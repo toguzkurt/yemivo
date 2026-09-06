@@ -1,11 +1,10 @@
 package com.tnc.yemivo.app.activity
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.tnc.yemivo.R
 
 /**
- * Hosts the app's single-activity shell. Screens are still layout-only mockups (no Fragments or
- * Navigation graph wired up yet), so this only sets the container content view for now.
+ * Single-activity shell: every screen is a Fragment destination inside the root NavHost
+ * (activity_main.xml, nav_graph.xml) or the nested tabs NavHost (MainTabsFragment).
  */
 class MainActivity : AppCompatActivity(R.layout.activity_main)
