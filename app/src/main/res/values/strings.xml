@@ -168,12 +168,12 @@
     <!-- Surprise recipe                                               -->
     <!-- ============================================================ -->
     <string name="surprise_title">Bugün ne pişirsem?</string>
-    <string name="surprise_badge">Sürpriz</string>
+    <string name="surprise_badge">🎲 Sürpriz</string>
     <string name="recipe_name_karnıyarık">Karnıyarık</string>
     <string name="recipe_detail_meta_karnıyarık">Türk mutfağı · 50 dk · 4 kişilik</string>
-    <string name="surprise_reroll">Başka göster</string>
+    <string name="surprise_reroll">🔀 Başka göster</string>
     <string name="surprise_view_recipe">Tarife git</string>
-    <string name="surprise_fab">Sürpriz tarif</string>
+    <string name="surprise_fab">🎲 Sürpriz tarif</string>
 
     <!-- ============================================================ -->
     <!-- Empty states                                                  -->
