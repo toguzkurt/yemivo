@@ -159,8 +159,8 @@
     <string name="login_label_password">Şifre</string>
     <string name="login_placeholder_password">••••••••</string>
     <string name="login_or_divider">veya</string>
-    <string name="login_continue_google">Google ile devam et</string>
-    <string name="login_continue_apple">Apple ile devam et</string>
+    <string name="login_continue_google">🔵 Google ile devam et</string>
+    <string name="login_continue_apple">🍎 Apple ile devam et</string>
     <string name="login_no_account">Hesabın yok mu?</string>
     <string name="login_register">Kayıt ol</string>
 
