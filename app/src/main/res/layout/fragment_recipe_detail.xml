@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <!-- Hero image -->
+
+    <ImageView
+        android:id="@+id/ivHero"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hero_image_height"
+        android:background="@drawable/bg_hero_placeholder"
+        android:contentDescription="@null"
+        android:padding="@dimen/spacing_huge"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_add_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/text_muted" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/icon_button_size"
+        android:layout_height="@dimen/icon_button_size"
+        android:layout_marginStart="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:background="@drawable/bg_circle_white"
+        android:contentDescription="@null"
+        android:padding="@dimen/spacing_xs"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFavorite"
+        android:layout_width="@dimen/icon_button_size"
+        android:layout_height="@dimen/icon_button_size"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:layout_marginEnd="@dimen/spacing_md"
+        android:background="@drawable/bg_circle_white"
+        android:contentDescription="@null"
+        android:padding="@dimen/spacing_xs"
+        android:src="@drawable/ic_heart_filled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Body -->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivHero">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_lg">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recipe_name_mantı"
+                android:textAppearance="@style/TextAppearance.Yemivo.HeadlineSm" />
+
+            <TextView
+                android:id="@+id/tvMeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:layout_marginBottom="@dimen/spacing_lg"
+                android:text="@string/recipe_detail_meta_mantı"
+                android:textAppearance="@style/TextAppearance.Yemivo.BodySecondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_lg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tabIngredients"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tab_inactive"
+                    android:gravity="center"
+                    android:padding="@dimen/spacing_sm_md"
+                    android:text="@string/tab_ingredients"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_sm" />
+
+                <TextView
+                    android:id="@+id/tabInstructions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_sm"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tab_active"
+                    android:gravity="center"
+                    android:padding="@dimen/spacing_sm_md"
+                    android:text="@string/tab_instructions"
+                    android:textColor="@color/accent"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_sm" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_recipe_step" />
+
+            <TextView
+                android:id="@+id/btnAddToShoppingList"
+                style="@style/Widget.Yemivo.ButtonDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:text="@string/action_add_to_shopping_list" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
