@@ -481,6 +481,17 @@
                 android:textColor="@color/text_muted"
                 android:textSize="@dimen/text_sm" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xxs"
+                android:gravity="center"
+                android:paddingStart="@dimen/spacing_xxl"
+                android:paddingEnd="@dimen/spacing_xxl"
+                android:text="@string/settings_data_attribution"
+                android:textColor="@color/text_muted"
+                android:textSize="@dimen/text_xs" />
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

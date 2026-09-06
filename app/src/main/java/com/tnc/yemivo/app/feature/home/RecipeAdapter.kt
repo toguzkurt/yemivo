@@ -2,6 +2,7 @@ package com.tnc.yemivo.app.feature.home
 
 import androidx.recyclerview.widget.DiffUtil
 import com.tnc.yemivo.R
+import com.tnc.yemivo.app.feature.common.metaSummary
 import com.tnc.yemivo.databinding.ItemRecipeCardBinding
 import com.tnc.core.base.BaseAdapter
 import com.tnc.domain.recipe.model.Recipe
@@ -34,7 +35,7 @@ class RecipeAdapter(
     ) = with(binding) {
 
         tvName.text = item.name
-        tvMeta.text = "${item.cuisineLabel} · ${item.durationMinutes} dk"
+        tvMeta.text = item.metaSummary()
 
         ivFavorite.setImageResource(
             if (item.isFavorite) R.drawable.ic_heart_filled else R.drawable.ic_heart_outline

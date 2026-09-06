@@ -2,6 +2,7 @@ package com.tnc.yemivo.app.feature.recipedetail
 
 import androidx.navigation.fragment.findNavController
 import com.tnc.yemivo.R
+import com.tnc.yemivo.app.feature.common.detailSummary
 import com.tnc.yemivo.databinding.FragmentRecipeDetailBinding
 import com.tnc.core.base.BaseFragment
 import com.tnc.core.extensions.showToast
@@ -79,7 +80,7 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
     ) = with(binding) {
 
         tvTitle.text = recipe.name
-        tvMeta.text = "${recipe.cuisineLabel} · ${recipe.durationMinutes} dk · ${recipe.servings} kişilik"
+        tvMeta.text = recipe.detailSummary()
 
         ivFavorite.setImageResource(
             if (recipe.isFavorite) R.drawable.ic_heart_filled else R.drawable.ic_heart_outline

@@ -232,6 +232,7 @@
     <string name="settings_contact_us">Bize ulaşın</string>
     <string name="settings_delete_account">Hesabı sil</string>
     <string name="settings_version">Sürüm 1.0.0</string>
+    <string name="settings_data_attribution">Türk mutfağı tarifleri 104bit/turkish-recipe-dataset (MIT lisans) kaynağından derlenmiştir.</string>
 
     <!-- ============================================================ -->
     <!-- Cuisines grid                                                 -->
