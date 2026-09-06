@@ -1,0 +1,763 @@
+[
+  {
+    "tarif_adi": "Tavuklu Taco",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "tavuk göğsü", "miktar": 400, "birim": "gr"},
+      {"isim": "mısır tortilla", "miktar": 8, "birim": "adet"},
+      {"isim": "kırmızı biber", "miktar": 1, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "kimyon", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "toz kırmızı biber", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "limon", "miktar": 1, "birim": "adet"},
+      {"isim": "taze kişniş", "miktar": 3, "birim": "dal"}
+    ],
+    "yapilis_adimlari": [
+      "Tavuk göğsünü ince şeritler halinde doğrayın.",
+      "Kimyon, toz biber ve tuzla marine edin.",
+      "Tavada tavukları rengi dönene kadar kavurun.",
+      "Biber ve soğanı ince doğrayıp aynı tavada birkaç dakika kavurun.",
+      "Tortillaları kuru bir tavada ısıtın.",
+      "Her tortillaya tavuk ve sebze karışımını paylaştırın.",
+      "Üzerine limon suyu sıkıp taze kişniş serperek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Burrito",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava", "ocak"],
+    "malzemeler": [
+      {"isim": "un tortilla", "miktar": 4, "birim": "adet"},
+      {"isim": "kıyma", "miktar": 400, "birim": "gr"},
+      {"isim": "pirinç", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "kırmızı fasulye", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "cheddar peyniri", "miktar": 100, "birim": "gr"},
+      {"isim": "domates", "miktar": 2, "birim": "adet"},
+      {"isim": "marul", "miktar": 4, "birim": "yaprak"},
+      {"isim": "taco baharatı", "miktar": 1, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Pirinci haşlayıp ayırın.",
+      "Kıymayı taco baharatıyla birlikte kavurun.",
+      "Kırmızı fasulyeyi ısıtın.",
+      "Tortillaları kuru tavada hafifçe ısıtın.",
+      "Her tortillanın ortasına pirinç, kıyma, fasulye, doğranmış domates, marul ve rendelenmiş peynir koyun.",
+      "Tortillanın iki yanını içe katlayıp sıkıca sarın.",
+      "İsterseniz kapalı halde hafifçe tavada kızartıp servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Guacamole",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": null,
+    "zorluk": "kolay",
+    "pisirme_yontemi": [],
+    "malzemeler": [
+      {"isim": "avokado", "miktar": 3, "birim": "adet"},
+      {"isim": "limon", "miktar": 1, "birim": "adet"},
+      {"isim": "kırmızı soğan", "miktar": 0.5, "birim": "adet"},
+      {"isim": "domates", "miktar": 1, "birim": "adet"},
+      {"isim": "taze kişniş", "miktar": 2, "birim": "dal"},
+      {"isim": "jalapeno biberi", "miktar": 1, "birim": "adet"},
+      {"isim": "tuz", "miktar": 1, "birim": "çay kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Avokadoları ikiye bölüp çekirdeklerini çıkarın ve içini bir kaseye kazıyın.",
+      "Çatal yardımıyla avokadoyu kabaca ezin.",
+      "İnce kıyılmış soğan, domates ve jalapeno biberini ekleyin.",
+      "Limon suyunu sıkıp tuz ekleyin.",
+      "Kişnişi ince kıyıp karışıma katın.",
+      "Hepsini hafifçe karıştırıp hemen servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Enchilada",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 25,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["fırın", "tava"],
+    "malzemeler": [
+      {"isim": "mısır tortilla", "miktar": 8, "birim": "adet"},
+      {"isim": "tavuk göğsü", "miktar": 300, "birim": "gr"},
+      {"isim": "enchilada sosu", "miktar": 400, "birim": "gr"},
+      {"isim": "cheddar peyniri", "miktar": 150, "birim": "gr"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "kimyon", "miktar": 1, "birim": "çay kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Tavuk göğsünü haşlayıp lif lif ayırın.",
+      "Soğanı ince doğrayıp tavuk ile birlikte kimyon eşliğinde kavurun.",
+      "Tortillaları biraz enchilada sosuna batırıp yumuşatın.",
+      "Her tortillanın içine tavuk harcından koyup rulo şeklinde sarın.",
+      "Fırın kabına dizip üzerine kalan sosu dökün.",
+      "Bol rendelenmiş peynir serpin.",
+      "Önceden ısıtılmış 190°C fırında peynir eriyene kadar 20 dakika pişirin."
+    ]
+  },
+  {
+    "tarif_adi": "Quesadilla",
+    "kategori": "atıştırmalık",
+    "porsiyon": 2,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "un tortilla", "miktar": 4, "birim": "adet"},
+      {"isim": "cheddar peyniri", "miktar": 150, "birim": "gr"},
+      {"isim": "kırmızı biber", "miktar": 1, "birim": "adet"},
+      {"isim": "mısır", "miktar": 0.5, "birim": "su bardağı"},
+      {"isim": "tereyağı", "miktar": 20, "birim": "gr"}
+    ],
+    "yapilis_adimlari": [
+      "Biberi ince şeritler halinde doğrayın.",
+      "Bir tortillanın üzerine rendelenmiş peynir, biber ve mısırı eşit yayın.",
+      "Üzerini ikinci bir tortilla ile kapatın.",
+      "Tavada tereyağını eritip quesadillayı yerleştirin.",
+      "Alt tarafı altın rengi olunca dikkatlice çevirip diğer tarafını da pişirin.",
+      "Peynir eriyince dilimleyerek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Nachos",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "mısır cipsi", "miktar": 200, "birim": "gr"},
+      {"isim": "cheddar peyniri", "miktar": 150, "birim": "gr"},
+      {"isim": "kırmızı fasulye", "miktar": 0.5, "birim": "su bardağı"},
+      {"isim": "domates", "miktar": 1, "birim": "adet"},
+      {"isim": "jalapeno biberi", "miktar": 1, "birim": "adet"},
+      {"isim": "ekşi krema", "miktar": 3, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Fırın tepsisine mısır cipsini yayın.",
+      "Üzerine rendelenmiş peynir, fasulye ve ince doğranmış jalapenoyu serpin.",
+      "Önceden ısıtılmış 190°C fırında peynir eriyene kadar 8-10 dakika pişirin.",
+      "Fırından çıkarıp üzerine doğranmış domates ekleyin.",
+      "Ekşi krema ile birlikte hemen servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Fajita",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "dana bonfile", "miktar": 400, "birim": "gr"},
+      {"isim": "kırmızı biber", "miktar": 1, "birim": "adet"},
+      {"isim": "yeşil biber", "miktar": 1, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "un tortilla", "miktar": 8, "birim": "adet"},
+      {"isim": "kimyon", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "toz kırmızı biber", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "limon", "miktar": 1, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Eti ve biberleri ince şeritler halinde doğrayın.",
+      "Eti kimyon, toz biber ve tuzla marine edin.",
+      "Sıcak tavada eti hızlıca mühürleyip çıkarın.",
+      "Aynı tavada biber ve soğanı kavurun.",
+      "Eti geri ekleyip birkaç dakika birlikte pişirin.",
+      "Limon suyu sıkıp karıştırın.",
+      "Sıcak tortillalarla birlikte servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Chili Con Carne",
+    "kategori": "ana yemek",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 45,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "kıyma", "miktar": 500, "birim": "gr"},
+      {"isim": "kırmızı fasulye", "miktar": 2, "birim": "su bardağı"},
+      {"isim": "domates", "miktar": 4, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "sarımsak", "miktar": 2, "birim": "diş"},
+      {"isim": "toz kırmızı biber", "miktar": 2, "birim": "çay kaşığı"},
+      {"isim": "kimyon", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "domates salçası", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Soğan ve sarımsağı bir tencerede kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar pişirin.",
+      "Domates salçası, toz biber ve kimyonu ekleyip kısa süre kavurun.",
+      "Doğranmış domatesleri ve bir su bardağı su ekleyin.",
+      "Kapağını kapatıp kısık ateşte 30 dakika pişirin.",
+      "Kırmızı fasulyeyi ekleyip 10-15 dakika daha kaynatın.",
+      "Tuz ile tatlandırıp sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Salsa Verde",
+    "kategori": "atıştırmalık",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "yeşil domates (tomatillo)", "miktar": 6, "birim": "adet"},
+      {"isim": "jalapeno biberi", "miktar": 2, "birim": "adet"},
+      {"isim": "soğan", "miktar": 0.5, "birim": "adet"},
+      {"isim": "taze kişniş", "miktar": 3, "birim": "dal"},
+      {"isim": "sarımsak", "miktar": 1, "birim": "diş"},
+      {"isim": "limon", "miktar": 1, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Yeşil domates ve jalapenoyu fırın tepsisine dizin.",
+      "220°C fırında kabukları hafifçe kararana kadar 10 dakika kızartın.",
+      "Kızarmış sebzeleri soğan, sarımsak ve kişniş ile birlikte blendera koyun.",
+      "Pürüzsüz kıvama gelene kadar çekin.",
+      "Limon suyu ve tuz ekleyip karıştırın.",
+      "Oda sıcaklığında veya soğuk servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Churros",
+    "kategori": "tatlı",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "su", "miktar": 250, "birim": "ml"},
+      {"isim": "tereyağı", "miktar": 60, "birim": "gr"},
+      {"isim": "un", "miktar": 150, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 2, "birim": "adet"},
+      {"isim": "toz şeker", "miktar": 50, "birim": "gr"},
+      {"isim": "tarçın", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "kızartmalık yağ", "miktar": 500, "birim": "ml"}
+    ],
+    "yapilis_adimlari": [
+      "Su ve tereyağını bir tencerede kaynatın.",
+      "Kaynayınca unu bir kerede ekleyip hızlıca karıştırarak topak haline getirin.",
+      "Hamuru ocaktan alıp biraz soğutun.",
+      "Yumurtaları teker teker ekleyip her seferinde iyice karıştırın.",
+      "Hamuru sıkma torbasına doldurup kızgın yağa uzun şeritler halinde sıkın.",
+      "Altın rengi olana kadar kızartıp kağıt havluda süzdürün.",
+      "Sıcak churrosları şeker ve tarçın karışımına bulayarak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Tostada",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "mısır tortilla", "miktar": 6, "birim": "adet"},
+      {"isim": "kırmızı fasulye", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "marul", "miktar": 4, "birim": "yaprak"},
+      {"isim": "domates", "miktar": 1, "birim": "adet"},
+      {"isim": "cheddar peyniri", "miktar": 80, "birim": "gr"},
+      {"isim": "ekşi krema", "miktar": 3, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Tortillaları fırın tepsisine dizip 200°C fırında her iki yüzü de çıtır olana kadar kızartın.",
+      "Fasulyeyi ezip pürüze yakın bir kıvam elde edin.",
+      "Kızarmış tortillaların üzerine fasulye püresini sürün.",
+      "İnce doğranmış marul, domates ve rendelenmiş peyniri ekleyin.",
+      "Üzerine ekşi krema koyarak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Karidesli Ceviche",
+    "kategori": "salata",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 30,
+    "pisirme_suresi_dk": null,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["buzdolabı"],
+    "malzemeler": [
+      {"isim": "karides", "miktar": 400, "birim": "gr"},
+      {"isim": "limon", "miktar": 5, "birim": "adet"},
+      {"isim": "kırmızı soğan", "miktar": 0.5, "birim": "adet"},
+      {"isim": "domates", "miktar": 2, "birim": "adet"},
+      {"isim": "jalapeno biberi", "miktar": 1, "birim": "adet"},
+      {"isim": "taze kişniş", "miktar": 3, "birim": "dal"},
+      {"isim": "avokado", "miktar": 1, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Karidesleri kısaca haşlayıp küçük parçalar halinde doğrayın.",
+      "Limonları sıkıp karidesin üzerine dökün, buzdolabında 20 dakika bekletin.",
+      "İnce doğranmış soğan, domates ve jalapenoyu ekleyin.",
+      "Kıyılmış kişnişi karıştırın.",
+      "Servis etmeden önce küp doğranmış avokadoyu ekleyin.",
+      "Soğuk olarak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Tavuklu Tortilla Çorbası",
+    "kategori": "çorba",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 30,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak", "fırın"],
+    "malzemeler": [
+      {"isim": "tavuk göğsü", "miktar": 300, "birim": "gr"},
+      {"isim": "mısır tortilla", "miktar": 4, "birim": "adet"},
+      {"isim": "domates", "miktar": 3, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "sarımsak", "miktar": 2, "birim": "diş"},
+      {"isim": "tavuk suyu", "miktar": 1, "birim": "litre"},
+      {"isim": "mısır", "miktar": 0.5, "birim": "su bardağı"},
+      {"isim": "avokado", "miktar": 1, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Tortillaları ince şeritler halinde kesip fırında çıtır olana kadar kızartın.",
+      "Soğan, sarımsak ve domatesi bir tencerede kavurup blenderdan geçirin.",
+      "Bu karışımı tavuk suyu ile birlikte tencereye alıp kaynatın.",
+      "Tavuk göğsünü ekleyip 20 dakika haşlayın.",
+      "Tavuğu çıkarıp lif lif ayırıp çorbaya geri ekleyin.",
+      "Mısırı ilave edip birkaç dakika daha pişirin.",
+      "Servis ederken üzerine çıtır tortilla ve avokado dilimleri ekleyin."
+    ]
+  },
+  {
+    "tarif_adi": "Elote (Meksika Usulü Mısır)",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 5,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ızgara"],
+    "malzemeler": [
+      {"isim": "taze mısır", "miktar": 4, "birim": "adet"},
+      {"isim": "mayonez", "miktar": 4, "birim": "yemek kaşığı"},
+      {"isim": "beyaz peynir (cotija)", "miktar": 80, "birim": "gr"},
+      {"isim": "toz kırmızı biber", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "limon", "miktar": 1, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Mısırları kabuklarından ayırıp ızgarada her yüzü hafif kararana kadar çevirerek pişirin.",
+      "Sıcak mısırların üzerine mayonez sürün.",
+      "Ufalanmış beyaz peyniri tüm yüzeye bastırarak yapıştırın.",
+      "Üzerine toz kırmızı biber serpin.",
+      "Limon suyu sıkarak sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Pico de Gallo",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": null,
+    "zorluk": "kolay",
+    "pisirme_yontemi": [],
+    "malzemeler": [
+      {"isim": "domates", "miktar": 4, "birim": "adet"},
+      {"isim": "kırmızı soğan", "miktar": 0.5, "birim": "adet"},
+      {"isim": "jalapeno biberi", "miktar": 1, "birim": "adet"},
+      {"isim": "taze kişniş", "miktar": 3, "birim": "dal"},
+      {"isim": "limon", "miktar": 1, "birim": "adet"},
+      {"isim": "tuz", "miktar": 0.5, "birim": "çay kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Domates, soğan ve jalapenoyu küçük küpler halinde doğrayın.",
+      "Kişnişi ince kıyıp diğer malzemelerle karıştırın.",
+      "Limon suyu ve tuzu ekleyip karıştırın.",
+      "10 dakika dinlendirip tortilla cipsi ile servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Meksika Usulü Pirinç",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 25,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "pirinç", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "domates sosu", "miktar": 150, "birim": "gr"},
+      {"isim": "soğan", "miktar": 0.5, "birim": "adet"},
+      {"isim": "sarımsak", "miktar": 1, "birim": "diş"},
+      {"isim": "tavuk suyu", "miktar": 2, "birim": "su bardağı"},
+      {"isim": "zeytinyağı", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Pirinci yıkayıp süzün.",
+      "Zeytinyağında pirinci hafif sararana kadar kavurun.",
+      "İnce doğranmış soğan ve sarımsağı ekleyip kavurmaya devam edin.",
+      "Domates sosu ve tavuk suyunu ekleyin.",
+      "Kaynayınca kısık ateşte kapağı kapalı 18-20 dakika pişirin.",
+      "Ocaktan alıp 5 dakika dinlendirdikten sonra çatalla karıştırıp servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Karnitas (Fırında Domuz/Dana Kavurma)",
+    "kategori": "ana yemek",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 180,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "dana kürek eti", "miktar": 1, "birim": "kg"},
+      {"isim": "portakal suyu", "miktar": 200, "birim": "ml"},
+      {"isim": "sarımsak", "miktar": 4, "birim": "diş"},
+      {"isim": "kimyon", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "toz kırmızı biber", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "defne yaprağı", "miktar": 2, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Eti büyük parçalar halinde kesip baharatlarla ovun.",
+      "Fırın kabına yerleştirip portakal suyu, sarımsak ve defne yaprağını ekleyin.",
+      "Kabın üzerini folyo ile sıkıca kapatın.",
+      "160°C fırında 3 saat, et yumuşayıp lif lif ayrılana kadar pişirin.",
+      "Eti çıkarıp iki çatal yardımıyla lif lif ayırın.",
+      "Fırın sosuyla karıştırıp isteğe göre birkaç dakika daha kızartın.",
+      "Tortilla ile servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Sopa de Fideo (Erişte Çorbası)",
+    "kategori": "çorba",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "ince şehriye", "miktar": 200, "birim": "gr"},
+      {"isim": "domates", "miktar": 3, "birim": "adet"},
+      {"isim": "soğan", "miktar": 0.5, "birim": "adet"},
+      {"isim": "sarımsak", "miktar": 1, "birim": "diş"},
+      {"isim": "tavuk suyu", "miktar": 1, "birim": "litre"},
+      {"isim": "zeytinyağı", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Zeytinyağında şehriyeyi hafif kızarana kadar kavurun.",
+      "Domates, soğan ve sarımsağı blenderdan geçirin.",
+      "Bu karışımı kavrulmuş şehriyenin üzerine dökün.",
+      "Tavuk suyunu ekleyip kaynatın.",
+      "Kısık ateşte şehriye yumuşayana kadar 12-15 dakika pişirin.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Chiles Rellenos",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 25,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["tava", "fırın"],
+    "malzemeler": [
+      {"isim": "poblano biberi", "miktar": 4, "birim": "adet"},
+      {"isim": "cheddar peyniri", "miktar": 200, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 3, "birim": "adet"},
+      {"isim": "un", "miktar": 60, "birim": "gr"},
+      {"isim": "domates sosu", "miktar": 200, "birim": "gr"},
+      {"isim": "kızartmalık yağ", "miktar": 200, "birim": "ml"}
+    ],
+    "yapilis_adimlari": [
+      "Biberleri ızgara veya fırında kabukları kararana kadar kızartıp kabuklarını soyun.",
+      "Bir kenarından yarık açıp çekirdeklerini temizleyin.",
+      "İçlerine rendelenmiş peynir doldurun.",
+      "Yumurta aklarını sert köpük haline getirip sarılarını hafifçe karıştırın.",
+      "Biberleri una, sonra yumurta karışımına bulayın.",
+      "Kızgın yağda her yüzü altın rengi olana kadar kızartın.",
+      "Sıcak domates sosuyla birlikte servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Meksika Usulü Fasulye Ezmesi (Refried Beans)",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "kırmızı fasulye", "miktar": 2, "birim": "su bardağı"},
+      {"isim": "soğan", "miktar": 0.5, "birim": "adet"},
+      {"isim": "sarımsak", "miktar": 1, "birim": "diş"},
+      {"isim": "zeytinyağı", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "kimyon", "miktar": 0.5, "birim": "çay kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Zeytinyağında ince doğranmış soğan ve sarımsağı kavurun.",
+      "Haşlanmış fasulyeyi suyuyla birlikte ekleyin.",
+      "Kimyonu ekleyip birkaç dakika pişirin.",
+      "Fasulyeyi çatal veya blender ile ezerek pürüze yakın kıvama getirin.",
+      "Kıvamı koyulaşana kadar kısık ateşte karıştırarak pişirin.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Horchata (Pirinç Sütü İçeceği)",
+    "kategori": "içecek",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 480,
+    "pisirme_suresi_dk": null,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["buzdolabı"],
+    "malzemeler": [
+      {"isim": "pirinç", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "su", "miktar": 1, "birim": "litre"},
+      {"isim": "tarçın çubuğu", "miktar": 1, "birim": "adet"},
+      {"isim": "süt", "miktar": 250, "birim": "ml"},
+      {"isim": "toz şeker", "miktar": 100, "birim": "gr"},
+      {"isim": "vanilya", "miktar": 1, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Pirinci tarçın çubuğu ile birlikte suda gece boyunca (en az 8 saat) bekletin.",
+      "Bekletilen karışımı blenderdan pürüzsüz olana kadar geçirin.",
+      "İnce bir süzgeçten veya tülbentten süzün.",
+      "Süzülen sıvıya süt, şeker ve vanilyayı ekleyip karıştırın.",
+      "Buzdolabında soğutup buzla servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Tacos al Pastor",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 60,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "dana kontrfile", "miktar": 500, "birim": "gr"},
+      {"isim": "ananas", "miktar": 4, "birim": "dilim"},
+      {"isim": "toz kırmızı biber", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "sirke", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "mısır tortilla", "miktar": 8, "birim": "adet"},
+      {"isim": "kırmızı soğan", "miktar": 0.5, "birim": "adet"},
+      {"isim": "taze kişniş", "miktar": 3, "birim": "dal"}
+    ],
+    "yapilis_adimlari": [
+      "Eti ince dilimleyip toz biber, sirke ve tuz ile marine edin, en az 1 saat dinlendirin.",
+      "Marine edilen eti sıcak tavada hızlıca kızartın.",
+      "Ananas dilimlerini aynı tavada hafifçe karamelize edin.",
+      "Ananası küçük parçalara doğrayın.",
+      "Tortillaları ısıtın.",
+      "Her tortillaya et ve ananas parçalarını paylaştırın.",
+      "İnce kıyılmış soğan ve kişniş ile servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Meksika Usulü Mısır Salatası (Esquites)",
+    "kategori": "salata",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "mısır", "miktar": 3, "birim": "su bardağı"},
+      {"isim": "mayonez", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "beyaz peynir (cotija)", "miktar": 60, "birim": "gr"},
+      {"isim": "toz kırmızı biber", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "limon", "miktar": 1, "birim": "adet"},
+      {"isim": "taze kişniş", "miktar": 2, "birim": "dal"}
+    ],
+    "yapilis_adimlari": [
+      "Mısır tanelerini tavada hafif kararana kadar kavurun.",
+      "Sıcak mısırı bir kaseye alıp mayonez ile karıştırın.",
+      "Ufalanmış beyaz peyniri ve toz biberi ekleyin.",
+      "Limon suyu sıkıp kıyılmış kişnişi karıştırın.",
+      "Ilık veya soğuk servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Flan",
+    "kategori": "tatlı",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 45,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "yumurta", "miktar": 4, "birim": "adet"},
+      {"isim": "süt", "miktar": 400, "birim": "ml"},
+      {"isim": "yoğunlaştırılmış süt", "miktar": 200, "birim": "gr"},
+      {"isim": "toz şeker", "miktar": 150, "birim": "gr"},
+      {"isim": "vanilya", "miktar": 1, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Şekeri bir tavada eritip koyu altın rengi karamel elde edin.",
+      "Karameli kalıpların tabanına eşit dağıtın.",
+      "Yumurta, süt, yoğunlaştırılmış süt ve vanilyayı çırpın.",
+      "Karışımı karamelin üzerine süzerek dökün.",
+      "Kalıpları su dolu bir fırın tepsisine yerleştirin.",
+      "160°C fırında yaklaşık 45 dakika pişirin.",
+      "Soğuduktan sonra buzdolabında birkaç saat bekletip ters çevirerek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Molletes (Fasulyeli Peynirli Ekmek)",
+    "kategori": "kahvaltı",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "baget ekmek", "miktar": 2, "birim": "adet"},
+      {"isim": "kırmızı fasulye ezmesi", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "cheddar peyniri", "miktar": 150, "birim": "gr"},
+      {"isim": "pico de gallo", "miktar": 4, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Bagetleri ikiye bölüp içini hafifçe oyun.",
+      "Her yarımın üzerine fasulye ezmesini sürün.",
+      "Bol rendelenmiş peynir serpin.",
+      "Fırında peynir eriyene kadar 8-10 dakika pişirin.",
+      "Üzerine pico de gallo koyarak sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Meksika Usulü Sıcak Çikolata",
+    "kategori": "içecek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 5,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "süt", "miktar": 1, "birim": "litre"},
+      {"isim": "bitter çikolata", "miktar": 150, "birim": "gr"},
+      {"isim": "tarçın", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "toz şeker", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "vanilya", "miktar": 1, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Sütü bir tencerede kısık ateşte ısıtın.",
+      "Doğranmış çikolatayı ekleyip eriyene kadar karıştırın.",
+      "Tarçın, şeker ve vanilyayı ekleyin.",
+      "Telli çırpıcı ile köpürene kadar hızlıca çırpın.",
+      "Sıcak bardaklara paylaştırıp servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Tinga de Pollo",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 30,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "tavuk göğsü", "miktar": 400, "birim": "gr"},
+      {"isim": "domates", "miktar": 4, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "chipotle biberi", "miktar": 2, "birim": "adet"},
+      {"isim": "sarımsak", "miktar": 2, "birim": "diş"},
+      {"isim": "mısır tortilla", "miktar": 8, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Tavuk göğsünü haşlayıp lif lif ayırın.",
+      "Domates, yarım soğan, chipotle biber ve sarımsağı blenderdan geçirin.",
+      "Kalan soğanı ince doğrayıp bir tavada kavurun.",
+      "Blenderdan geçirilen sosu ekleyip 10 dakika pişirin.",
+      "Lif lif ayrılmış tavuğu sosa ekleyip 10-15 dakika daha pişirin.",
+      "Sıcak tortillalarla servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Sopes",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 25,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "mısır unu (masa)", "miktar": 250, "birim": "gr"},
+      {"isim": "su", "miktar": 200, "birim": "ml"},
+      {"isim": "kırmızı fasulye ezmesi", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "marul", "miktar": 4, "birim": "yaprak"},
+      {"isim": "beyaz peynir (cotija)", "miktar": 60, "birim": "gr"},
+      {"isim": "ekşi krema", "miktar": 3, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Mısır ununu su ile yoğurup yumuşak bir hamur elde edin.",
+      "Hamurdan küçük yuvarlak parçalar açıp kalınca yassı şekil verin.",
+      "Kuru bir tavada her iki tarafını pişirin.",
+      "Sıcakken kenarlarını hafifçe yukarı kıvırarak küçük bir kase şekli verin.",
+      "Az yağda tekrar kızartıp içine fasulye ezmesi sürün.",
+      "Üzerine marul, peynir ve ekşi krema ekleyerek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Meksika Usulü Kinoa Salatası",
+    "kategori": "salata",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "kinoa", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "kırmızı fasulye", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "mısır", "miktar": 0.5, "birim": "su bardağı"},
+      {"isim": "domates", "miktar": 2, "birim": "adet"},
+      {"isim": "avokado", "miktar": 1, "birim": "adet"},
+      {"isim": "limon", "miktar": 1, "birim": "adet"},
+      {"isim": "taze kişniş", "miktar": 3, "birim": "dal"}
+    ],
+    "yapilis_adimlari": [
+      "Kinoayı yıkayıp paket üzerindeki süreye göre haşlayın ve soğutun.",
+      "Domates ve avokadoyu küp doğrayın.",
+      "Kinoa, fasulye, mısır, domates ve avokadoyu bir kasede karıştırın.",
+      "Limon suyu ve tuz ekleyin.",
+      "Kıyılmış kişnişi serperek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Empanada",
+    "kategori": "atıştırmalık",
+    "porsiyon": 8,
+    "hazirlik_suresi_dk": 30,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "un", "miktar": 300, "birim": "gr"},
+      {"isim": "tereyağı", "miktar": 100, "birim": "gr"},
+      {"isim": "kıyma", "miktar": 250, "birim": "gr"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "cheddar peyniri", "miktar": 80, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 1, "birim": "adet"},
+      {"isim": "kimyon", "miktar": 1, "birim": "çay kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Un ve soğuk tereyağını parmak uçlarınızla ovarak kum kıvamına getirin.",
+      "Az su ekleyip hamuru yoğurun, streç filme sarıp 20 dakika dinlendirin.",
+      "Soğanı kavurup kıymayı ekleyin, kimyon ve tuz ile pişirin.",
+      "Hamuru ince açıp daire şeklinde kesin.",
+      "Her dairenin yarısına kıyma harcı ve rendelenmiş peynir koyun.",
+      "Hamuru yarım ay şeklinde kapatıp kenarlarını çatalla bastırarak yapıştırın.",
+      "Üzerlerine çırpılmış yumurta sürüp önceden ısıtılmış 200°C fırında 18-20 dakika pişirin."
+    ]
+  }
+]

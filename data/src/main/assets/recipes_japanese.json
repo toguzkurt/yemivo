@@ -1,0 +1,816 @@
+[
+  {
+    "tarif_adi": "California Roll",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 40,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "sushi pirinci", "miktar": 2, "birim": "su bardağı"},
+      {"isim": "pirinç sirkesi", "miktar": 4, "birim": "yemek kaşığı"},
+      {"isim": "nori yaprağı", "miktar": 4, "birim": "adet"},
+      {"isim": "yengeç eti (surimi)", "miktar": 200, "birim": "gr"},
+      {"isim": "avokado", "miktar": 1, "birim": "adet"},
+      {"isim": "salatalık", "miktar": 1, "birim": "adet"},
+      {"isim": "susam", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Pirinci yıkayıp paket üzerindeki süreye göre haşlayın.",
+      "Haşlanan pirince pirinç sirkesini ekleyip yayarak soğutun.",
+      "Bambu hasırın üzerine nori yaprağını parlak yüzü altta kalacak şekilde koyun.",
+      "Nori üzerine ince bir tabaka pirinç yayıp ters çevirin.",
+      "Pirincin üzerine surimi, avokado ve salatalık şeritlerini yerleştirin.",
+      "Bambu hasırı kullanarak sıkıca rulo haline getirin.",
+      "Ruloyu susamla kaplayıp keskin bıçakla parçalara ayırın."
+    ]
+  },
+  {
+    "tarif_adi": "Miso Çorbası",
+    "kategori": "çorba",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 5,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "dashi suyu", "miktar": 1, "birim": "litre"},
+      {"isim": "miso ezmesi", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "tofu", "miktar": 150, "birim": "gr"},
+      {"isim": "yeşil soğan", "miktar": 2, "birim": "dal"},
+      {"isim": "wakame deniz yosunu", "miktar": 1, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Dashi suyunu bir tencerede ısıtın, kaynatmayın.",
+      "Küçük bir kaseye biraz sıcak dashi suyu alıp miso ezmesini içinde eritin.",
+      "Eritilen misoyu tencereye geri dökün.",
+      "Küp doğranmış tofuyu ve wakame yosununu ekleyin.",
+      "Kısık ateşte 2-3 dakika ısıtın, kaynatmamaya dikkat edin.",
+      "İnce doğranmış yeşil soğan ile servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Teriyaki Tavuk",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "tavuk but", "miktar": 4, "birim": "adet"},
+      {"isim": "soya sosu", "miktar": 60, "birim": "ml"},
+      {"isim": "mirin", "miktar": 40, "birim": "ml"},
+      {"isim": "toz şeker", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "sarımsak", "miktar": 1, "birim": "diş"},
+      {"isim": "susam", "miktar": 1, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Soya sosu, mirin, şeker ve rendelenmiş sarımsağı karıştırarak sosu hazırlayın.",
+      "Tavuk butlarını derili yüzü aşağıda olacak şekilde sıcak tavaya koyun.",
+      "Orta ateşte her iki tarafını da güzelce kızartın.",
+      "Hazırlanan sosu tavaya dökün.",
+      "Sos koyulaşıp tavuğu kaplayana kadar kısık ateşte pişirin.",
+      "Üzerine susam serperek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Tavuklu Ramen",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 40,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "ramen eriştesi", "miktar": 400, "birim": "gr"},
+      {"isim": "tavuk suyu", "miktar": 1.5, "birim": "litre"},
+      {"isim": "tavuk göğsü", "miktar": 300, "birim": "gr"},
+      {"isim": "soya sosu", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "yumurta", "miktar": 4, "birim": "adet"},
+      {"isim": "yeşil soğan", "miktar": 3, "birim": "dal"},
+      {"isim": "mısır", "miktar": 0.5, "birim": "su bardağı"}
+    ],
+    "yapilis_adimlari": [
+      "Yumurtaları 7 dakika haşlayıp soğuk suda soyup ikiye bölün.",
+      "Tavuk göğsünü tavuk suyunda haşlayıp lif lif ayırın.",
+      "Tavuk suyuna soya sosunu ekleyip kaynatın.",
+      "Ramen eriştesini ayrı bir tencerede paket üzerindeki süreye göre haşlayın.",
+      "Süzülen erişteyi derin kaselere paylaştırın.",
+      "Üzerine sıcak et suyunu dökün.",
+      "Tavuk, yumurta, mısır ve yeşil soğanla süsleyerek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Tempura",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "karides", "miktar": 300, "birim": "gr"},
+      {"isim": "kabak", "miktar": 1, "birim": "adet"},
+      {"isim": "patlıcan", "miktar": 1, "birim": "adet"},
+      {"isim": "un", "miktar": 150, "birim": "gr"},
+      {"isim": "buzlu soda", "miktar": 200, "birim": "ml"},
+      {"isim": "yumurta", "miktar": 1, "birim": "adet"},
+      {"isim": "kızartmalık yağ", "miktar": 500, "birim": "ml"}
+    ],
+    "yapilis_adimlari": [
+      "Karidesleri temizleyip kuyruklarını bırakın.",
+      "Sebzeleri ince dilimler halinde kesin.",
+      "Yumurta ve buzlu sodayı hafifçe çırpın.",
+      "Unu ekleyip topaklı kalacak şekilde az karıştırın, fazla karıştırmayın.",
+      "Karides ve sebzeleri hamura batırın.",
+      "170°C kızgın yağda altın rengi olana kadar kızartın.",
+      "Kağıt havlu üzerinde fazla yağını süzdürüp sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Yakitori",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ızgara"],
+    "malzemeler": [
+      {"isim": "tavuk but", "miktar": 500, "birim": "gr"},
+      {"isim": "yeşil soğan", "miktar": 2, "birim": "dal"},
+      {"isim": "soya sosu", "miktar": 60, "birim": "ml"},
+      {"isim": "mirin", "miktar": 40, "birim": "ml"},
+      {"isim": "toz şeker", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "şiş", "miktar": 8, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Tavuk butlarını küp şeklinde doğrayın.",
+      "Yeşil soğanı 3 cm parçalar halinde kesin.",
+      "Tavuk ve soğanı sırayla şişlere dizin.",
+      "Soya sosu, mirin ve şekeri kaynatarak koyu bir sos hazırlayın.",
+      "Şişleri ızgarada çevirerek pişirin.",
+      "Pişirme sırasında birkaç kez sosla fırçalayın.",
+      "Tavuk pişince sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Okonomiyaki",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "lahana", "miktar": 0.5, "birim": "adet"},
+      {"isim": "un", "miktar": 150, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 3, "birim": "adet"},
+      {"isim": "su", "miktar": 150, "birim": "ml"},
+      {"isim": "kavurmalık pastırma", "miktar": 100, "birim": "gr"},
+      {"isim": "okonomiyaki sosu", "miktar": 4, "birim": "yemek kaşığı"},
+      {"isim": "mayonez", "miktar": 3, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Lahanayı ince ince doğrayın.",
+      "Un, yumurta ve suyu karıştırarak hamur hazırlayın.",
+      "Doğranmış lahanayı hamura katın.",
+      "Tavada karışımı yayıp üzerine pastırma dilimlerini yerleştirin.",
+      "Alt tarafı pişince dikkatlice çevirip diğer tarafını pişirin.",
+      "Sıcakken üzerine okonomiyaki sosu ve mayonez gezdirin.",
+      "Dilimleyerek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Japon Usulü Tavuk Curry (Katsu Curry)",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 30,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava", "ocak"],
+    "malzemeler": [
+      {"isim": "tavuk göğsü", "miktar": 4, "birim": "adet"},
+      {"isim": "galeta unu", "miktar": 150, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 2, "birim": "adet"},
+      {"isim": "japon curry küpü", "miktar": 100, "birim": "gr"},
+      {"isim": "havuç", "miktar": 1, "birim": "adet"},
+      {"isim": "patates", "miktar": 2, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "pirinç", "miktar": 2, "birim": "su bardağı"}
+    ],
+    "yapilis_adimlari": [
+      "Tavuk göğüslerini önce yumurtaya sonra galeta ununa bulayıp kızartın (katsu).",
+      "Soğan, havuç ve patatesi bir tencerede kavurun.",
+      "Üzerine su ekleyip sebzeler yumuşayana kadar haşlayın.",
+      "Curry küplerini ekleyip eriyene kadar karıştırın.",
+      "Sos koyulaşana kadar kısık ateşte pişirin.",
+      "Pirinci ayrı haşlayın.",
+      "Servis tabağına pirinç, üzerine dilimlenmiş katsu tavuk ve curry sosunu paylaştırın."
+    ]
+  },
+  {
+    "tarif_adi": "Gyoza",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 40,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "gyoza hamuru (mantı yaprağı)", "miktar": 30, "birim": "adet"},
+      {"isim": "kıyma", "miktar": 250, "birim": "gr"},
+      {"isim": "lahana", "miktar": 150, "birim": "gr"},
+      {"isim": "yeşil soğan", "miktar": 2, "birim": "dal"},
+      {"isim": "sarımsak", "miktar": 1, "birim": "diş"},
+      {"isim": "susam yağı", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "soya sosu", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Lahanayı ince kıyıp tuzlayarak suyunu sıkın.",
+      "Lahana, kıyma, yeşil soğan, sarımsak, susam yağı ve soya sosunu karıştırın.",
+      "Her gyoza yaprağının ortasına bir tatlı kaşığı harç koyun.",
+      "Kenarlarını parmak uçlarınızla nemlendirip kıvırarak yapıştırın.",
+      "Tavada az yağla alt tarafları kızarana kadar pişirin.",
+      "Az su ekleyip kapağı kapatarak buharda pişmesini tamamlayın.",
+      "Kapak açıp suyu tamamen buharlaştırdıktan sonra servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Onigiri",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "sushi pirinci", "miktar": 2, "birim": "su bardağı"},
+      {"isim": "nori yaprağı", "miktar": 4, "birim": "adet"},
+      {"isim": "ton balığı", "miktar": 100, "birim": "gr"},
+      {"isim": "mayonez", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "tuz", "miktar": 1, "birim": "çay kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Pirinci yıkayıp haşlayın ve ılınmaya bırakın.",
+      "Ton balığını mayonezle karıştırarak iç harcı hazırlayın.",
+      "Ellerinizi ıslatıp hafifçe tuzlayın.",
+      "Avucunuza bir miktar pirinç alıp ortasına iç harçtan koyun.",
+      "Pirinci üçgen şeklinde sıkıştırarak şekillendirin.",
+      "Her onigirinin altına bir şerit nori yaprağı sarın.",
+      "Oda sıcaklığında veya soğuk servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Udon Erişte",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "udon eriştesi", "miktar": 400, "birim": "gr"},
+      {"isim": "dashi suyu", "miktar": 1, "birim": "litre"},
+      {"isim": "soya sosu", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "mirin", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "yeşil soğan", "miktar": 2, "birim": "dal"},
+      {"isim": "tempura kırıntısı", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Udon eriştesini paket üzerindeki süreye göre haşlayın.",
+      "Dashi suyuna soya sosu ve mirini ekleyip kaynatın.",
+      "Süzülen eriştelerini kaselere paylaştırın.",
+      "Sıcak et suyunu üzerlerine dökün.",
+      "İnce doğranmış yeşil soğan ve tempura kırıntısı ile süsleyin.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Yaki Udon",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "udon eriştesi", "miktar": 400, "birim": "gr"},
+      {"isim": "tavuk göğsü", "miktar": 200, "birim": "gr"},
+      {"isim": "havuç", "miktar": 1, "birim": "adet"},
+      {"isim": "lahana", "miktar": 150, "birim": "gr"},
+      {"isim": "soya sosu", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "susam yağı", "miktar": 1, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Udon eriştesini haşlayıp süzün.",
+      "Tavuk göğsünü ince şeritler halinde doğrayıp susam yağında kavurun.",
+      "Havuç ve lahanayı ekleyip birkaç dakika daha kavurun.",
+      "Haşlanan udonu tavaya ekleyin.",
+      "Soya sosunu dökerek tüm malzemeleri karıştırın.",
+      "2-3 dakika daha pişirip sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Karaage (Japon Usulü Kızarmış Tavuk)",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 30,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "tavuk but", "miktar": 500, "birim": "gr"},
+      {"isim": "soya sosu", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "sake", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "zencefil", "miktar": 1, "birim": "tatlı kaşığı"},
+      {"isim": "sarımsak", "miktar": 1, "birim": "diş"},
+      {"isim": "mısır nişastası", "miktar": 100, "birim": "gr"},
+      {"isim": "kızartmalık yağ", "miktar": 500, "birim": "ml"}
+    ],
+    "yapilis_adimlari": [
+      "Tavuk butlarını küçük parçalar halinde doğrayın.",
+      "Soya sosu, sake, rendelenmiş zencefil ve sarımsakla marine edin, 20 dakika bekletin.",
+      "Marine edilen tavukları mısır nişastasına bulayın.",
+      "170°C kızgın yağda altın rengi olana kadar kızartın.",
+      "Kağıt havlu üzerinde fazla yağını süzdürün.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Chawanmushi (Buharda Yumurta)",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "yumurta", "miktar": 3, "birim": "adet"},
+      {"isim": "dashi suyu", "miktar": 400, "birim": "ml"},
+      {"isim": "soya sosu", "miktar": 1, "birim": "tatlı kaşığı"},
+      {"isim": "mirin", "miktar": 1, "birim": "tatlı kaşığı"},
+      {"isim": "tavuk göğsü", "miktar": 100, "birim": "gr"},
+      {"isim": "mantar", "miktar": 4, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Yumurtaları köpürtmeden hafifçe çırpın.",
+      "Soğuyan dashi suyunu, soya sosu ve mirini yumurtaya ekleyip karıştırın.",
+      "Karışımı ince bir süzgeçten geçirin.",
+      "Küçük kaselere doğranmış tavuk ve mantarı paylaştırın.",
+      "Üzerine yumurta karışımını dökün.",
+      "Buharda kısık ateşte 15-20 dakika, tamamen katılaşana kadar pişirin.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Sukiyaki",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "ince dilimlenmiş dana eti", "miktar": 400, "birim": "gr"},
+      {"isim": "tofu", "miktar": 200, "birim": "gr"},
+      {"isim": "lahana", "miktar": 200, "birim": "gr"},
+      {"isim": "pırasa", "miktar": 1, "birim": "adet"},
+      {"isim": "mantar", "miktar": 150, "birim": "gr"},
+      {"isim": "soya sosu", "miktar": 80, "birim": "ml"},
+      {"isim": "mirin", "miktar": 60, "birim": "ml"},
+      {"isim": "toz şeker", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Soya sosu, mirin, şeker ve az suyu karıştırarak sukiyaki sosunu hazırlayın.",
+      "Geniş bir tavada eti kısa sürede mühürleyin.",
+      "Lahana, pırasa ve mantarı tavaya ekleyin.",
+      "Hazırlanan sosu üzerine dökün.",
+      "Küp doğranmış tofuyu ekleyin.",
+      "Kısık ateşte sebzeler yumuşayana kadar pişirin.",
+      "Sıcak pirinç ile servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Takoyaki",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "un", "miktar": 150, "birim": "gr"},
+      {"isim": "dashi suyu", "miktar": 400, "birim": "ml"},
+      {"isim": "yumurta", "miktar": 2, "birim": "adet"},
+      {"isim": "ahtapot", "miktar": 150, "birim": "gr"},
+      {"isim": "yeşil soğan", "miktar": 2, "birim": "dal"},
+      {"isim": "takoyaki sosu", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "mayonez", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Un, dashi suyu ve yumurtayı çırparak akışkan bir hamur hazırlayın.",
+      "Ahtapotu küçük küpler halinde doğrayın.",
+      "Özel takoyaki tavasının gözlerini yağlayıp ısıtın.",
+      "Her göze hamur döküp üzerine ahtapot ve yeşil soğan koyun.",
+      "Alt tarafı pişince şiş yardımıyla topu çevirip yuvarlak hale getirin.",
+      "Tüm yüzeyi altın rengi olana kadar çevirerek pişirin.",
+      "Üzerine takoyaki sosu ve mayonez gezdirerek sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Ebi Furai (Kızarmış Karides)",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "karides", "miktar": 500, "birim": "gr"},
+      {"isim": "un", "miktar": 80, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 2, "birim": "adet"},
+      {"isim": "galeta unu", "miktar": 150, "birim": "gr"},
+      {"isim": "kızartmalık yağ", "miktar": 500, "birim": "ml"},
+      {"isim": "limon", "miktar": 1, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Karidesleri temizleyip kuyruklarını bırakarak düzleştirin.",
+      "Sırasıyla una, çırpılmış yumurtaya ve galeta ununa bulayın.",
+      "170°C kızgın yağda her yüzü altın rengi olana kadar kızartın.",
+      "Kağıt havlu üzerinde fazla yağını süzdürün.",
+      "Limon dilimleriyle sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Edamame",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 2,
+    "pisirme_suresi_dk": 8,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "edamame (soya fasulyesi)", "miktar": 400, "birim": "gr"},
+      {"isim": "kaya tuzu", "miktar": 1, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Kaynayan tuzlu suda edamameyi 5-6 dakika haşlayın.",
+      "Süzüp soğuk suyla durulayın.",
+      "Üzerine bolca kaya tuzu serpin.",
+      "Sıcak veya oda sıcaklığında servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Katsu Sando (Tonkatsu Sandviç)",
+    "kategori": "atıştırmalık",
+    "porsiyon": 2,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "tavuk göğsü", "miktar": 2, "birim": "adet"},
+      {"isim": "tost ekmeği", "miktar": 4, "birim": "dilim"},
+      {"isim": "galeta unu", "miktar": 100, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 1, "birim": "adet"},
+      {"isim": "lahana", "miktar": 100, "birim": "gr"},
+      {"isim": "tonkatsu sosu", "miktar": 3, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Tavuk göğsünü ince açıp yumurta ve galeta ununa bulayın.",
+      "Kızgın yağda her iki yüzü altın rengi olana kadar kızartın.",
+      "Lahanayı ince ince doğrayın.",
+      "Ekmek dilimlerini hafifçe kızartın.",
+      "Bir dilim ekmeğe tonkatsu sosu sürün.",
+      "Üzerine lahana ve kızarmış tavuğu yerleştirin.",
+      "Diğer ekmek dilimiyle kapatıp kenarlarını kesip servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Chirashi Sushi",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 30,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "sushi pirinci", "miktar": 2, "birim": "su bardağı"},
+      {"isim": "pirinç sirkesi", "miktar": 4, "birim": "yemek kaşığı"},
+      {"isim": "somon (sashimi kalite)", "miktar": 200, "birim": "gr"},
+      {"isim": "avokado", "miktar": 1, "birim": "adet"},
+      {"isim": "salatalık", "miktar": 1, "birim": "adet"},
+      {"isim": "susam", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "yumurta", "miktar": 2, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Pirinci haşlayıp pirinç sirkesiyle karıştırarak soğutun.",
+      "Yumurtaları çırpıp ince bir omlet yapıp julyen doğrayın.",
+      "Somonu, avokadoyu ve salatalığı ince dilimleyin.",
+      "Soğuyan pirinci geniş bir servis tabağına yayın.",
+      "Üzerine somon, avokado, salatalık ve yumurta şeritlerini düzenli şekilde dizin.",
+      "Susam serperek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Nikujaga (Etli Patates Yahnisi)",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 30,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "ince dilimlenmiş dana eti", "miktar": 300, "birim": "gr"},
+      {"isim": "patates", "miktar": 4, "birim": "adet"},
+      {"isim": "havuç", "miktar": 1, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "soya sosu", "miktar": 4, "birim": "yemek kaşığı"},
+      {"isim": "mirin", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "toz şeker", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "dashi suyu", "miktar": 400, "birim": "ml"}
+    ],
+    "yapilis_adimlari": [
+      "Patates ve havucu iri parçalar halinde doğrayın.",
+      "Soğanı yarım ay şeklinde dilimleyin.",
+      "Bir tencerede eti kısaca kavurun.",
+      "Sebzeleri ekleyip birlikte birkaç dakika kavurun.",
+      "Dashi suyu, soya sosu, mirin ve şekeri ekleyin.",
+      "Kapağını kapatıp sebzeler yumuşayana kadar kısık ateşte 20-25 dakika pişirin.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Yasai Itame (Karışık Sebze Sote)",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "lahana", "miktar": 150, "birim": "gr"},
+      {"isim": "havuç", "miktar": 1, "birim": "adet"},
+      {"isim": "filiz lahana (taze fasulye filizi)", "miktar": 150, "birim": "gr"},
+      {"isim": "kırmızı biber", "miktar": 1, "birim": "adet"},
+      {"isim": "soya sosu", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "susam yağı", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "sarımsak", "miktar": 1, "birim": "diş"}
+    ],
+    "yapilis_adimlari": [
+      "Tüm sebzeleri ince şeritler halinde doğrayın.",
+      "Susam yağında ince kıyılmış sarımsağı kavurun.",
+      "Havuç ve biberi ekleyip yüksek ateşte kısa süre soteleyin.",
+      "Lahana ve fasulye filizini ekleyip 2-3 dakika daha pişirin.",
+      "Soya sosunu dökerek karıştırın.",
+      "Sebzeler hafif çıtır kalacak şekilde ocaktan alıp sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Dorayaki",
+    "kategori": "tatlı",
+    "porsiyon": 8,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "un", "miktar": 200, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 3, "birim": "adet"},
+      {"isim": "toz şeker", "miktar": 80, "birim": "gr"},
+      {"isim": "bal", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "kabartma tozu", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "kırmızı fasulye ezmesi (anko)", "miktar": 300, "birim": "gr"}
+    ],
+    "yapilis_adimlari": [
+      "Yumurta ve şekeri rengi açılana kadar çırpın.",
+      "Bal ve azıcık suyu ekleyip karıştırın.",
+      "Un ve kabartma tozunu eleyerek karışıma katın.",
+      "Hamuru 15 dakika dinlendirin.",
+      "Kuru bir tavada küçük yuvarlak kekler pişirir gibi her iki yüzü de pişirin.",
+      "Soğuyan kekleri ikişerli eşleştirin.",
+      "Aralarına fasulye ezmesi koyarak birleştirin."
+    ]
+  },
+  {
+    "tarif_adi": "Mochi",
+    "kategori": "tatlı",
+    "porsiyon": 10,
+    "hazirlik_suresi_dk": 30,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "yapışkan pirinç unu (mochiko)", "miktar": 200, "birim": "gr"},
+      {"isim": "su", "miktar": 250, "birim": "ml"},
+      {"isim": "toz şeker", "miktar": 80, "birim": "gr"},
+      {"isim": "mısır nişastası", "miktar": 50, "birim": "gr"},
+      {"isim": "kırmızı fasulye ezmesi (anko)", "miktar": 200, "birim": "gr"}
+    ],
+    "yapilis_adimlari": [
+      "Pirinç unu, şeker ve suyu pürüzsüz olana kadar karıştırın.",
+      "Karışımı buharda veya mikrodalgada, her 2 dakikada bir karıştırarak yapışkan hamur haline gelene kadar pişirin.",
+      "Hamuru mısır nişastası serpilmiş yüzeye alıp soğuyunca küçük parçalar halinde bölün.",
+      "Her parçayı düzleştirip ortasına bir tatlı kaşığı fasulye ezmesi koyun.",
+      "Hamuru toplayarak topu tamamen kapatın.",
+      "Fazla nişastayı silkeleyip servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Agedashi Tofu",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "tofu", "miktar": 400, "birim": "gr"},
+      {"isim": "mısır nişastası", "miktar": 60, "birim": "gr"},
+      {"isim": "dashi suyu", "miktar": 200, "birim": "ml"},
+      {"isim": "soya sosu", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "mirin", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "yeşil soğan", "miktar": 1, "birim": "dal"},
+      {"isim": "kızartmalık yağ", "miktar": 300, "birim": "ml"}
+    ],
+    "yapilis_adimlari": [
+      "Tofuyu kağıt havluya sarıp 15 dakika suyunu süzdürün.",
+      "Küp şeklinde kesip mısır nişastasına bulayın.",
+      "170°C kızgın yağda her yüzü hafif altın rengi olana kadar kızartın.",
+      "Dashi suyu, soya sosu ve mirini kaynatarak sosu hazırlayın.",
+      "Kızarmış tofuyu bir kaseye alıp sıcak sosu üzerine dökün.",
+      "İnce doğranmış yeşil soğan ile servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Yaki Onigiri (Izgara Pirinç Topu)",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "sushi pirinci", "miktar": 2, "birim": "su bardağı"},
+      {"isim": "soya sosu", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "mirin", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "susam yağı", "miktar": 1, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Pirinci haşlayıp ılınmaya bırakın.",
+      "Islak ellerle pirinci üçgen ya da yuvarlak şekilde sıkıştırın.",
+      "Soya sosu ve mirini karıştırın.",
+      "Tavada susam yağını ısıtıp pirinç toplarını yerleştirin.",
+      "Bir yüzü kızarınca sos ile fırçalayıp çevirin.",
+      "Her iki yüzü de hafif kabuklu ve kızarmış olana kadar pişirip sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Tamagoyaki (Japon Usulü Rulo Omlet)",
+    "kategori": "kahvaltı",
+    "porsiyon": 2,
+    "hazirlik_suresi_dk": 5,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "yumurta", "miktar": 4, "birim": "adet"},
+      {"isim": "dashi suyu", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "soya sosu", "miktar": 1, "birim": "tatlı kaşığı"},
+      {"isim": "toz şeker", "miktar": 1, "birim": "tatlı kaşığı"},
+      {"isim": "bitkisel yağ", "miktar": 1, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Yumurta, dashi suyu, soya sosu ve şekeri çırpın.",
+      "Dikdörtgen tamagoyaki tavasını hafifçe yağlayıp ısıtın.",
+      "Karışımdan ince bir tabaka dökün.",
+      "Yarı pişince tavanın bir ucundan itibaren rulo yapın.",
+      "Ruloyu kenara itip tavayı tekrar yağlayın.",
+      "Kalan karışımdan yeni bir tabaka dökün ve mevcut ruloyu içine katarak sarmaya devam edin.",
+      "Tüm karışım bitene kadar tekrarlayıp dilimleyerek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Soba Erişte Salatası",
+    "kategori": "salata",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "soba eriştesi", "miktar": 250, "birim": "gr"},
+      {"isim": "salatalık", "miktar": 1, "birim": "adet"},
+      {"isim": "havuç", "miktar": 1, "birim": "adet"},
+      {"isim": "yeşil soğan", "miktar": 2, "birim": "dal"},
+      {"isim": "soya sosu", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "susam yağı", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "susam", "miktar": 1, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Soba eriştesini haşlayıp soğuk suyla durulayın.",
+      "Salatalık ve havucu ince şeritler halinde doğrayın.",
+      "Erişte ve sebzeleri bir kasede karıştırın.",
+      "Soya sosu ve susam yağını ekleyip karıştırın.",
+      "İnce doğranmış yeşil soğan ve susam serperek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Matcha Latte",
+    "kategori": "içecek",
+    "porsiyon": 2,
+    "hazirlik_suresi_dk": 5,
+    "pisirme_suresi_dk": 5,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "matcha tozu", "miktar": 2, "birim": "çay kaşığı"},
+      {"isim": "sıcak su", "miktar": 60, "birim": "ml"},
+      {"isim": "süt", "miktar": 400, "birim": "ml"},
+      {"isim": "bal", "miktar": 2, "birim": "tatlı kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Matcha tozunu sıcak suyla küçük bir kasede pürüzsüz olana kadar çırpın.",
+      "Sütü bir tencerede köpürene kadar ısıtın.",
+      "Isıtılan sütü matcha karışımına yavaşça ekleyin.",
+      "Bal ile tatlandırıp karıştırın.",
+      "Sıcak bardaklara paylaştırıp servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Zaru Soba (Soğuk Soba Erişte)",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "soba eriştesi", "miktar": 300, "birim": "gr"},
+      {"isim": "dashi suyu", "miktar": 200, "birim": "ml"},
+      {"isim": "soya sosu", "miktar": 60, "birim": "ml"},
+      {"isim": "mirin", "miktar": 40, "birim": "ml"},
+      {"isim": "yeşil soğan", "miktar": 2, "birim": "dal"},
+      {"isim": "wasabi", "miktar": 1, "birim": "çay kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Sobayı haşlayıp buzlu suda soğutun.",
+      "Dashi suyu, soya sosu ve mirini kaynatıp soğutarak sosu hazırlayın.",
+      "Soğuyan sobayı bir servis tabağına veya bambu süzgece dizin.",
+      "Sosu küçük kaselere paylaştırın.",
+      "İnce doğranmış yeşil soğan ve wasabiyi sosun yanına koyun.",
+      "Sobayı sosa batırarak yiyecek şekilde servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Gyudon (Etli Pirinç Kasesi)",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "ince dilimlenmiş dana eti", "miktar": 400, "birim": "gr"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "soya sosu", "miktar": 60, "birim": "ml"},
+      {"isim": "mirin", "miktar": 40, "birim": "ml"},
+      {"isim": "toz şeker", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "dashi suyu", "miktar": 200, "birim": "ml"},
+      {"isim": "pirinç", "miktar": 2, "birim": "su bardağı"}
+    ],
+    "yapilis_adimlari": [
+      "Soğanı ince yarım halkalar halinde dilimleyin.",
+      "Dashi suyu, soya sosu, mirin ve şekeri bir tavada kaynatın.",
+      "Soğanı ekleyip yumuşayana kadar pişirin.",
+      "İnce dilimlenmiş eti ekleyip rengi dönene kadar pişirin.",
+      "Pirinci ayrı haşlayın.",
+      "Servis kasesine pirinç ve üzerine et karışımını paylaştırarak sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Inari Sushi",
+    "kategori": "atıştırmalık",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": null,
+    "zorluk": "kolay",
+    "pisirme_yontemi": [],
+    "malzemeler": [
+      {"isim": "hazır tatlı tofu kesesi (aburaage)", "miktar": 12, "birim": "adet"},
+      {"isim": "sushi pirinci", "miktar": 2, "birim": "su bardağı"},
+      {"isim": "pirinç sirkesi", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "susam", "miktar": 1, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Pirinci haşlayıp pirinç sirkesi ile karıştırıp soğutun.",
+      "Susamı pirince katın.",
+      "Tatlı tofu keselerinin ağzını dikkatlice açın.",
+      "Her kesenin içine bir avuç pirinç doldurun.",
+      "Kesenin ağzını içe katlayarak kapatın.",
+      "Oda sıcaklığında veya soğuk servis edin."
+    ]
+  }
+]

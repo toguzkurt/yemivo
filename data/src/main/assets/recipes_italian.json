@@ -1,0 +1,810 @@
+[
+  {
+    "tarif_adi": "Margherita Pizza",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 90,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "un", "miktar": 500, "birim": "gr"},
+      {"isim": "kuru maya", "miktar": 7, "birim": "gr"},
+      {"isim": "ılık su", "miktar": 300, "birim": "ml"},
+      {"isim": "zeytinyağı", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "tuz", "miktar": 1, "birim": "tatlı kaşığı"},
+      {"isim": "domates sosu", "miktar": 200, "birim": "gr"},
+      {"isim": "mozzarella peyniri", "miktar": 250, "birim": "gr"},
+      {"isim": "fesleğen yaprağı", "miktar": 8, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Ilık suyun içine mayayı ve bir tutam şekeri ekleyip 10 dakika köpürmesini bekleyin.",
+      "Unu geniş bir kaba eleyip ortasını havuz gibi açın, tuzu kenara serpin.",
+      "Maya karışımını ve zeytinyağını unun ortasına dökün, yoğurarak pürüzsüz bir hamur elde edin.",
+      "Hamuru streç film ile örtüp oda sıcaklığında 1 saat kabarmaya bırakın.",
+      "Fırını 240°C'ye ısıtın, tepsiyi de içine koyup ısınmasını sağlayın.",
+      "Hamuru iki parçaya bölüp un serpilmiş yüzeyde ince yuvarlak açın.",
+      "Açılan hamurun üzerine domates sosunu ince bir tabaka halinde sürün.",
+      "Mozzarella peynirini elle parçalayıp sosun üzerine eşit dağıtın.",
+      "Sıcak tepsiye alıp 12-15 dakika kenarları altın rengi olana kadar pişirin.",
+      "Fırından çıkar çıkmaz üzerine taze fesleğen yapraklarını serpip servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Spaghetti Carbonara",
+    "kategori": "ana yemek",
+    "porsiyon": 3,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "spagetti", "miktar": 320, "birim": "gr"},
+      {"isim": "kavurmalık pastırma", "miktar": 150, "birim": "gr"},
+      {"isim": "yumurta sarısı", "miktar": 4, "birim": "adet"},
+      {"isim": "parmesan peyniri", "miktar": 80, "birim": "gr"},
+      {"isim": "karabiber", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "tuz", "miktar": 1, "birim": "tatlı kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Büyük bir tencerede bolca tuzlu suyu kaynatıp spagettiyi paket üzerindeki süreye göre haşlayın.",
+      "Haşlama esnasında bir tavada pastırmayı kendi yağında çıtır olana kadar kavurun.",
+      "Ayrı bir kapta yumurta sarılarını, rendelenmiş parmesanı ve bol karabiberi çırpın.",
+      "Makarnayı süzmeden önce bir kepçe haşlama suyunu ayırın.",
+      "Sıcak makarnayı pastırmanın olduğu tavaya alıp ocaktan indirin.",
+      "Yumurta karışımını hemen üzerine dökün ve hızlıca karıştırarak kremamsı bir doku oluşturun.",
+      "Karışım fazla katılaşırsa ayırdığınız haşlama suyundan azar azar ekleyin.",
+      "Üzerine ekstra parmesan ve karabiber serperek sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Lazanya",
+    "kategori": "ana yemek",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 40,
+    "pisirme_suresi_dk": 45,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["fırın", "ocak"],
+    "malzemeler": [
+      {"isim": "lazanya yaprağı", "miktar": 12, "birim": "adet"},
+      {"isim": "kıyma", "miktar": 500, "birim": "gr"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "sarımsak", "miktar": 2, "birim": "diş"},
+      {"isim": "domates sosu", "miktar": 400, "birim": "gr"},
+      {"isim": "süt", "miktar": 500, "birim": "ml"},
+      {"isim": "tereyağı", "miktar": 50, "birim": "gr"},
+      {"isim": "un", "miktar": 50, "birim": "gr"},
+      {"isim": "mozzarella peyniri", "miktar": 200, "birim": "gr"},
+      {"isim": "parmesan peyniri", "miktar": 50, "birim": "gr"}
+    ],
+    "yapilis_adimlari": [
+      "Soğan ve sarımsağı ince doğrayıp bir tencerede kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar pişirin, ardından domates sosunu ilave edin.",
+      "Sosu kısık ateşte 20 dakika kaynatıp kıyma harcını hazırlayın.",
+      "Ayrı bir tencerede tereyağını eritip unu ekleyerek 1 dakika kavurun.",
+      "Sütü azar azar dökerek sürekli çırpın ve beşamel sosu koyulaşana kadar pişirin.",
+      "Fırın kabının tabanına ince bir kat kıyma sosu sürün.",
+      "Sırasıyla lazanya yaprağı, kıyma sosu, beşamel sos ve rendelenmiş mozzarella ekleyerek katmanları oluşturun.",
+      "Bu sırayı kap dolana kadar tekrarlayıp en üste bol peynir serpin.",
+      "Önceden ısıtılmış 190°C fırında üzeri kızarana kadar 40-45 dakika pişirin.",
+      "Fırından çıkardıktan sonra 10 dakika dinlendirip dilimleyerek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Mantarlı Risotto",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 30,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "arborio pirinci", "miktar": 300, "birim": "gr"},
+      {"isim": "kültür mantarı", "miktar": 250, "birim": "gr"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "sebze suyu", "miktar": 1, "birim": "litre"},
+      {"isim": "beyaz şarap", "miktar": 100, "birim": "ml"},
+      {"isim": "tereyağı", "miktar": 40, "birim": "gr"},
+      {"isim": "parmesan peyniri", "miktar": 60, "birim": "gr"},
+      {"isim": "zeytinyağı", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Sebze suyunu ayrı bir tencerede kaynar halde bekletin.",
+      "Zeytinyağında ince doğranmış soğanı şeffaflaşana kadar kavurun.",
+      "Dilimlenmiş mantarları ekleyip suyunu salıp çekene kadar pişirin.",
+      "Pirinci ekleyip 2 dakika kavurarak tanelerin yağı emmesini sağlayın.",
+      "Beyaz şarabı dökün ve alkolü uçana kadar karıştırın.",
+      "Sıcak sebze suyunu kepçe kepçe ekleyerek her seferinde emilmesini bekleyin.",
+      "Bu işlemi pirinç yumuşayıp kremamsı kıvam alana kadar sürekli karıştırarak tekrarlayın.",
+      "Ocaktan alıp tereyağı ve rendelenmiş parmesanı karıştırarak son halini verin.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Tiramisu",
+    "kategori": "tatlı",
+    "porsiyon": 8,
+    "hazirlik_suresi_dk": 30,
+    "pisirme_suresi_dk": null,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["buzdolabı"],
+    "malzemeler": [
+      {"isim": "kedidili bisküvi", "miktar": 24, "birim": "adet"},
+      {"isim": "mascarpone peyniri", "miktar": 500, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 4, "birim": "adet"},
+      {"isim": "toz şeker", "miktar": 100, "birim": "gr"},
+      {"isim": "soğuk kahve", "miktar": 300, "birim": "ml"},
+      {"isim": "kakao tozu", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Yumurta sarılarını şeker ile rengi açılana kadar çırpın.",
+      "Mascarponeyi ekleyip pürüzsüz bir krema elde edene kadar karıştırın.",
+      "Yumurta aklarını ayrı bir kapta sert köpük haline gelene kadar çırpın.",
+      "Kar haline getirilen akları mascarpone karışımına yavaşça katın.",
+      "Kedidili bisküvileri soğuk kahveye hızlıca batırıp bir kabın tabanına dizin.",
+      "Üzerine mascarpone kremasının yarısını yayın.",
+      "İkinci kat için işlemi tekrarlayıp kalan krema ile üstü kapatın.",
+      "Kabı streç film ile örtüp buzdolabında en az 4 saat dinlendirin.",
+      "Servis etmeden hemen önce üzerine kakao tozu eleyin."
+    ]
+  },
+  {
+    "tarif_adi": "Caprese Salatası",
+    "kategori": "salata",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": null,
+    "zorluk": "kolay",
+    "pisirme_yontemi": [],
+    "malzemeler": [
+      {"isim": "domates", "miktar": 4, "birim": "adet"},
+      {"isim": "mozzarella peyniri", "miktar": 250, "birim": "gr"},
+      {"isim": "fesleğen yaprağı", "miktar": 10, "birim": "adet"},
+      {"isim": "zeytinyağı", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "balzamik sirke", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "tuz", "miktar": 1, "birim": "çay kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Domatesleri ve mozzarellayı eşit kalınlıkta dilimleyin.",
+      "Bir servis tabağına domates ve mozzarella dilimlerini sırayla dizin.",
+      "Aralarına taze fesleğen yapraklarını yerleştirin.",
+      "Üzerine zeytinyağı ve balzamik sirkeyi gezdirin.",
+      "Tuzu serpip hemen servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Pesto Genovese Makarna",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 12,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "makarna", "miktar": 400, "birim": "gr"},
+      {"isim": "taze fesleğen", "miktar": 2, "birim": "su bardağı"},
+      {"isim": "çam fıstığı", "miktar": 40, "birim": "gr"},
+      {"isim": "sarımsak", "miktar": 2, "birim": "diş"},
+      {"isim": "parmesan peyniri", "miktar": 60, "birim": "gr"},
+      {"isim": "zeytinyağı", "miktar": 120, "birim": "ml"},
+      {"isim": "tuz", "miktar": 1, "birim": "tatlı kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Bol tuzlu suda makarnayı paket üzerindeki süreye göre haşlayın.",
+      "Fesleğen, çam fıstığı, sarımsak ve parmesanı bir mutfak robotuna koyun.",
+      "Zeytinyağını azar azar ekleyerek pürüzsüz bir sos elde edene kadar çekin.",
+      "Haşlanan makarnayı süzüp bir kepçe haşlama suyunu ayırın.",
+      "Sıcak makarnayı pesto sosuyla karıştırın, gerekirse haşlama suyuyla inceltin.",
+      "Üzerine ekstra parmesan serperek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Osso Buco",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 120,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["ocak", "fırın"],
+    "malzemeler": [
+      {"isim": "dana incik", "miktar": 4, "birim": "parça"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "havuç", "miktar": 2, "birim": "adet"},
+      {"isim": "kereviz sapı", "miktar": 2, "birim": "adet"},
+      {"isim": "domates salçası", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "beyaz şarap", "miktar": 200, "birim": "ml"},
+      {"isim": "et suyu", "miktar": 400, "birim": "ml"},
+      {"isim": "un", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "zeytinyağı", "miktar": 3, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "İncik parçalarını una bulayıp fazlasını silkeleyin.",
+      "Geniş bir tencerede zeytinyağını kızdırıp incikleri her yüzü kızarana kadar mühürleyin, ardından çıkarın.",
+      "Aynı tencerede doğranmış soğan, havuç ve kerevizi kavurun.",
+      "Domates salçasını ekleyip 1 dakika kavurun.",
+      "Beyaz şarabı dökün ve kaynatarak alkolü uçurun.",
+      "Et suyunu ve incikleri tencereye geri ekleyin.",
+      "Kapağını kapatıp kısık ateşte 2 saat, et kemikten ayrılana kadar pişirin.",
+      "Sos koyulaşmadıysa kapaksız birkaç dakika daha kaynatın.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Bruschetta",
+    "kategori": "atıştırmalık",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 5,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "baget ekmek", "miktar": 1, "birim": "adet"},
+      {"isim": "domates", "miktar": 4, "birim": "adet"},
+      {"isim": "sarımsak", "miktar": 2, "birim": "diş"},
+      {"isim": "taze fesleğen", "miktar": 8, "birim": "yaprak"},
+      {"isim": "zeytinyağı", "miktar": 3, "birim": "yemek kaşığı"},
+      {"isim": "tuz", "miktar": 1, "birim": "çay kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Baget ekmeği eğik dilimler halinde kesin.",
+      "Dilimleri fırın tepsisine dizip 200°C fırında 5 dakika hafifçe kızartın.",
+      "Domatesleri küçük küpler halinde doğrayın.",
+      "Doğranmış domatesi ince kıyılmış fesleğen, tuz ve zeytinyağı ile karıştırın.",
+      "Kızarmış ekmek dilimlerini yarım sarımsak dişi ile hafifçe ovun.",
+      "Üzerine domates karışımından bolca koyarak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Minestrone Çorbası",
+    "kategori": "çorba",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 35,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "kuru fasulye", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "havuç", "miktar": 2, "birim": "adet"},
+      {"isim": "kereviz sapı", "miktar": 2, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "kabak", "miktar": 1, "birim": "adet"},
+      {"isim": "domates", "miktar": 3, "birim": "adet"},
+      {"isim": "makarna", "miktar": 1, "birim": "su bardağı"},
+      {"isim": "sebze suyu", "miktar": 1.5, "birim": "litre"},
+      {"isim": "zeytinyağı", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Zeytinyağında ince doğranmış soğan, havuç ve kerevizi kavurun.",
+      "Küp doğranmış kabak ve domatesi ekleyip birkaç dakika daha kavurun.",
+      "Haşlanmış kuru fasulyeyi ve sebze suyunu tencereye ekleyin.",
+      "Kaynamaya başladıktan sonra kısık ateşte 20 dakika pişirin.",
+      "Makarnayı ekleyip yumuşayana kadar 10 dakika daha kaynatın.",
+      "Tuz ve karabiber ile tatlandırıp sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Fettuccine Alfredo",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 5,
+    "pisirme_suresi_dk": 20,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "fettuccine makarna", "miktar": 400, "birim": "gr"},
+      {"isim": "tereyağı", "miktar": 100, "birim": "gr"},
+      {"isim": "kaymak", "miktar": 250, "birim": "ml"},
+      {"isim": "parmesan peyniri", "miktar": 100, "birim": "gr"},
+      {"isim": "karabiber", "miktar": 1, "birim": "çay kaşığı"},
+      {"isim": "tuz", "miktar": 1, "birim": "tatlı kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Bol tuzlu suda fettuccineyi paket üzerindeki süreye göre haşlayın.",
+      "Geniş bir tavada tereyağını kısık ateşte eritin.",
+      "Kaymağı ekleyip hafifçe kaynatarak birkaç dakika pişirin.",
+      "Rendelenmiş parmesanı azar azar ekleyip eritene kadar karıştırın.",
+      "Süzülen sıcak makarnayı sosa alıp iyice karıştırın.",
+      "Karabiber serperek sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Ispanaklı Peynirli Ravioli",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 45,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "un", "miktar": 300, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 3, "birim": "adet"},
+      {"isim": "ıspanak", "miktar": 200, "birim": "gr"},
+      {"isim": "ricotta peyniri", "miktar": 250, "birim": "gr"},
+      {"isim": "parmesan peyniri", "miktar": 50, "birim": "gr"},
+      {"isim": "tereyağı", "miktar": 40, "birim": "gr"},
+      {"isim": "muskat", "miktar": 1, "birim": "tutam"}
+    ],
+    "yapilis_adimlari": [
+      "Unu havuz şeklinde açıp ortasına yumurtaları kırın ve yoğurarak pürüzsüz hamur elde edin.",
+      "Hamuru streç filme sarıp 30 dakika dinlendirin.",
+      "Ispanağı buharda hafifçe pişirip suyunu sıkarak ince kıyın.",
+      "Ispanağı ricotta, rendelenmiş parmesan ve muskat ile karıştırıp iç harcı hazırlayın.",
+      "Hamuru ince açıp küçük kareler halinde kesin.",
+      "Her karenin ortasına bir tatlı kaşığı harç koyup üzerini başka bir hamur karesiyle kapatın, kenarlarını bastırarak yapıştırın.",
+      "Ravioliyi kaynayan tuzlu suda 3-4 dakika haşlayın.",
+      "Süzülen ravioliyi eritilmiş tereyağı ile karıştırıp servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Patatesli Gnocchi",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 40,
+    "pisirme_suresi_dk": 5,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "patates", "miktar": 800, "birim": "gr"},
+      {"isim": "un", "miktar": 200, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 1, "birim": "adet"},
+      {"isim": "tuz", "miktar": 1, "birim": "tatlı kaşığı"},
+      {"isim": "domates sosu", "miktar": 200, "birim": "gr"},
+      {"isim": "parmesan peyniri", "miktar": 40, "birim": "gr"}
+    ],
+    "yapilis_adimlari": [
+      "Patatesleri kabuklu haşlayıp sıcakken kabuklarını soyun.",
+      "Sıcak patatesleri püre haline getirin.",
+      "Püreye yumurta, tuz ve unu ekleyip yumuşak bir hamur elde edene kadar yoğurun.",
+      "Hamurdan ince silindirler açıp 2 cm'lik parçalar halinde kesin.",
+      "İsteğe göre çatal ile üzerlerine hafif çizgiler açın.",
+      "Kaynayan tuzlu suda gnocchiyi yüzeye çıkana kadar haşlayın.",
+      "Süzülen gnocchiyi ısıtılmış domates sosuyla karıştırın.",
+      "Üzerine parmesan serperek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Panna Cotta",
+    "kategori": "tatlı",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak", "buzdolabı"],
+    "malzemeler": [
+      {"isim": "kaymak", "miktar": 500, "birim": "ml"},
+      {"isim": "süt", "miktar": 150, "birim": "ml"},
+      {"isim": "toz şeker", "miktar": 80, "birim": "gr"},
+      {"isim": "vanilya", "miktar": 1, "birim": "adet"},
+      {"isim": "jelatin", "miktar": 8, "birim": "gr"},
+      {"isim": "kırmızı meyve sosu", "miktar": 100, "birim": "gr"}
+    ],
+    "yapilis_adimlari": [
+      "Jelatini soğuk suda 5 dakika bekletip yumuşamasını sağlayın.",
+      "Kaymak, süt, şeker ve vanilyayı bir tencerede kısık ateşte ısıtın.",
+      "Karışım kaynamadan hemen önce ocaktan alın.",
+      "Sıkılan jelatini sıcak karışıma ekleyip tamamen erimesini sağlayın.",
+      "Karışımı küçük kaplara paylaştırın.",
+      "Oda sıcaklığına soğuduktan sonra buzdolabında en az 4 saat bekletin.",
+      "Servis ederken üzerine kırmızı meyve sosu gezdirin."
+    ]
+  },
+  {
+    "tarif_adi": "Focaccia",
+    "kategori": "atıştırmalık",
+    "porsiyon": 8,
+    "hazirlik_suresi_dk": 100,
+    "pisirme_suresi_dk": 25,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "un", "miktar": 500, "birim": "gr"},
+      {"isim": "kuru maya", "miktar": 7, "birim": "gr"},
+      {"isim": "ılık su", "miktar": 350, "birim": "ml"},
+      {"isim": "zeytinyağı", "miktar": 60, "birim": "ml"},
+      {"isim": "tuz", "miktar": 1, "birim": "yemek kaşığı"},
+      {"isim": "kaya tuzu", "miktar": 1, "birim": "tutam"},
+      {"isim": "biberiye", "miktar": 2, "birim": "dal"}
+    ],
+    "yapilis_adimlari": [
+      "Ilık suya mayayı ekleyip 10 dakika bekletin.",
+      "Unu, tuzu ve maya karışımını yoğurma kabında birleştirin.",
+      "Zeytinyağının yarısını ekleyip yapışkan ama esnek bir hamur elde edene kadar yoğurun.",
+      "Hamuru yağlanmış kaba alıp üzerini örterek 1 saat kabartın.",
+      "Kabaran hamuru yağlanmış fırın tepsisine yayıp parmak uçlarınızla üzerine çukurlar açın.",
+      "Kalan zeytinyağını üzerine gezdirip kaya tuzu ve biberiye serpin.",
+      "30 dakika daha mayalanmaya bırakın.",
+      "Önceden ısıtılmış 220°C fırında 20-25 dakika altın rengi olana kadar pişirin."
+    ]
+  },
+  {
+    "tarif_adi": "Arancini",
+    "kategori": "atıştırmalık",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 40,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "pişmiş risotto pirinci", "miktar": 500, "birim": "gr"},
+      {"isim": "mozzarella peyniri", "miktar": 150, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 2, "birim": "adet"},
+      {"isim": "galeta unu", "miktar": 200, "birim": "gr"},
+      {"isim": "un", "miktar": 100, "birim": "gr"},
+      {"isim": "kızartmalık yağ", "miktar": 500, "birim": "ml"}
+    ],
+    "yapilis_adimlari": [
+      "Soğumuş risotto pirincini avucunuzda yuvarlak şekil verecek kadar sıkıştırın.",
+      "Ortasına küçük bir mozzarella parçası yerleştirip topu kapatın.",
+      "Topları sırasıyla una, çırpılmış yumurtaya ve galeta ununa bulayın.",
+      "Kızgın yağda her yüzü altın rengi olana kadar kızartın.",
+      "Kağıt havlu üzerinde fazla yağını süzdürün.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Cacio e Pepe",
+    "kategori": "ana yemek",
+    "porsiyon": 2,
+    "hazirlik_suresi_dk": 5,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "spagetti", "miktar": 200, "birim": "gr"},
+      {"isim": "pecorino peyniri", "miktar": 100, "birim": "gr"},
+      {"isim": "karabiber", "miktar": 2, "birim": "çay kaşığı"},
+      {"isim": "tuz", "miktar": 1, "birim": "tatlı kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Az miktarda tuzlu suda spagettiyi haşlayın, haşlama suyunu ayırın.",
+      "Bir tavada karabiberi kuru olarak birkaç saniye kavurup kokusunu açığa çıkarın.",
+      "Tavaya biraz haşlama suyu ekleyip karıştırın.",
+      "Süzülen makarnayı tavaya alın.",
+      "Ocaktan aldıktan sonra rendelenmiş pecorino peyniri ekleyip hızlıca karıştırarak kremamsı bir sos oluşturun.",
+      "Gerekirse biraz daha haşlama suyu ekleyerek kıvamını ayarlayın ve hemen servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Tavuk Parmigiana",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 30,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava", "fırın"],
+    "malzemeler": [
+      {"isim": "tavuk göğsü", "miktar": 4, "birim": "adet"},
+      {"isim": "galeta unu", "miktar": 150, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 2, "birim": "adet"},
+      {"isim": "domates sosu", "miktar": 300, "birim": "gr"},
+      {"isim": "mozzarella peyniri", "miktar": 200, "birim": "gr"},
+      {"isim": "parmesan peyniri", "miktar": 50, "birim": "gr"},
+      {"isim": "zeytinyağı", "miktar": 3, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Tavuk göğüslerini ince dilimler halinde açın.",
+      "Önce çırpılmış yumurtaya, sonra galeta ununa bulayın.",
+      "Tavada zeytinyağında her iki yüzü altın rengi olana kadar kızartın.",
+      "Fırın kabına domates sosundan ince bir tabaka sürün.",
+      "Kızarmış tavukları kabın içine dizin.",
+      "Üzerine kalan domates sosunu, mozzarella ve parmesanı serpin.",
+      "Önceden ısıtılmış 190°C fırında peynir eriyip kızarana kadar 15-20 dakika pişirin."
+    ]
+  },
+  {
+    "tarif_adi": "Zuppa Toscana",
+    "kategori": "çorba",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 30,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "sosis", "miktar": 300, "birim": "gr"},
+      {"isim": "patates", "miktar": 3, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "sarımsak", "miktar": 2, "birim": "diş"},
+      {"isim": "et suyu", "miktar": 1, "birim": "litre"},
+      {"isim": "kaymak", "miktar": 150, "birim": "ml"},
+      {"isim": "karalahana", "miktar": 100, "birim": "gr"}
+    ],
+    "yapilis_adimlari": [
+      "Sosisi bir tencerede kendi yağında kavurup çıkarın.",
+      "Aynı tencerede doğranmış soğan ve sarımsağı kavurun.",
+      "Küp doğranmış patatesleri ve et suyunu ekleyip kaynatın.",
+      "Patatesler yumuşayana kadar 15 dakika pişirin.",
+      "Kavrulmuş sosisi ve ince doğranmış karalahanayı ekleyin.",
+      "5 dakika daha pişirdikten sonra kaymağı ekleyip karıştırın.",
+      "Kaynamadan ocaktan alıp sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Saltimbocca alla Romana",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "dana pirzola", "miktar": 8, "birim": "adet"},
+      {"isim": "prosciutto", "miktar": 8, "birim": "dilim"},
+      {"isim": "adaçayı yaprağı", "miktar": 8, "birim": "adet"},
+      {"isim": "tereyağı", "miktar": 40, "birim": "gr"},
+      {"isim": "beyaz şarap", "miktar": 100, "birim": "ml"},
+      {"isim": "un", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Dana pirzolaları tokmakla hafifçe dövüp inceltin.",
+      "Her pirzolanın üzerine bir yaprak adaçayı ve bir dilim prosciutto yerleştirip kürdanla sabitleyin.",
+      "Etleri hafifçe una bulayın.",
+      "Tavada tereyağını eritip etleri prosciutto tarafı aşağıda olacak şekilde kızartın.",
+      "Diğer tarafını çevirip birkaç dakika daha pişirin.",
+      "Beyaz şarabı ekleyip alkolü uçurarak sosu koyulaştırın.",
+      "Sosuyla birlikte sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Peynirli Polenta",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 5,
+    "pisirme_suresi_dk": 25,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "mısır unu", "miktar": 200, "birim": "gr"},
+      {"isim": "su", "miktar": 1, "birim": "litre"},
+      {"isim": "tereyağı", "miktar": 40, "birim": "gr"},
+      {"isim": "parmesan peyniri", "miktar": 80, "birim": "gr"},
+      {"isim": "tuz", "miktar": 1, "birim": "tatlı kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Suyu tuzla birlikte kaynatın.",
+      "Mısır ununu ince bir akışla dökerek sürekli çırpın, topaklanmasını önleyin.",
+      "Kısık ateşte sürekli karıştırarak 20-25 dakika pişirin.",
+      "Polenta koyulaştığında ocaktan alın.",
+      "Tereyağı ve rendelenmiş parmesanı ekleyip karıştırın.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Caponata",
+    "kategori": "atıştırmalık",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 30,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "patlıcan", "miktar": 2, "birim": "adet"},
+      {"isim": "kereviz sapı", "miktar": 2, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "domates", "miktar": 3, "birim": "adet"},
+      {"isim": "zeytin", "miktar": 80, "birim": "gr"},
+      {"isim": "kapari", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "sirke", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "zeytinyağı", "miktar": 100, "birim": "ml"}
+    ],
+    "yapilis_adimlari": [
+      "Patlıcanları küp doğrayıp tuzlayarak 20 dakika dinlendirin, sonra suyunu sıkın.",
+      "Zeytinyağında patlıcanları kızartıp bir kenara alın.",
+      "Aynı yağda soğan ve kerevizi kavurun.",
+      "Doğranmış domatesi ekleyip birkaç dakika pişirin.",
+      "Zeytin, kapari ve kızarmış patlıcanları geri ekleyin.",
+      "Sirkeyi dökün ve kısık ateşte 10 dakika daha pişirin.",
+      "Ilıklaştıktan sonra servis edin, soğuk servisi de mümkündür."
+    ]
+  },
+  {
+    "tarif_adi": "İtalyan Sebzeli Frittata",
+    "kategori": "kahvaltı",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": 15,
+    "zorluk": "kolay",
+    "pisirme_yontemi": ["tava", "fırın"],
+    "malzemeler": [
+      {"isim": "yumurta", "miktar": 6, "birim": "adet"},
+      {"isim": "kabak", "miktar": 1, "birim": "adet"},
+      {"isim": "kırmızı biber", "miktar": 1, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "parmesan peyniri", "miktar": 50, "birim": "gr"},
+      {"isim": "zeytinyağı", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Kabak, biber ve soğanı ince doğrayın.",
+      "Zeytinyağında sebzeleri yumuşayana kadar kavurun.",
+      "Yumurtaları çırpıp rendelenmiş parmesan ile karıştırın.",
+      "Yumurta karışımını tavadaki sebzelerin üzerine dökün.",
+      "Kısık ateşte alt tarafı pişene kadar bekletin.",
+      "Tavayı önceden ısıtılmış 180°C fırına alıp üstü de pişene kadar 8-10 dakika pişirin.",
+      "Dilimleyerek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Cannoli",
+    "kategori": "tatlı",
+    "porsiyon": 10,
+    "hazirlik_suresi_dk": 40,
+    "pisirme_suresi_dk": 10,
+    "zorluk": "zor",
+    "pisirme_yontemi": ["tava"],
+    "malzemeler": [
+      {"isim": "un", "miktar": 250, "birim": "gr"},
+      {"isim": "toz şeker", "miktar": 30, "birim": "gr"},
+      {"isim": "tereyağı", "miktar": 30, "birim": "gr"},
+      {"isim": "kırmızı şarap", "miktar": 100, "birim": "ml"},
+      {"isim": "ricotta peyniri", "miktar": 400, "birim": "gr"},
+      {"isim": "pudra şekeri", "miktar": 100, "birim": "gr"},
+      {"isim": "bitter çikolata parçaları", "miktar": 50, "birim": "gr"},
+      {"isim": "kızartmalık yağ", "miktar": 500, "birim": "ml"}
+    ],
+    "yapilis_adimlari": [
+      "Un, şeker, tereyağı ve şarabı yoğurarak sert bir hamur elde edin.",
+      "Hamuru 30 dakika dinlendirin.",
+      "İnce açıp daireler kesin ve metal cannoli kalıplarına sararak kenarlarını yumurta akıyla yapıştırın.",
+      "Kızgın yağda altın rengi olana kadar kızartıp soğumaya bırakın, ardından kalıplardan çıkarın.",
+      "Ricotta peynirini pudra şekeriyle çırpıp krema haline getirin.",
+      "Çikolata parçalarını kremaya karıştırın.",
+      "Servis etmeden hemen önce kremayı sıkma torbasıyla kabukların içine doldurun."
+    ]
+  },
+  {
+    "tarif_adi": "Badem Kurabiyesi Biscotti",
+    "kategori": "tatlı",
+    "porsiyon": 20,
+    "hazirlik_suresi_dk": 20,
+    "pisirme_suresi_dk": 40,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["fırın"],
+    "malzemeler": [
+      {"isim": "un", "miktar": 300, "birim": "gr"},
+      {"isim": "toz şeker", "miktar": 150, "birim": "gr"},
+      {"isim": "yumurta", "miktar": 3, "birim": "adet"},
+      {"isim": "kabartma tozu", "miktar": 1, "birim": "tatlı kaşığı"},
+      {"isim": "badem", "miktar": 150, "birim": "gr"},
+      {"isim": "vanilya", "miktar": 1, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Yumurta ve şekeri rengi açılana kadar çırpın.",
+      "Un, kabartma tozu ve vanilyayı ekleyip yoğurun.",
+      "Bademleri hamura katın.",
+      "Hamuru iki uzun silindir şeklinde şekillendirip fırın tepsisine yerleştirin.",
+      "Önceden ısıtılmış 180°C fırında 25 dakika pişirin.",
+      "Fırından çıkarıp ılındıktan sonra çapraz dilimler halinde kesin.",
+      "Dilimleri tekrar tepsiye dizip 10-15 dakika daha çıtırlaşana kadar pişirin."
+    ]
+  },
+  {
+    "tarif_adi": "Pappardelle al Ragù",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 90,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "pappardelle makarna", "miktar": 350, "birim": "gr"},
+      {"isim": "kıyma", "miktar": 400, "birim": "gr"},
+      {"isim": "havuç", "miktar": 1, "birim": "adet"},
+      {"isim": "kereviz sapı", "miktar": 1, "birim": "adet"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "domates sosu", "miktar": 500, "birim": "gr"},
+      {"isim": "kırmızı şarap", "miktar": 100, "birim": "ml"},
+      {"isim": "parmesan peyniri", "miktar": 50, "birim": "gr"}
+    ],
+    "yapilis_adimlari": [
+      "Havuç, kereviz ve soğanı ince doğrayıp bir tencerede kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar pişirin.",
+      "Kırmızı şarabı dökün ve alkolü uçurun.",
+      "Domates sosunu ekleyip kısık ateşte kapak kapalı 1-1.5 saat pişirin.",
+      "Arada karıştırıp gerekirse az su ekleyin.",
+      "Pappardelleyi bol tuzlu suda haşlayıp süzün.",
+      "Makarnayı ragù sosuyla karıştırın.",
+      "Üzerine parmesan serperek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Patlıcan Parmigiana",
+    "kategori": "ana yemek",
+    "porsiyon": 6,
+    "hazirlik_suresi_dk": 30,
+    "pisirme_suresi_dk": 40,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["tava", "fırın"],
+    "malzemeler": [
+      {"isim": "patlıcan", "miktar": 3, "birim": "adet"},
+      {"isim": "domates sosu", "miktar": 400, "birim": "gr"},
+      {"isim": "mozzarella peyniri", "miktar": 250, "birim": "gr"},
+      {"isim": "parmesan peyniri", "miktar": 80, "birim": "gr"},
+      {"isim": "un", "miktar": 100, "birim": "gr"},
+      {"isim": "zeytinyağı", "miktar": 100, "birim": "ml"},
+      {"isim": "fesleğen yaprağı", "miktar": 8, "birim": "adet"}
+    ],
+    "yapilis_adimlari": [
+      "Patlıcanları ince dilimleyip tuzlayarak 20 dakika dinlendirin, ardından kurulayın.",
+      "Dilimleri hafifçe una bulayıp zeytinyağında altın rengi olana kadar kızartın.",
+      "Fırın kabının tabanına domates sosundan ince bir tabaka sürün.",
+      "Kızarmış patlıcan, domates sosu, mozzarella ve parmesanı katman katman dizin.",
+      "En üste bol peynir ve birkaç fesleğen yaprağı ekleyin.",
+      "Önceden ısıtılmış 190°C fırında 30-35 dakika üzeri kızarana kadar pişirin.",
+      "10 dakika dinlendirdikten sonra dilimleyerek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Bolonez Soslu Makarna",
+    "kategori": "ana yemek",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": 60,
+    "zorluk": "orta",
+    "pisirme_yontemi": ["ocak"],
+    "malzemeler": [
+      {"isim": "makarna", "miktar": 400, "birim": "gr"},
+      {"isim": "kıyma", "miktar": 400, "birim": "gr"},
+      {"isim": "soğan", "miktar": 1, "birim": "adet"},
+      {"isim": "havuç", "miktar": 1, "birim": "adet"},
+      {"isim": "domates sosu", "miktar": 500, "birim": "gr"},
+      {"isim": "kırmızı şarap", "miktar": 100, "birim": "ml"},
+      {"isim": "zeytinyağı", "miktar": 2, "birim": "yemek kaşığı"},
+      {"isim": "parmesan peyniri", "miktar": 50, "birim": "gr"}
+    ],
+    "yapilis_adimlari": [
+      "Zeytinyağında ince doğranmış soğan ve havucu kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar pişirin.",
+      "Kırmızı şarabı dökün ve alkolü uçurun.",
+      "Domates sosunu ekleyip kısık ateşte 40-45 dakika pişirin.",
+      "Bu sırada makarnayı ayrı bir tencerede haşlayın.",
+      "Süzülen makarnayı sosla karıştırın.",
+      "Üzerine parmesan serperek servis edin."
+    ]
+  },
+  {
+    "tarif_adi": "Ekmek Salatası Panzanella",
+    "kategori": "salata",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 15,
+    "pisirme_suresi_dk": null,
+    "zorluk": "kolay",
+    "pisirme_yontemi": [],
+    "malzemeler": [
+      {"isim": "bayat ekmek", "miktar": 200, "birim": "gr"},
+      {"isim": "domates", "miktar": 4, "birim": "adet"},
+      {"isim": "salatalık", "miktar": 1, "birim": "adet"},
+      {"isim": "kırmızı soğan", "miktar": 0.5, "birim": "adet"},
+      {"isim": "taze fesleğen", "miktar": 10, "birim": "yaprak"},
+      {"isim": "zeytinyağı", "miktar": 4, "birim": "yemek kaşığı"},
+      {"isim": "kırmızı şarap sirkesi", "miktar": 2, "birim": "yemek kaşığı"}
+    ],
+    "yapilis_adimlari": [
+      "Bayat ekmeği kabaca kırıp hafif ıslatın ve suyunu sıkın.",
+      "Domates ve salatalığı iri küpler halinde doğrayın.",
+      "Kırmızı soğanı ince yarım halkalar halinde dilimleyin.",
+      "Ekmek, domates, salatalık ve soğanı büyük bir kasede karıştırın.",
+      "Zeytinyağı ve sirkeyi ekleyip karıştırın.",
+      "Üzerine fesleğen yapraklarını ekleyip servis etmeden önce 10 dakika dinlendirin."
+    ]
+  },
+  {
+    "tarif_adi": "Prosciutto e Melone",
+    "kategori": "atıştırmalık",
+    "porsiyon": 4,
+    "hazirlik_suresi_dk": 10,
+    "pisirme_suresi_dk": null,
+    "zorluk": "kolay",
+    "pisirme_yontemi": [],
+    "malzemeler": [
+      {"isim": "kavun", "miktar": 1, "birim": "adet"},
+      {"isim": "prosciutto", "miktar": 12, "birim": "dilim"},
+      {"isim": "taze nane", "miktar": 6, "birim": "yaprak"}
+    ],
+    "yapilis_adimlari": [
+      "Kavunu ikiye bölüp çekirdeklerini çıkarın.",
+      "Kavunu ince dilimler halinde kesip kabuğunu soyun.",
+      "Her kavun dilimini bir dilim prosciutto ile sarın.",
+      "Bir servis tabağına dizin.",
+      "Üzerine ince kıyılmış taze nane serperek servis edin."
+    ]
+  }
+]
