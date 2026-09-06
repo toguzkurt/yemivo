@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.tnc.yemivo.R
 import com.tnc.yemivo.databinding.FragmentHomeBinding
 import com.tnc.core.base.BaseFragment
@@ -33,7 +34,14 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(
     override fun setupListeners() = with(binding) {
 
         searchBar.setOnClickListener {
-            findNavController().navigate(R.id.search_nav_graph)
+            // Switch tabs through the BottomNavigationView's own selection mechanism (the same
+            // path NavigationUI.setupWithNavController wires a real tap through), not a direct
+            // findNavController().navigate(R.id.search_nav_graph) — that bypasses the nested
+            // tabs NavHost's saved-state/back-stack handling entirely and left the "Ana Sayfa"
+            // tab and the system back button both unable to return here.
+            requireActivity()
+                .findViewById<BottomNavigationView>(R.id.bottomNav)
+                ?.selectedItemId = R.id.search_nav_graph
         }
 
         chipAll.setOnClickListener {
