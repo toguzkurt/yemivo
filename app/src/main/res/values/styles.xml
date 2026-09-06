@@ -80,6 +80,8 @@
     <!-- Component styles                                              -->
     <!-- ============================================================ -->
 
+    <style name="Widget.Yemivo" parent="" />
+
     <style name="Widget.Yemivo.Chip">
         <item name="android:background">@drawable/bg_chip_outline</item>
         <item name="android:paddingStart">@dimen/spacing_md</item>
