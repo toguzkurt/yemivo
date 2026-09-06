@@ -172,17 +172,6 @@
         android:textColor="@color/accent"
         android:textSize="@dimen/text_body_sm"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/bottomNav"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <!-- Bottom navigation -->
-
-    <include
-        android:id="@+id/bottomNav"
-        layout="@layout/partial_bottom_nav_home"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

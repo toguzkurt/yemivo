@@ -83,7 +83,7 @@
         android:gravity="center"
         android:orientation="vertical"
         android:padding="@dimen/spacing_md"
-        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -104,14 +104,5 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
-    <include
-        android:id="@+id/bottomNav"
-        layout="@layout/partial_bottom_nav_favorites"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
