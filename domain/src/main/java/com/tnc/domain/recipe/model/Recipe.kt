@@ -10,11 +10,19 @@ data class Recipe(
 
     val cuisineLabel: String,
 
-    val durationMinutes: Int,
+    val category: String,
 
-    val servings: Int,
+    val prepMinutes: Int?,
 
-    val isFavorite: Boolean,
+    val cookMinutes: Int?,
 
-    val steps: List<String>
+    val servings: Int?,
+
+    val difficulty: String?,
+
+    val ingredients: List<RecipeIngredient>,
+
+    val steps: List<String>,
+
+    val isFavorite: Boolean
 )

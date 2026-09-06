@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -18,6 +19,10 @@ android {
     }
 }
 
+ksp {
+    arg("room.schemaLocation", "$projectDir/schemas")
+}
+
 dependencies {
     implementation(project(":core"))
     implementation(project(":domain"))
@@ -27,6 +32,12 @@ dependencies {
     implementation(libs.koin.android)
 
     implementation(libs.coroutines.core)
+
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
+
+    implementation(libs.gson)
 
     testImplementation(libs.junit)
     testImplementation(libs.coroutines.test)
