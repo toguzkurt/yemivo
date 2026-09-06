@@ -1,3 +1,271 @@
 <resources>
     <string name="app_name">Yemivo</string>
+
+    <!-- ============================================================ -->
+    <!-- Shared: bottom navigation                                     -->
+    <!-- ============================================================ -->
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_search">Ara</string>
+    <string name="nav_favorites">Favoriler</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- ============================================================ -->
+    <!-- Shared: cuisines / filters                                    -->
+    <!-- ============================================================ -->
+    <string name="cuisine_all">Tümü</string>
+    <string name="cuisine_turkish">Türk</string>
+    <string name="cuisine_italian">İtalyan</string>
+    <string name="cuisine_mexican">Meksika</string>
+    <string name="cuisine_indian">Hint</string>
+    <string name="cuisine_japanese">Japon</string>
+    <string name="cuisine_thai">Tayland</string>
+    <string name="cuisine_greek">Yunan</string>
+    <string name="cuisine_american">Amerikan</string>
+
+    <string name="cuisine_turkish_full">Türk mutfağı</string>
+    <string name="cuisine_italian_full">İtalyan mutfağı</string>
+    <string name="cuisine_mexican_full">Meksika mutfağı</string>
+    <string name="cuisine_indian_full">Hint mutfağı</string>
+    <string name="cuisine_japanese_full">Japon mutfağı</string>
+    <string name="cuisine_thai_full">Tayland mutfağı</string>
+    <string name="cuisine_greek_full">Yunan mutfağı</string>
+    <string name="cuisine_american_full">Amerikan mutfağı</string>
+
+    <!-- ============================================================ -->
+    <!-- Shared: common actions / labels                               -->
+    <!-- ============================================================ -->
+    <string name="action_login">Giriş yap</string>
+    <string name="action_search_hint">Tarif ara</string>
+    <string name="premium_go_premium">Premium\'a geç</string>
+    <string name="premium_unlimited_offline">Sınırsız erişim, offline mod</string>
+    <string name="recipe_count_suffix">tarif</string>
+
+    <!-- ============================================================ -->
+    <!-- Home                                                          -->
+    <!-- ============================================================ -->
+    <string name="home_greeting">Merhaba</string>
+    <string name="home_title">Ne pişirelim?</string>
+    <string name="home_premium_banner">Sınırsız tarif için Premium\'a geç</string>
+    <string name="recipe_name_mantı">Mantı</string>
+    <string name="recipe_name_margherita">Margherita Pizza</string>
+    <string name="recipe_name_tavuk_sis">Tavuk Şiş</string>
+    <string name="recipe_meta_mantı">Türk mutfağı · 45 dk</string>
+    <string name="recipe_meta_margherita">İtalyan · 30 dk</string>
+    <string name="recipe_meta_tavuk_sis">Türk mutfağı · 25 dk</string>
+
+    <!-- ============================================================ -->
+    <!-- Search                                                        -->
+    <!-- ============================================================ -->
+    <string name="search_sample_query">tavuk</string>
+    <string name="search_label_cuisine">Mutfak</string>
+    <string name="search_label_duration">Süre</string>
+    <string name="search_duration_under_15">15 dk altı</string>
+    <string name="search_duration_under_30">30 dk altı</string>
+    <string name="search_duration_over_60">1 saat +</string>
+    <string name="search_result_count">3 sonuç</string>
+    <string name="recipe_name_tavuk_sote">Tavuk Sote</string>
+    <string name="recipe_meta_tavuk_sote">Türk mutfağı · 20 dk</string>
+
+    <!-- ============================================================ -->
+    <!-- Recipe detail                                                 -->
+    <!-- ============================================================ -->
+    <string name="recipe_detail_meta_mantı">Türk mutfağı · 45 dk · 4 kişilik</string>
+    <string name="tab_ingredients">Malzemeler</string>
+    <string name="tab_instructions">Yapılışı</string>
+    <string name="recipe_step_1">Hamuru yoğurup 20 dakika dinlendirin.</string>
+    <string name="recipe_step_2">İç harcı için kıymayı soğan ve baharatlarla karıştırın.</string>
+    <string name="recipe_step_3">Hamuru ince açıp küçük kareler halinde kesin.</string>
+    <string name="action_add_to_shopping_list">Alışveriş listesine ekle</string>
+
+    <!-- ============================================================ -->
+    <!-- Favorites                                                     -->
+    <!-- ============================================================ -->
+    <string name="favorites_title">Favorilerim</string>
+    <string name="favorites_progress">3 / 5 tarif</string>
+    <string name="recipe_name_sezar">Sezar Salata</string>
+    <string name="favorites_remaining">2 favori hakkın kaldı</string>
+    <string name="favorites_upsell">Sınırsız favori için Premium\'a geç</string>
+
+    <!-- ============================================================ -->
+    <!-- Profile                                                       -->
+    <!-- ============================================================ -->
+    <string name="profile_guest_user">Misafir kullanıcı</string>
+    <string name="profile_menu_downloads">İndirilen tarifler</string>
+    <string name="profile_menu_notifications">Bildirimler</string>
+    <string name="profile_menu_shopping_list">Alışveriş listesi</string>
+    <string name="profile_menu_settings">Ayarlar</string>
+
+    <!-- ============================================================ -->
+    <!-- Shopping list                                                 -->
+    <!-- ============================================================ -->
+    <string name="shopping_list_title">Alışveriş Listem</string>
+    <string name="shopping_item_kiyma">500 gr kıyma</string>
+    <string name="shopping_item_un">2 su bardağı un</string>
+    <string name="shopping_item_mozzarella">Mozzarella peyniri</string>
+    <string name="shopping_item_domates_sosu">Domates sosu</string>
+    <string name="shopping_tag_mantı">Mantı</string>
+    <string name="shopping_tag_pizza">Pizza</string>
+    <string name="action_share_list">Listeyi paylaş</string>
+
+    <!-- ============================================================ -->
+    <!-- Premium paywall                                               -->
+    <!-- ============================================================ -->
+    <string name="paywall_subtitle">Sınırsız tarif, offline erişim ve daha fazlası</string>
+    <string name="paywall_feature_unlimited_recipes">Sınırsız tarif görüntüleme</string>
+    <string name="paywall_feature_offline">Offline mod — internetsiz erişim</string>
+    <string name="paywall_feature_unlimited_favorites">Sınırsız favori ve liste</string>
+    <string name="paywall_feature_no_ads">Reklamsız deneyim</string>
+    <string name="paywall_feature_smart_list">Akıllı alışveriş listesi</string>
+    <string name="paywall_plan_monthly">Aylık</string>
+    <string name="paywall_plan_monthly_price">₺29,99</string>
+    <string name="paywall_plan_yearly">Yıllık</string>
+    <string name="paywall_plan_yearly_price">₺17,99/ay</string>
+    <string name="paywall_plan_badge">%40 avantajlı</string>
+    <string name="paywall_cta">Premium\'u başlat</string>
+    <string name="paywall_footnote">İstediğin zaman iptal edebilirsin</string>
+
+    <!-- ============================================================ -->
+    <!-- Onboarding                                                    -->
+    <!-- ============================================================ -->
+    <string name="onboarding_skip">Atla</string>
+    <string name="onboarding_page1_title">Dünya mutfağını keşfet</string>
+    <string name="onboarding_page1_desc">Yüzlerce tarif arasından mutfağına, süresine ve malzemene göre seç.</string>
+    <string name="onboarding_page2_title">Offline erişim</string>
+    <string name="onboarding_page2_desc">Sevdiğin tarifleri indir, internetsizken bile mutfakta yanında olsun.</string>
+    <string name="onboarding_page3_title">Alışverişi kolaylaştır</string>
+    <string name="onboarding_page3_desc">Tariflerdeki malzemeler otomatik alışveriş listene eklensin.</string>
+    <string name="onboarding_continue">Devam et</string>
+    <string name="onboarding_get_started">Hemen başla</string>
+
+    <!-- ============================================================ -->
+    <!-- Cook mode                                                     -->
+    <!-- ============================================================ -->
+    <string name="cook_mode_step_count">Adım 2 / 6</string>
+    <string name="cook_mode_step_title">İÇ HARCI HAZIRLA</string>
+    <string name="cook_mode_step_text">Kıymayı ince doğranmış soğan, tuz ve karabiber ile iyice yoğurun.</string>
+    <string name="cook_mode_timer">02:30</string>
+    <string name="cook_mode_timer_label">dinlendirme süresi</string>
+    <string name="cook_mode_prev">Önceki</string>
+    <string name="cook_mode_next">Sonraki</string>
+    <string name="cook_mode_voice_hint">\"Sonraki adım\" diyerek de ilerleyebilirsin</string>
+
+    <!-- ============================================================ -->
+    <!-- Login                                                         -->
+    <!-- ============================================================ -->
+    <string name="login_title">Hesabına giriş yap</string>
+    <string name="login_subtitle">Favorilerin her cihazda seninle olsun</string>
+    <string name="login_label_email">E-posta</string>
+    <string name="login_placeholder_email">ornek@email.com</string>
+    <string name="login_label_password">Şifre</string>
+    <string name="login_placeholder_password">••••••••</string>
+    <string name="login_or_divider">veya</string>
+    <string name="login_continue_google">Google ile devam et</string>
+    <string name="login_continue_apple">Apple ile devam et</string>
+    <string name="login_no_account">Hesabın yok mu?</string>
+    <string name="login_register">Kayıt ol</string>
+
+    <!-- ============================================================ -->
+    <!-- Surprise recipe                                               -->
+    <!-- ============================================================ -->
+    <string name="surprise_title">Bugün ne pişirsem?</string>
+    <string name="surprise_badge">Sürpriz</string>
+    <string name="recipe_name_karnıyarık">Karnıyarık</string>
+    <string name="recipe_detail_meta_karnıyarık">Türk mutfağı · 50 dk · 4 kişilik</string>
+    <string name="surprise_reroll">Başka göster</string>
+    <string name="surprise_view_recipe">Tarife git</string>
+    <string name="surprise_fab">Sürpriz tarif</string>
+
+    <!-- ============================================================ -->
+    <!-- Empty states                                                  -->
+    <!-- ============================================================ -->
+    <string name="empty_favorites_title">Henüz favori tarifin yok</string>
+    <string name="empty_favorites_message">Beğendiğin tarifleri kalp ikonuna dokunarak buraya kaydedebilirsin.</string>
+    <string name="empty_favorites_cta">Tarifleri keşfet</string>
+    <string name="search_results_title">Arama sonuçları</string>
+    <string name="empty_search_title">Sonuç bulunamadı</string>
+    <string name="empty_search_message">\"tavuklu waffle\" için bir tarif bulamadık. Farklı bir kelime dener misin?</string>
+    <string name="empty_search_cta">Filtreleri temizle</string>
+    <string name="empty_offline_title_bar">Bağlantı yok</string>
+    <string name="empty_offline_title">İnternet bağlantısı yok</string>
+    <string name="empty_offline_message">İndirilen tariflerine offline modda erişebilirsin, yeni içerik için bağlantı gerekiyor.</string>
+    <string name="empty_offline_cta">İndirilenleri gör</string>
+
+    <!-- ============================================================ -->
+    <!-- Notifications                                                 -->
+    <!-- ============================================================ -->
+    <string name="notifications_title">Bildirimler</string>
+    <string name="notifications_section_today">BUGÜN</string>
+    <string name="notifications_section_this_week">BU HAFTA</string>
+    <string name="notif_daily_recipe_title">Günün tarifi hazır</string>
+    <string name="notif_daily_recipe_message">Bugün için \"Karnıyarık\" tarifini önerdik, göz atmaya ne dersin?</string>
+    <string name="notif_time_2h">2 saat önce</string>
+    <string name="notif_premium_title">Premium fırsatı</string>
+    <string name="notif_premium_message">Yıllık plana geç, %40 avantajlı fiyattan sınırsız erişim kazan.</string>
+    <string name="notif_time_5h">5 saat önce</string>
+    <string name="notif_download_title">İndirme tamamlandı</string>
+    <string name="notif_download_message">\"Mantı\" tarifi offline erişim için cihazına kaydedildi.</string>
+    <string name="notif_time_2d">2 gün önce</string>
+    <string name="notif_miss_you_title">Seni özledik</string>
+    <string name="notif_miss_you_message">3 gündür uğramadın, yeni tarifler seni bekliyor.</string>
+    <string name="notif_time_3d">3 gün önce</string>
+
+    <!-- ============================================================ -->
+    <!-- Settings                                                      -->
+    <!-- ============================================================ -->
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_section_general">GENEL</string>
+    <string name="settings_language">Dil</string>
+    <string name="settings_language_value">Türkçe</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_theme_value">Sistem</string>
+    <string name="settings_unit">Ölçü birimi</string>
+    <string name="settings_unit_value">Metrik</string>
+    <string name="settings_section_notifications">BİLDİRİMLER</string>
+    <string name="settings_notif_daily_recipe">Günün tarifi bildirimi</string>
+    <string name="settings_notif_campaigns">Kampanya ve fırsatlar</string>
+    <string name="settings_section_account">HESAP</string>
+    <string name="settings_account_info">Hesap bilgilerim</string>
+    <string name="settings_subscription">Abonelik yönetimi</string>
+    <string name="settings_subscription_value">Premium</string>
+    <string name="settings_section_other">DİĞER</string>
+    <string name="settings_privacy_policy">Gizlilik politikası</string>
+    <string name="settings_contact_us">Bize ulaşın</string>
+    <string name="settings_delete_account">Hesabı sil</string>
+    <string name="settings_version">Sürüm 1.0.0</string>
+
+    <!-- ============================================================ -->
+    <!-- Cuisines grid                                                 -->
+    <!-- ============================================================ -->
+    <string name="cuisines_title">Mutfaklar</string>
+    <string name="cuisines_subtitle">Dünya mutfağını keşfetmeye başla</string>
+    <string name="cuisine_count_turkish">48 tarif</string>
+    <string name="cuisine_count_italian">62 tarif</string>
+    <string name="cuisine_count_mexican">31 tarif</string>
+    <string name="cuisine_count_indian">44 tarif</string>
+    <string name="cuisine_count_japanese">27 tarif</string>
+    <string name="cuisine_count_thai">19 tarif</string>
+    <string name="cuisine_count_greek">22 tarif</string>
+    <string name="cuisine_count_american">55 tarif</string>
+
+    <!-- ============================================================ -->
+    <!-- Portion adjuster                                              -->
+    <!-- ============================================================ -->
+    <string name="portion_title">Mantı — Malzemeler</string>
+    <string name="portion_label">Porsiyon</string>
+    <string name="portion_count">6 kişilik</string>
+    <string name="portion_ingredients_label">Malzemeler (6 kişilik için otomatik hesaplandı)</string>
+    <string name="ingredient_flour">Un</string>
+    <string name="ingredient_flour_amount">3 su bardağı</string>
+    <string name="ingredient_egg">Yumurta</string>
+    <string name="ingredient_egg_amount">2 adet</string>
+    <string name="ingredient_mince">Kıyma</string>
+    <string name="ingredient_mince_amount">750 gr</string>
+    <string name="ingredient_onion">Soğan</string>
+    <string name="ingredient_onion_amount">2 adet</string>
+    <string name="ingredient_yogurt">Yoğurt</string>
+    <string name="ingredient_yogurt_amount">4 su bardağı</string>
+    <string name="ingredient_salt">Tuz</string>
+    <string name="ingredient_salt_amount">1 tatlı kaşığı</string>
+    <string name="portion_hint">Orijinal tarif 4 kişilik için hesaplanmıştı — miktarlar otomatik güncellendi</string>
+
 </resources>
