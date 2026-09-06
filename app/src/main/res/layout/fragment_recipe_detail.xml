@@ -16,11 +16,10 @@
         android:contentDescription="@null"
         android:padding="@dimen/spacing_huge"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_add_photo"
+        tools:src="@drawable/cat_ana_yemek"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/text_muted" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ivBack"
