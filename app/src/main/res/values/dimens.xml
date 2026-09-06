@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Spacing scale (1:1 with the mockups' CSS px) -->
+    <dimen name="spacing_xxxs">2dp</dimen>
+    <dimen name="spacing_xxs">4dp</dimen>
+    <dimen name="spacing_xs">6dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_sm_md">10dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_md_lg">14dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_lg_xl">18dp</dimen>
+    <dimen name="spacing_xl">20dp</dimen>
+    <dimen name="spacing_xl_xxl">22dp</dimen>
+    <dimen name="spacing_xxl">24dp</dimen>
+    <dimen name="spacing_xxxl">28dp</dimen>
+    <dimen name="spacing_huge">32dp</dimen>
+
+    <!-- Corner radius -->
+    <dimen name="radius_xs">5dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">10dp</dimen>
+    <dimen name="radius_lg">12dp</dimen>
+    <dimen name="radius_xl">14dp</dimen>
+    <dimen name="radius_xxl">16dp</dimen>
+    <dimen name="radius_huge">20dp</dimen>
+    <dimen name="radius_pill">24dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_2xs">9sp</dimen>
+    <dimen name="text_xs">10sp</dimen>
+    <dimen name="text_sm">11sp</dimen>
+    <dimen name="text_body_sm">12sp</dimen>
+    <dimen name="text_body">13sp</dimen>
+    <dimen name="text_body_lg">14sp</dimen>
+    <dimen name="text_title_sm">15sp</dimen>
+    <dimen name="text_title">16sp</dimen>
+    <dimen name="text_title_lg">18sp</dimen>
+    <dimen name="text_headline_sm">19sp</dimen>
+    <dimen name="text_headline">20sp</dimen>
+    <dimen name="text_headline_lg">22sp</dimen>
+    <dimen name="text_display_sm">26sp</dimen>
+    <dimen name="text_display">30sp</dimen>
+    <dimen name="text_display_lg">34sp</dimen>
+    <dimen name="text_illustration">56sp</dimen>
+
+    <!-- Component sizes -->
+    <dimen name="avatar_size_sm">34dp</dimen>
+    <dimen name="avatar_size_lg">56dp</dimen>
+    <dimen name="thumb_size_sm">48dp</dimen>
+    <dimen name="thumb_size_md">52dp</dimen>
+    <dimen name="thumb_size_lg">56dp</dimen>
+    <dimen name="icon_button_size">32dp</dimen>
+    <dimen name="checkbox_size">18dp</dimen>
+    <dimen name="step_number_size">20dp</dimen>
+    <dimen name="stepper_button_size">28dp</dimen>
+    <dimen name="notif_icon_size">36dp</dimen>
+    <dimen name="progress_bar_height">6dp</dimen>
+    <dimen name="progress_segment_height">4dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="toggle_width">38dp</dimen>
+    <dimen name="toggle_height">22dp</dimen>
+    <dimen name="toggle_knob_size">18dp</dimen>
+    <dimen name="dot_indicator_size">6dp</dimen>
+    <dimen name="dot_indicator_active_width">18dp</dimen>
+    <dimen name="hero_image_height">170dp</dimen>
+    <dimen name="hero_image_height_lg">200dp</dimen>
+    <dimen name="onboarding_illustration_size">160dp</dimen>
+    <dimen name="empty_state_icon_size">72dp</dimen>
+    <dimen name="notif_dot_size">8dp</dimen>
+
+</resources>
