@@ -1,10 +1,21 @@
 package com.tnc.yemivo.app.di
 
+import com.tnc.yemivo.app.feature.home.HomeViewModel
+import com.tnc.yemivo.app.feature.recipedetail.RecipeDetailViewModel
+import org.koin.core.module.dsl.viewModel
+import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
-/**
- * App-scoped bindings (ViewModels, navigation helpers). Empty for now — screens are still
- * layout-only; ViewModels/use cases get registered here as each feature is wired up.
- */
 val appModule = module {
+
+    viewModelOf(::HomeViewModel)
+
+    viewModel { (recipeId: String) ->
+        RecipeDetailViewModel(
+            recipeId = recipeId,
+            getRecipeByIdUseCase = get(),
+            toggleFavoriteUseCase = get()
+        )
+    }
+
 }
