@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_divider_bottom"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/spacing_sm_md"
+    android:paddingBottom="@dimen/spacing_sm_md">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_body"
+        tools:text="@string/ingredient_flour" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textColor="@color/accent"
+        android:textSize="@dimen/text_body"
+        android:textStyle="bold"
+        tools:text="@string/ingredient_flour_amount" />
+
+</LinearLayout>
