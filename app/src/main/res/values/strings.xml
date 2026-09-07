@@ -232,6 +232,10 @@
     </string-array>
     <string name="settings_unit">Ölçü birimi</string>
     <string name="settings_unit_value">Metrik</string>
+    <string-array name="unit_system_options">
+        <item>Metrik</item>
+        <item>Emperyal</item>
+    </string-array>
     <string name="settings_section_notifications">BİLDİRİMLER</string>
     <string name="settings_notif_daily_recipe">Günün tarifi bildirimi</string>
     <string name="settings_notif_campaigns">Kampanya ve fırsatlar</string>

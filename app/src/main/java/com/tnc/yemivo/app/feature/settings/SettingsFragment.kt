@@ -6,15 +6,20 @@ import com.tnc.yemivo.R
 import com.tnc.yemivo.app.theme.LocaleHelper
 import com.tnc.yemivo.app.theme.ThemeMode
 import com.tnc.yemivo.app.theme.ThemePreferences
+import com.tnc.yemivo.app.theme.UnitPreferences
+import com.tnc.yemivo.app.theme.UnitSystem
 import com.tnc.yemivo.databinding.FragmentSettingsBinding
 import com.tnc.core.base.BaseFragment
 import org.koin.android.ext.android.inject
 
 /**
- * Language and theme are real (see LocaleHelper/ThemePreferences) — everything else here (units,
- * notification toggles, account/subscription info, privacy policy, contact, delete account)
- * stays static display content, since making those real needs an actual account/preferences
- * backend this app doesn't have.
+ * Language, theme, and unit system are real (see LocaleHelper/ThemePreferences/UnitPreferences)
+ * — everything else here (notification toggles, account/subscription info, privacy policy,
+ * contact, delete account) stays static display content, since making those real needs an
+ * actual account/preferences backend this app doesn't have. Unit system only persists the
+ * choice — recipe amounts are free-text from TheMealDB ("1 cup", "500g", "a pinch", ...), not
+ * structured quantity+unit pairs, so there's no safe way to actually convert displayed amounts
+ * without risking a wrong parse turning into a wrong ingredient quantity.
  */
 class SettingsFragment : BaseFragment<FragmentSettingsBinding>(
     FragmentSettingsBinding::inflate
@@ -22,9 +27,12 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(
 
     private val themePreferences: ThemePreferences by inject()
 
+    private val unitPreferences: UnitPreferences by inject()
+
     override fun setupViews() {
         renderLanguageValue()
         renderThemeValue()
+        renderUnitValue()
     }
 
     override fun setupListeners() = with(binding) {
@@ -39,6 +47,10 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(
 
         rowTheme.setOnClickListener {
             showThemePicker()
+        }
+
+        rowUnit.setOnClickListener {
+            showUnitPicker()
         }
 
     }
@@ -78,6 +90,23 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(
 
     }
 
+    private fun showUnitPicker() {
+
+        val systems = UnitSystem.entries
+        val labels = resources.getStringArray(R.array.unit_system_options)
+        val currentIndex = systems.indexOf(unitPreferences.system).coerceAtLeast(0)
+
+        MaterialAlertDialogBuilder(requireContext())
+            .setTitle(R.string.settings_unit)
+            .setSingleChoiceItems(labels, currentIndex) { dialog, which ->
+                unitPreferences.system = systems[which]
+                renderUnitValue()
+                dialog.dismiss()
+            }
+            .show()
+
+    }
+
     private fun renderLanguageValue() {
         binding.tvLanguageValue.text = if (LocaleHelper.currentTag(requireContext()) == LocaleHelper.TAG_TURKISH) {
             "Türkçe"
@@ -89,6 +118,11 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(
     private fun renderThemeValue() {
         val labels = resources.getStringArray(R.array.theme_mode_options)
         binding.tvThemeValue.text = labels[ThemeMode.entries.indexOf(themePreferences.mode)]
+    }
+
+    private fun renderUnitValue() {
+        val labels = resources.getStringArray(R.array.unit_system_options)
+        binding.tvUnitValue.text = labels[UnitSystem.entries.indexOf(unitPreferences.system)]
     }
 
 }

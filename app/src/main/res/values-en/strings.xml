@@ -212,6 +212,10 @@
     <string name="settings_theme_value">System</string>
     <string name="settings_unit">Unit system</string>
     <string name="settings_unit_value">Metric</string>
+    <string-array name="unit_system_options">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
     <string name="settings_section_notifications">NOTIFICATIONS</string>
     <string name="settings_notif_daily_recipe">Daily recipe notification</string>
     <string name="settings_notif_campaigns">Campaigns and offers</string>

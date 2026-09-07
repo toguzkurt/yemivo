@@ -9,6 +9,7 @@ import com.tnc.yemivo.app.feature.search.SearchViewModel
 import com.tnc.yemivo.app.feature.shoppinglist.ShoppingListViewModel
 import com.tnc.yemivo.app.session.SessionPreferences
 import com.tnc.yemivo.app.theme.ThemePreferences
+import com.tnc.yemivo.app.theme.UnitPreferences
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.dsl.viewModel
 import org.koin.core.module.dsl.viewModelOf
@@ -19,6 +20,8 @@ val appModule = module {
     single { SessionPreferences(androidContext()) }
 
     single { ThemePreferences(androidContext()) }
+
+    single { UnitPreferences(androidContext()) }
 
     viewModelOf(::HomeViewModel)
 
