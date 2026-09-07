@@ -9,6 +9,28 @@
         android:id="@+id/favoritesFragment"
         android:name="com.tnc.yemivo.app.feature.favorites.FavoritesFragment"
         android:label="Favorites"
-        tools:layout="@layout/fragment_favorites" />
+        tools:layout="@layout/fragment_favorites">
+
+        <action
+            android:id="@+id/action_favorites_to_recipeDetail"
+            app:destination="@id/recipeDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.tnc.yemivo.app.feature.recipedetail.RecipeDetailFragment"
+        android:label="RecipeDetail"
+        tools:layout="@layout/fragment_recipe_detail">
+
+        <argument
+            android:name="recipeId"
+            app:argType="string" />
+
+    </fragment>
 
 </navigation>

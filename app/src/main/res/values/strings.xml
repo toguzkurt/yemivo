@@ -77,10 +77,11 @@
     <!-- Favorites                                                     -->
     <!-- ============================================================ -->
     <string name="favorites_title">Favorilerim</string>
-    <string name="favorites_progress">3 / 5 tarif</string>
+    <string name="favorites_progress">%1$d / %2$d tarif</string>
     <string name="recipe_name_sezar">Sezar Salata</string>
-    <string name="favorites_remaining">2 favori hakkın kaldı</string>
+    <string name="favorites_remaining">%d favori hakkın kaldı</string>
     <string name="favorites_upsell">Sınırsız favori için Premium\'a geç</string>
+    <string name="coming_soon">Bu özellik yakında geliyor</string>
 
     <!-- ============================================================ -->
     <!-- Profile                                                       -->
@@ -159,6 +160,7 @@
     <string name="login_continue_apple">🍎 Apple ile devam et</string>
     <string name="login_no_account">Hesabın yok mu?</string>
     <string name="login_register">Kayıt ol</string>
+    <string name="login_error_required">E-posta ve şifre gerekli</string>
 
     <!-- ============================================================ -->
     <!-- Surprise recipe                                               -->

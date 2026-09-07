@@ -24,7 +24,7 @@
         android:layout_marginStart="@dimen/spacing_lg"
         android:layout_marginTop="@dimen/spacing_xxxs"
         android:layout_marginEnd="@dimen/spacing_lg"
-        android:text="@string/favorites_progress"
+        tools:text="@string/favorites_progress"
         android:textAppearance="@style/TextAppearance.Yemivo.BodySecondary"
         app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
@@ -49,6 +49,7 @@
             android:background="@drawable/bg_progress_fill" />
 
         <View
+            android:id="@+id/progressRemainder"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2" />
@@ -88,9 +89,10 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
+            android:id="@+id/tvRemaining"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/favorites_remaining"
+            tools:text="@string/favorites_remaining"
             android:textAppearance="@style/TextAppearance.Yemivo.BodySecondary"
             android:textSize="@dimen/text_body_sm" />
 
@@ -102,6 +104,58 @@
             android:textColor="@color/accent"
             android:textSize="@dimen/text_body_sm"
             android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Empty state -->
+
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/spacing_xxl"
+        android:paddingEnd="@dimen/spacing_xxl"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/avatar_size_lg"
+            android:layout_height="@dimen/avatar_size_lg"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_heart_outline"
+            app:tint="@color/text_muted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:gravity="center"
+            android:text="@string/empty_favorites_title"
+            android:textAppearance="@style/TextAppearance.Yemivo.HeadlineSm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:gravity="center"
+            android:text="@string/empty_favorites_message"
+            android:textAppearance="@style/TextAppearance.Yemivo.BodySecondary" />
+
+        <TextView
+            android:id="@+id/btnExplore"
+            style="@style/Widget.Yemivo.ButtonDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:paddingStart="@dimen/spacing_lg"
+            android:paddingEnd="@dimen/spacing_lg"
+            android:text="@string/empty_favorites_cta" />
 
     </LinearLayout>
 
