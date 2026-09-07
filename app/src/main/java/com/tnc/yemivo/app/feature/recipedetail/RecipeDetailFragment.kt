@@ -2,7 +2,7 @@ package com.tnc.yemivo.app.feature.recipedetail
 
 import androidx.navigation.fragment.findNavController
 import com.tnc.yemivo.R
-import com.tnc.yemivo.app.feature.common.categoryImageRes
+import com.tnc.yemivo.app.feature.common.bindRecipeImage
 import com.tnc.yemivo.app.feature.common.detailSummary
 import com.tnc.yemivo.databinding.FragmentRecipeDetailBinding
 import com.tnc.core.base.BaseFragment
@@ -82,7 +82,10 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
 
         tvTitle.text = recipe.name
         tvMeta.text = recipe.detailSummary()
-        ivHero.setImageResource(categoryImageRes(recipe.category))
+        ivHero.bindRecipeImage(
+            recipe = recipe,
+            iconPadding = resources.getDimensionPixelSize(R.dimen.spacing_huge)
+        )
 
         ivFavorite.setImageResource(
             if (recipe.isFavorite) R.drawable.ic_heart_filled else R.drawable.ic_heart_outline

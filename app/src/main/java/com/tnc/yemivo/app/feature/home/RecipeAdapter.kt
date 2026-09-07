@@ -2,7 +2,7 @@ package com.tnc.yemivo.app.feature.home
 
 import androidx.recyclerview.widget.DiffUtil
 import com.tnc.yemivo.R
-import com.tnc.yemivo.app.feature.common.categoryImageRes
+import com.tnc.yemivo.app.feature.common.bindRecipeImage
 import com.tnc.yemivo.app.feature.common.metaSummary
 import com.tnc.yemivo.databinding.ItemRecipeCardBinding
 import com.tnc.core.base.BaseAdapter
@@ -37,7 +37,10 @@ class RecipeAdapter(
 
         tvName.text = item.name
         tvMeta.text = item.metaSummary()
-        ivThumb.setImageResource(categoryImageRes(item.category))
+        ivThumb.bindRecipeImage(
+            recipe = item,
+            iconPadding = root.resources.getDimensionPixelSize(R.dimen.spacing_sm)
+        )
 
         ivFavorite.setImageResource(
             if (item.isFavorite) R.drawable.ic_heart_filled else R.drawable.ic_heart_outline
