@@ -2,7 +2,6 @@ package com.tnc.data.di
 
 import androidx.room.Room
 import com.tnc.data.local.AppDatabase
-import com.tnc.data.local.recipe.RecipeSeeder
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
@@ -13,11 +12,12 @@ val databaseModule = module {
             androidContext(),
             AppDatabase::class.java,
             "yemivo.db"
-        ).build()
+        )
+            // No production installs yet — safe to wipe on schema change rather than migrate.
+            .fallbackToDestructiveMigration(dropAllTables = true)
+            .build()
     }
 
     single { get<AppDatabase>().recipeDao() }
-
-    single { RecipeSeeder(androidContext(), get()) }
 
 }

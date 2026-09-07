@@ -6,9 +6,9 @@ import com.google.gson.reflect.TypeToken
 import kotlin.math.roundToInt
 
 /**
- * Populates the (empty, first-launch) recipes table from the bundled JSON assets instead of a
- * live API — see recipes_turkish/italian/mexican/japanese.json for provenance. Runs once: later
- * launches see a non-empty table and skip straight past [seedIfEmpty].
+ * Not currently wired into DI — the app now seeds from TheMealDB via [RecipeRemoteSeeder]
+ * instead. Left in place (bundled JSON assets included) as a ready-to-use offline data source in
+ * case we go back to bundled data, e.g. once TheMealDB's paid commercial tier is evaluated.
  */
 class RecipeSeeder(
     private val context: Context,
@@ -57,7 +57,8 @@ class RecipeSeeder(
                     RecipeIngredientEntity(it.name, it.amount.orEmpty(), it.unit.orEmpty())
                 },
                 steps = dto.steps,
-                isFavorite = false
+                isFavorite = false,
+                imageUrl = null
             )
         }
 

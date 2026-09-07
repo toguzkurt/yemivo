@@ -24,5 +24,7 @@ data class Recipe(
 
     val steps: List<String>,
 
-    val isFavorite: Boolean
+    val isFavorite: Boolean,
+
+    val imageUrl: String?
 )

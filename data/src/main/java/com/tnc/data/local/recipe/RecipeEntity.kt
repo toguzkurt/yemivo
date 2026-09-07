@@ -29,7 +29,9 @@ data class RecipeEntity(
 
     val steps: List<String>,
 
-    val isFavorite: Boolean
+    val isFavorite: Boolean,
+
+    val imageUrl: String?
 )
 
 data class RecipeIngredientEntity(

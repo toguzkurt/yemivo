@@ -2,9 +2,10 @@ package com.tnc.yemivo.app.application
 
 import android.app.Application
 import com.tnc.data.di.databaseModule
+import com.tnc.data.di.networkModule
 import com.tnc.data.di.repositoryModule
 import com.tnc.data.di.useCaseModule
-import com.tnc.data.local.recipe.RecipeSeeder
+import com.tnc.data.remote.mealdb.RecipeRemoteSeeder
 import com.tnc.yemivo.app.di.appModule
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -18,7 +19,7 @@ class YemivoApplication : Application() {
 
     private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 
-    private val recipeSeeder: RecipeSeeder by inject()
+    private val recipeSeeder: RecipeRemoteSeeder by inject()
 
     override fun onCreate() {
         super.onCreate()
@@ -26,14 +27,15 @@ class YemivoApplication : Application() {
             androidContext(this@YemivoApplication)
             modules(
                 databaseModule,
+                networkModule,
                 repositoryModule,
                 useCaseModule,
                 appModule
             )
         }
 
-        // One-time: populates the empty recipes table from the bundled JSON assets on first
-        // launch. Later launches see a non-empty table and RecipeSeeder.seedIfEmpty() no-ops.
+        // One-time: populates the empty recipes table from TheMealDB on first launch. Later
+        // launches see a non-empty table and RecipeRemoteSeeder.seedIfEmpty() no-ops.
         applicationScope.launch {
             recipeSeeder.seedIfEmpty()
         }
