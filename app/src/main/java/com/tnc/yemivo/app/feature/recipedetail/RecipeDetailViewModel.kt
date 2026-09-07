@@ -4,11 +4,14 @@ import com.tnc.core.base.BaseViewModel
 import com.tnc.core.common.result.UiText
 import com.tnc.domain.recipe.usecase.GetRecipeByIdUseCase
 import com.tnc.domain.recipe.usecase.ToggleFavoriteUseCase
+import com.tnc.domain.shoppinglist.usecase.AddRecipeToShoppingListUseCase
+import com.tnc.yemivo.R
 
 class RecipeDetailViewModel(
     private val recipeId: String,
     private val getRecipeByIdUseCase: GetRecipeByIdUseCase,
-    private val toggleFavoriteUseCase: ToggleFavoriteUseCase
+    private val toggleFavoriteUseCase: ToggleFavoriteUseCase,
+    private val addRecipeToShoppingListUseCase: AddRecipeToShoppingListUseCase
 ) : BaseViewModel<RecipeDetailUiState, RecipeDetailUiEffect>(initialState = RecipeDetailUiState()) {
 
     init {
@@ -25,11 +28,11 @@ class RecipeDetailViewModel(
             }
 
             RecipeDetailUiEvent.AddToShoppingListClicked -> {
-                sendEffect(
-                    RecipeDetailUiEffect.ShowMessage(
-                        UiText.DynamicString("Alışveriş listesine eklendi")
-                    )
-                )
+                addToShoppingList()
+            }
+
+            is RecipeDetailUiEvent.TabSelected -> {
+                setState { copy(selectedTab = event.tab) }
             }
 
         }
@@ -53,6 +56,24 @@ class RecipeDetailViewModel(
         launch {
             toggleFavoriteUseCase(recipeId)
         }
+    }
+
+    private fun addToShoppingList() {
+
+        val recipe = state.value.recipe ?: return
+
+        launch {
+
+            addRecipeToShoppingListUseCase(recipe)
+
+            sendEffect(
+                RecipeDetailUiEffect.ShowMessage(
+                    UiText.StringResource(R.string.shopping_list_item_added)
+                )
+            )
+
+        }
+
     }
 
 }

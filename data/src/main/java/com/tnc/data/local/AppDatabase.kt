@@ -5,15 +5,19 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.tnc.data.local.recipe.RecipeDao
 import com.tnc.data.local.recipe.RecipeEntity
+import com.tnc.data.local.shoppinglist.ShoppingListDao
+import com.tnc.data.local.shoppinglist.ShoppingListItemEntity
 
 @Database(
-    entities = [RecipeEntity::class],
-    version = 2,
+    entities = [RecipeEntity::class, ShoppingListItemEntity::class],
+    version = 3,
     exportSchema = true
 )
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun recipeDao(): RecipeDao
+
+    abstract fun shoppingListDao(): ShoppingListDao
 
 }

@@ -1,5 +1,9 @@
 package com.tnc.yemivo.app.feature.recipedetail
 
+import android.graphics.Typeface
+import android.widget.TextView
+import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import com.tnc.yemivo.R
 import com.tnc.yemivo.app.feature.common.bindRecipeImage
@@ -22,10 +26,12 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
         parametersOf(recipeId)
     }
 
+    private val ingredientAdapter = RecipeIngredientAdapter()
     private val stepAdapter = RecipeStepAdapter()
 
     override fun setupViews() = with(binding) {
 
+        rvIngredients.adapter = ingredientAdapter
         rvSteps.adapter = stepAdapter
 
     }
@@ -44,6 +50,14 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
             viewModel.onEvent(RecipeDetailUiEvent.AddToShoppingListClicked)
         }
 
+        tabIngredients.setOnClickListener {
+            viewModel.onEvent(RecipeDetailUiEvent.TabSelected(RecipeDetailTab.INGREDIENTS))
+        }
+
+        tabInstructions.setOnClickListener {
+            viewModel.onEvent(RecipeDetailUiEvent.TabSelected(RecipeDetailTab.INSTRUCTIONS))
+        }
+
     }
 
     override fun observeState() {
@@ -52,7 +66,7 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
 
             viewModel.state.collect { state ->
 
-                state.recipe?.let(::render)
+                state.recipe?.let { render(it, state.selectedTab) }
 
             }
 
@@ -77,7 +91,8 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
     }
 
     private fun render(
-        recipe: Recipe
+        recipe: Recipe,
+        selectedTab: RecipeDetailTab
     ) = with(binding) {
 
         tvTitle.text = recipe.name
@@ -91,8 +106,32 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
             if (recipe.isFavorite) R.drawable.ic_heart_filled else R.drawable.ic_heart_outline
         )
 
+        ingredientAdapter.submitList(recipe.ingredients)
         stepAdapter.submitList(recipe.steps)
 
+        val showIngredients = selectedTab == RecipeDetailTab.INGREDIENTS
+        rvIngredients.isVisible = showIngredients
+        rvSteps.isVisible = !showIngredients
+
+        renderTab(tabIngredients, showIngredients)
+        renderTab(tabInstructions, !showIngredients)
+
+    }
+
+    private fun renderTab(
+        tab: TextView,
+        isActive: Boolean
+    ) {
+        tab.setBackgroundResource(
+            if (isActive) R.drawable.bg_tab_active else R.drawable.bg_tab_inactive
+        )
+        tab.setTextColor(
+            ContextCompat.getColor(
+                requireContext(),
+                if (isActive) R.color.accent else R.color.text_secondary
+            )
+        )
+        tab.setTypeface(tab.typeface, if (isActive) Typeface.BOLD else Typeface.NORMAL)
     }
 
     private companion object {

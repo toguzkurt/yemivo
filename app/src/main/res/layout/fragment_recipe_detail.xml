@@ -114,6 +114,17 @@
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_recipe_ingredient"
+                tools:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvSteps"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

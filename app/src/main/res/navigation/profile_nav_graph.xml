@@ -19,6 +19,14 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
 
+        <action
+            android:id="@+id/action_profile_to_shoppingList"
+            app:destination="@id/shoppingListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
     </fragment>
 
     <fragment
@@ -26,5 +34,11 @@
         android:name="com.tnc.yemivo.app.feature.settings.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/shoppingListFragment"
+        android:name="com.tnc.yemivo.app.feature.shoppinglist.ShoppingListFragment"
+        android:label="ShoppingList"
+        tools:layout="@layout/fragment_shopping_list" />
 
 </navigation>

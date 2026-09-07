@@ -96,6 +96,12 @@
     <!-- Shopping list                                                 -->
     <!-- ============================================================ -->
     <string name="shopping_list_title">Alışveriş Listem</string>
+    <string name="shopping_list_item_added">Alışveriş listesine eklendi</string>
+    <string name="shopping_list_empty">Alışveriş listen boş</string>
+    <string name="shopping_list_clear_confirm_title">Listeyi temizle</string>
+    <string name="shopping_list_clear_confirm_message">Tüm ürünler alışveriş listesinden silinecek.</string>
+    <string name="action_clear">Temizle</string>
+    <string name="action_cancel">Vazgeç</string>
     <string name="shopping_item_kiyma">500 gr kıyma</string>
     <string name="shopping_item_un">2 su bardağı un</string>
     <string name="shopping_item_mozzarella">Mozzarella peyniri</string>

@@ -20,4 +20,6 @@ val databaseModule = module {
 
     single { get<AppDatabase>().recipeDao() }
 
+    single { get<AppDatabase>().shoppingListDao() }
+
 }

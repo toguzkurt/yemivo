@@ -1,6 +1,7 @@
 package com.tnc.yemivo.app.feature.common
 
 import com.tnc.domain.recipe.model.Recipe
+import com.tnc.domain.recipe.model.RecipeIngredient
 import java.util.Locale
 
 /**
@@ -35,6 +36,16 @@ fun Recipe.detailSummary(): String {
     }.joinToString(" · ")
 
 }
+
+/**
+ * "2 cups Flour" style line for the ingredients tab and the shopping list — amount and unit are
+ * two separate free-text fields (see RecipeIngredient), either of which can be blank depending
+ * on the data source, so join only the non-blank ones.
+ */
+fun RecipeIngredient.displayText(): String =
+    listOf(amount, unit, name)
+        .filter { it.isNotBlank() }
+        .joinToString(" ")
 
 private fun String.titleCaseTr(): String =
     split(" ").joinToString(" ") { word ->

@@ -6,16 +6,28 @@
     android:layout_height="match_parent"
     android:background="@color/page_bg">
 
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/spacing_lg"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitle" />
+
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/spacing_lg"
+        android:layout_marginStart="@dimen/spacing_sm_md"
         android:layout_marginTop="@dimen/spacing_lg"
         android:text="@string/shopping_list_title"
         android:textAppearance="@style/TextAppearance.Yemivo.ScreenTitle"
         app:layout_constraintEnd_toStartOf="@id/ivDelete"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -44,6 +56,22 @@
         app:layout_constraintTop_toBottomOf="@id/tvTitle"
         tools:itemCount="4"
         tools:listitem="@layout/item_shopping_list" />
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:paddingStart="@dimen/spacing_xxl"
+        android:paddingEnd="@dimen/spacing_xxl"
+        android:text="@string/shopping_list_empty"
+        android:textAppearance="@style/TextAppearance.Yemivo.BodySecondary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:visibility="visible" />
 
     <LinearLayout
         android:id="@+id/btnShare"
