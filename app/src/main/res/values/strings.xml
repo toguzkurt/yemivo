@@ -35,6 +35,7 @@
     <!-- Shared: common actions / labels                               -->
     <!-- ============================================================ -->
     <string name="action_login">Giriş yap</string>
+    <string name="action_logout">Çıkış yap</string>
     <string name="action_search_hint">Tarif ara</string>
     <string name="premium_go_premium">Premium\'a geç</string>
     <string name="premium_unlimited_offline">Sınırsız erişim, offline mod</string>
@@ -87,6 +88,7 @@
     <!-- Profile                                                       -->
     <!-- ============================================================ -->
     <string name="profile_guest_user">Misafir kullanıcı</string>
+    <string name="profile_guest_avatar">U</string>
     <string name="profile_menu_downloads">İndirilen tarifler</string>
     <string name="profile_menu_notifications">Bildirimler</string>
     <string name="profile_menu_shopping_list">Alışveriş listesi</string>

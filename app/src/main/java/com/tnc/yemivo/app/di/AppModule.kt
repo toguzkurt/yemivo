@@ -7,11 +7,15 @@ import com.tnc.yemivo.app.feature.notifications.NotificationsViewModel
 import com.tnc.yemivo.app.feature.recipedetail.RecipeDetailViewModel
 import com.tnc.yemivo.app.feature.search.SearchViewModel
 import com.tnc.yemivo.app.feature.shoppinglist.ShoppingListViewModel
+import com.tnc.yemivo.app.session.SessionPreferences
+import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.dsl.viewModel
 import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
 val appModule = module {
+
+    single { SessionPreferences(androidContext()) }
 
     viewModelOf(::HomeViewModel)
 
