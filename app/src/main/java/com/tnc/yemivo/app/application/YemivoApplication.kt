@@ -8,6 +8,7 @@ import com.tnc.data.di.useCaseModule
 import com.tnc.data.remote.mealdb.RecipeRemoteSeeder
 import com.tnc.domain.notification.usecase.GenerateDailyRecipeNotificationUseCase
 import com.tnc.yemivo.app.di.appModule
+import com.tnc.yemivo.app.theme.ThemePreferences
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -24,6 +25,8 @@ class YemivoApplication : Application() {
 
     private val generateDailyRecipeNotificationUseCase: GenerateDailyRecipeNotificationUseCase by inject()
 
+    private val themePreferences: ThemePreferences by inject()
+
     override fun onCreate() {
         super.onCreate()
         startKoin {
@@ -36,6 +39,10 @@ class YemivoApplication : Application() {
                 appModule
             )
         }
+
+        // Must happen before any Activity is created so the very first screen already renders
+        // in the saved mode rather than flashing the default then switching.
+        themePreferences.applySavedMode()
 
         applicationScope.launch {
             // One-time: populates the empty recipes table from TheMealDB on first launch. Later

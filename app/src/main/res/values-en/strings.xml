@@ -1,0 +1,269 @@
+<resources>
+    <!-- app_name intentionally not overridden — "Yemivo" is the brand name in every language. -->
+
+    <!-- ============================================================ -->
+    <!-- Shared: bottom navigation                                     -->
+    <!-- ============================================================ -->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- ============================================================ -->
+    <!-- Shared: cuisines / filters                                    -->
+    <!-- ============================================================ -->
+    <string name="cuisine_all">All</string>
+    <string name="cuisine_turkish">Turkish</string>
+    <string name="cuisine_italian">Italian</string>
+    <string name="cuisine_mexican">Mexican</string>
+    <string name="cuisine_indian">Indian</string>
+    <string name="cuisine_japanese">Japanese</string>
+    <string name="cuisine_thai">Thai</string>
+    <string name="cuisine_greek">Greek</string>
+    <string name="cuisine_american">American</string>
+
+    <string name="cuisine_turkish_full">Turkish cuisine</string>
+    <string name="cuisine_italian_full">Italian cuisine</string>
+    <string name="cuisine_mexican_full">Mexican cuisine</string>
+    <string name="cuisine_indian_full">Indian cuisine</string>
+    <string name="cuisine_japanese_full">Japanese cuisine</string>
+    <string name="cuisine_thai_full">Thai cuisine</string>
+    <string name="cuisine_greek_full">Greek cuisine</string>
+    <string name="cuisine_american_full">American cuisine</string>
+
+    <!-- ============================================================ -->
+    <!-- Shared: common actions / labels                               -->
+    <!-- ============================================================ -->
+    <string name="action_login">Log in</string>
+    <string name="action_logout">Log out</string>
+    <string name="action_search_hint">Search recipes</string>
+    <string name="premium_go_premium">Go Premium</string>
+    <string name="premium_unlimited_offline">Unlimited access, offline mode</string>
+    <string name="recipe_count_suffix">recipes</string>
+
+    <!-- ============================================================ -->
+    <!-- Home                                                          -->
+    <!-- ============================================================ -->
+    <string name="home_greeting">Hello</string>
+    <string name="home_title">What shall we cook?</string>
+    <string name="home_premium_banner">Go Premium for unlimited recipes</string>
+
+    <!-- ============================================================ -->
+    <!-- Search                                                        -->
+    <!-- ============================================================ -->
+    <string name="search_label_cuisine">Cuisine</string>
+    <string name="search_result_count">%d results</string>
+    <string name="search_result_count_empty">No results found</string>
+
+    <!-- ============================================================ -->
+    <!-- Recipe detail                                                 -->
+    <!-- ============================================================ -->
+    <string name="tab_ingredients">Ingredients</string>
+    <string name="tab_instructions">Instructions</string>
+    <string name="action_add_to_shopping_list">Add to shopping list</string>
+
+    <!-- ============================================================ -->
+    <!-- Favorites                                                     -->
+    <!-- ============================================================ -->
+    <string name="favorites_title">My Favorites</string>
+    <string name="favorites_progress">%1$d / %2$d recipes</string>
+    <string name="favorites_remaining">%d favorites left</string>
+    <string name="favorites_upsell">Go Premium for unlimited favorites</string>
+    <string name="coming_soon">This feature is coming soon</string>
+
+    <!-- ============================================================ -->
+    <!-- Profile                                                       -->
+    <!-- ============================================================ -->
+    <string name="profile_guest_user">Guest user</string>
+    <string name="profile_guest_avatar">U</string>
+    <string name="profile_menu_downloads">Downloaded recipes</string>
+    <string name="profile_menu_notifications">Notifications</string>
+    <string name="profile_menu_shopping_list">Shopping list</string>
+    <string name="profile_menu_settings">Settings</string>
+
+    <!-- ============================================================ -->
+    <!-- Shopping list                                                 -->
+    <!-- ============================================================ -->
+    <string name="shopping_list_title">My Shopping List</string>
+    <string name="shopping_list_item_added">Added to shopping list</string>
+    <string name="recipe_download_added">Recipe downloaded</string>
+    <string name="recipe_download_removed">Removed from downloads</string>
+    <string name="shopping_list_empty">Your shopping list is empty</string>
+    <string name="shopping_list_clear_confirm_title">Clear list</string>
+    <string name="shopping_list_clear_confirm_message">All items will be removed from your shopping list.</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="shopping_item_kiyma">500 g ground beef</string>
+    <string name="shopping_item_un">2 cups flour</string>
+    <string name="shopping_item_mozzarella">Mozzarella cheese</string>
+    <string name="shopping_item_domates_sosu">Tomato sauce</string>
+    <string name="shopping_tag_mantı">Mantı</string>
+    <string name="shopping_tag_pizza">Pizza</string>
+    <string name="action_share_list">Share list</string>
+
+    <!-- ============================================================ -->
+    <!-- Premium paywall                                               -->
+    <!-- ============================================================ -->
+    <string name="paywall_subtitle">Unlimited recipes, offline access and more</string>
+    <string name="paywall_feature_unlimited_recipes">Unlimited recipe views</string>
+    <string name="paywall_feature_offline">Offline mode — access without internet</string>
+    <string name="paywall_feature_unlimited_favorites">Unlimited favorites and lists</string>
+    <string name="paywall_feature_no_ads">Ad-free experience</string>
+    <string name="paywall_feature_smart_list">Smart shopping list</string>
+    <string name="paywall_plan_monthly">Monthly</string>
+    <string name="paywall_plan_monthly_price">$2.99</string>
+    <string name="paywall_plan_yearly">Yearly</string>
+    <string name="paywall_plan_yearly_price">$1.79/mo</string>
+    <string name="paywall_plan_badge">Save 40%</string>
+    <string name="paywall_cta">Start Premium</string>
+    <string name="paywall_footnote">Cancel anytime</string>
+
+    <!-- ============================================================ -->
+    <!-- Onboarding                                                    -->
+    <!-- ============================================================ -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_page1_title">Discover cuisines from around the world</string>
+    <string name="onboarding_page1_desc">Choose from hundreds of recipes by cuisine, time, or ingredients you have.</string>
+    <string name="onboarding_page2_title">Offline access</string>
+    <string name="onboarding_page2_desc">Download the recipes you love so they\'re with you in the kitchen, even offline.</string>
+    <string name="onboarding_page3_title">Shopping made easy</string>
+    <string name="onboarding_page3_desc">Recipe ingredients get added straight to your shopping list.</string>
+    <string name="onboarding_continue">Continue</string>
+    <string name="onboarding_get_started">Get started</string>
+
+    <!-- ============================================================ -->
+    <!-- Cook mode                                                     -->
+    <!-- ============================================================ -->
+    <string name="cook_mode_step_count">Step 2 / 6</string>
+    <string name="cook_mode_step_title">PREPARE THE FILLING</string>
+    <string name="cook_mode_step_text">Knead the ground beef thoroughly with finely chopped onion, salt, and black pepper.</string>
+    <string name="cook_mode_timer">02:30</string>
+    <string name="cook_mode_timer_label">resting time</string>
+    <string name="cook_mode_prev">Previous</string>
+    <string name="cook_mode_next">Next</string>
+    <string name="cook_mode_voice_hint">You can also say \"next step\" to move on</string>
+
+    <!-- ============================================================ -->
+    <!-- Login                                                         -->
+    <!-- ============================================================ -->
+    <string name="login_title">Log in to your account</string>
+    <string name="login_subtitle">Keep your favorites with you on every device</string>
+    <string name="login_label_email">Email</string>
+    <string name="login_placeholder_email">example@email.com</string>
+    <string name="login_label_password">Password</string>
+    <string name="login_placeholder_password">••••••••</string>
+    <string name="login_or_divider">or</string>
+    <string name="login_continue_google">🔵 Continue with Google</string>
+    <string name="login_continue_apple">🍎 Continue with Apple</string>
+    <string name="login_no_account">Don\'t have an account?</string>
+    <string name="login_register">Sign up</string>
+    <string name="login_error_required">Email and password are required</string>
+
+    <!-- ============================================================ -->
+    <!-- Surprise recipe                                               -->
+    <!-- ============================================================ -->
+    <string name="surprise_title">What should I cook today?</string>
+    <string name="surprise_badge">🎲 Surprise</string>
+    <string name="surprise_reroll">🔀 Show another</string>
+    <string name="surprise_view_recipe">View recipe</string>
+    <string name="surprise_fab">🎲 Surprise recipe</string>
+
+    <!-- ============================================================ -->
+    <!-- Empty states                                                  -->
+    <!-- ============================================================ -->
+    <string name="empty_favorites_title">No favorite recipes yet</string>
+    <string name="empty_favorites_message">Tap the heart icon on recipes you like to save them here.</string>
+    <string name="empty_favorites_cta">Explore recipes</string>
+    <string name="downloaded_recipes_title">Downloaded recipes</string>
+    <string name="empty_downloads_title">No downloaded recipes yet</string>
+    <string name="empty_downloads_message">Tap the download icon on recipes you want offline access to, to save them here.</string>
+    <string name="search_results_title">Search results</string>
+    <string name="empty_search_title">No results found</string>
+    <string name="empty_search_message">We couldn\'t find a recipe for \"chicken waffles\". Want to try a different word?</string>
+    <string name="empty_search_cta">Clear filters</string>
+    <string name="empty_offline_title_bar">No connection</string>
+    <string name="empty_offline_title">No internet connection</string>
+    <string name="empty_offline_message">You can access your downloaded recipes offline — a connection is needed for new content.</string>
+    <string name="empty_offline_cta">View downloads</string>
+
+    <!-- ============================================================ -->
+    <!-- Notifications                                                 -->
+    <!-- ============================================================ -->
+    <string name="notifications_title">Notifications</string>
+    <string name="notif_daily_recipe_title">Today\'s recipe is ready</string>
+    <string name="notif_daily_recipe_message">We suggested \"%s\" for today — want to take a look?</string>
+    <string name="notif_download_title">Download complete</string>
+    <string name="notif_download_message">\"%s\" was saved to your device for offline access.</string>
+    <string name="notif_time_just_now">Just now</string>
+    <string name="notif_time_minutes_ago">%d minutes ago</string>
+    <string name="notif_time_hours_ago">%d hours ago</string>
+    <string name="notif_time_days_ago">%d days ago</string>
+    <string name="notifications_empty_title">No notifications yet</string>
+    <string name="notifications_empty_message">You\'ll see them here when you download a recipe or today\'s recipe is ready.</string>
+
+    <!-- ============================================================ -->
+    <!-- Settings                                                      -->
+    <!-- ============================================================ -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_general">GENERAL</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_value">English</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_value">System</string>
+    <string name="settings_unit">Unit system</string>
+    <string name="settings_unit_value">Metric</string>
+    <string name="settings_section_notifications">NOTIFICATIONS</string>
+    <string name="settings_notif_daily_recipe">Daily recipe notification</string>
+    <string name="settings_notif_campaigns">Campaigns and offers</string>
+    <string name="settings_section_account">ACCOUNT</string>
+    <string name="settings_account_info">Account information</string>
+    <string name="settings_subscription">Manage subscription</string>
+    <string name="settings_subscription_value">Premium</string>
+    <string name="settings_section_other">OTHER</string>
+    <string name="settings_privacy_policy">Privacy policy</string>
+    <string name="settings_contact_us">Contact us</string>
+    <string name="settings_delete_account">Delete account</string>
+    <string name="settings_version">Version 1.0.0</string>
+    <string name="settings_data_attribution">Recipes and photos are provided by TheMealDB.</string>
+    <string-array name="theme_mode_options">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <!-- ============================================================ -->
+    <!-- Cuisines grid                                                 -->
+    <!-- ============================================================ -->
+    <string name="cuisines_title">Cuisines</string>
+    <string name="cuisines_subtitle">Start exploring cuisines from around the world</string>
+    <string name="cuisine_count_turkish">48 recipes</string>
+    <string name="cuisine_count_italian">62 recipes</string>
+    <string name="cuisine_count_mexican">31 recipes</string>
+    <string name="cuisine_count_indian">44 recipes</string>
+    <string name="cuisine_count_japanese">27 recipes</string>
+    <string name="cuisine_count_thai">19 recipes</string>
+    <string name="cuisine_count_greek">22 recipes</string>
+    <string name="cuisine_count_american">55 recipes</string>
+
+    <!-- ============================================================ -->
+    <!-- Portion adjuster                                              -->
+    <!-- ============================================================ -->
+    <string name="portion_title">Mantı — Ingredients</string>
+    <string name="portion_label">Servings</string>
+    <string name="portion_count">6 servings</string>
+    <string name="portion_ingredients_label">Ingredients (auto-calculated for 6 servings)</string>
+    <string name="ingredient_flour">Flour</string>
+    <string name="ingredient_flour_amount">3 cups</string>
+    <string name="ingredient_egg">Egg</string>
+    <string name="ingredient_egg_amount">2</string>
+    <string name="ingredient_mince">Ground beef</string>
+    <string name="ingredient_mince_amount">750 g</string>
+    <string name="ingredient_onion">Onion</string>
+    <string name="ingredient_onion_amount">2</string>
+    <string name="ingredient_yogurt">Yogurt</string>
+    <string name="ingredient_yogurt_amount">4 cups</string>
+    <string name="ingredient_salt">Salt</string>
+    <string name="ingredient_salt_amount">1 tsp</string>
+    <string name="portion_hint">The original recipe was calculated for 4 servings — amounts updated automatically</string>
+
+</resources>

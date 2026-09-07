@@ -225,6 +225,11 @@
     <string name="settings_language_value">Türkçe</string>
     <string name="settings_theme">Tema</string>
     <string name="settings_theme_value">Sistem</string>
+    <string-array name="theme_mode_options">
+        <item>Sistem</item>
+        <item>Açık</item>
+        <item>Koyu</item>
+    </string-array>
     <string name="settings_unit">Ölçü birimi</string>
     <string name="settings_unit_value">Metrik</string>
     <string name="settings_section_notifications">BİLDİRİMLER</string>

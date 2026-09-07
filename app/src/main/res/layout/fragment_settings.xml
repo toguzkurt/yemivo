@@ -59,6 +59,7 @@
                 android:text="@string/settings_section_general" />
 
             <LinearLayout
+                android:id="@+id/rowLanguage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_divider_bottom"
@@ -86,6 +87,7 @@
                     android:textSize="@dimen/text_body" />
 
                 <TextView
+                    android:id="@+id/tvLanguageValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/settings_language_value"
@@ -103,6 +105,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/rowTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_divider_bottom"
@@ -130,6 +133,7 @@
                     android:textSize="@dimen/text_body" />
 
                 <TextView
+                    android:id="@+id/tvThemeValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/settings_theme_value"

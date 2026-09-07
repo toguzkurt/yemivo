@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base — "white" stays literal white on purpose: bg_circle_white badges float over photos
+         (hero image back/favorite/download buttons) and read correctly regardless of theme. -->
+    <color name="black">#FFF2F2F2</color>
+
+    <!-- Surfaces -->
+    <color name="surface">#FF1E1E20</color>
+    <color name="page_bg">#FF141416</color>
+    <color name="border">#FF3A3A3C</color>
+    <color name="dashed_border">#FF4A4A4C</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFF2F2F2</color>
+    <color name="text_secondary">#FFB0B0B0</color>
+    <color name="text_muted">#FF8A8A8E</color>
+
+    <!-- Brand / accent — lightened for contrast on dark surfaces, matching the existing
+         cook_accent value already tuned for this app's one other dark surface (Cook mode). -->
+    <color name="accent">#FF6D97EE</color>
+    <color name="accent_bg">#FF23304D</color>
+    <color name="danger">#FFE86A6A</color>
+
+    <!-- Dark CTA buttons — inverted to a light pill on dark backgrounds rather than a
+         near-invisible near-black button on a near-black page. -->
+    <color name="cta_dark_bg">#FFF2F2F2</color>
+    <color name="cta_dark_text">#FF1A1A1A</color>
+
+    <!-- Placeholders -->
+    <color name="thumb_placeholder">#FF2A2A2C</color>
+    <color name="hero_placeholder">#FF2E2620</color>
+    <color name="checkbox_border">#FF6A6A6C</color>
+    <color name="toggle_off">#FF48484A</color>
+    <color name="notif_unread_bg">#FF1A2233</color>
+    <color name="tab_inactive_bg">#FF2C2C2E</color>
+
+    <!-- Cuisine grid cell backgrounds -->
+    <color name="cuisine_bg_1">#FF3A2A26</color>
+    <color name="cuisine_bg_2">#FF223226</color>
+    <color name="cuisine_bg_3">#FF262A3A</color>
+    <color name="cuisine_bg_4">#FF3A3424</color>
+    <color name="cuisine_bg_5">#FF3A2430</color>
+    <color name="cuisine_bg_6">#FF223032</color>
+
+</resources>
