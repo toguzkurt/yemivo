@@ -222,7 +222,7 @@
     <string name="settings_section_account">ACCOUNT</string>
     <string name="settings_account_info">Account information</string>
     <string name="settings_subscription">Manage subscription</string>
-    <string name="settings_subscription_value">Premium</string>
+    <string name="settings_subscription_value">Free</string>
     <string name="settings_section_other">OTHER</string>
     <string name="settings_privacy_policy">Privacy policy</string>
     <string name="settings_contact_us">Contact us</string>

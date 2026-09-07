@@ -242,7 +242,7 @@
     <string name="settings_section_account">HESAP</string>
     <string name="settings_account_info">Hesap bilgilerim</string>
     <string name="settings_subscription">Abonelik yönetimi</string>
-    <string name="settings_subscription_value">Premium</string>
+    <string name="settings_subscription_value">Ücretsiz</string>
     <string name="settings_section_other">DİĞER</string>
     <string name="settings_privacy_policy">Gizlilik politikası</string>
     <string name="settings_contact_us">Bize ulaşın</string>

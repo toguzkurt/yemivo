@@ -8,6 +8,7 @@ import com.tnc.yemivo.app.feature.recipedetail.RecipeDetailViewModel
 import com.tnc.yemivo.app.feature.search.SearchViewModel
 import com.tnc.yemivo.app.feature.shoppinglist.ShoppingListViewModel
 import com.tnc.yemivo.app.session.SessionPreferences
+import com.tnc.yemivo.app.theme.NotificationPreferences
 import com.tnc.yemivo.app.theme.ThemePreferences
 import com.tnc.yemivo.app.theme.UnitPreferences
 import org.koin.android.ext.koin.androidContext
@@ -22,6 +23,8 @@ val appModule = module {
     single { ThemePreferences(androidContext()) }
 
     single { UnitPreferences(androidContext()) }
+
+    single { NotificationPreferences(androidContext()) }
 
     viewModelOf(::HomeViewModel)
 

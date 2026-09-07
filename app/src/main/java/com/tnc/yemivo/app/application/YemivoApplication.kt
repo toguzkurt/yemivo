@@ -8,6 +8,7 @@ import com.tnc.data.di.useCaseModule
 import com.tnc.data.remote.mealdb.RecipeRemoteSeeder
 import com.tnc.domain.notification.usecase.GenerateDailyRecipeNotificationUseCase
 import com.tnc.yemivo.app.di.appModule
+import com.tnc.yemivo.app.theme.NotificationPreferences
 import com.tnc.yemivo.app.theme.ThemePreferences
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -26,6 +27,8 @@ class YemivoApplication : Application() {
     private val generateDailyRecipeNotificationUseCase: GenerateDailyRecipeNotificationUseCase by inject()
 
     private val themePreferences: ThemePreferences by inject()
+
+    private val notificationPreferences: NotificationPreferences by inject()
 
     override fun onCreate() {
         super.onCreate()
@@ -49,8 +52,11 @@ class YemivoApplication : Application() {
             // launches see a non-empty table and RecipeRemoteSeeder.seedIfEmpty() no-ops.
             recipeSeeder.seedIfEmpty()
 
-            // No-ops if today's daily-recipe notification already exists.
-            generateDailyRecipeNotificationUseCase()
+            // No-ops if today's daily-recipe notification already exists, or if the user has
+            // turned this off in Settings.
+            if (notificationPreferences.isDailyRecipeEnabled) {
+                generateDailyRecipeNotificationUseCase()
+            }
         }
     }
 }

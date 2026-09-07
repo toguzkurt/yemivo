@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/surface">
@@ -206,6 +207,7 @@
                 android:text="@string/settings_section_notifications" />
 
             <LinearLayout
+                android:id="@+id/rowNotifDaily"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_divider_bottom"
@@ -233,6 +235,7 @@
                     android:textSize="@dimen/text_body" />
 
                 <View
+                    android:id="@+id/toggleDailyRecipe"
                     android:layout_width="@dimen/toggle_width"
                     android:layout_height="@dimen/toggle_height"
                     android:background="@drawable/bg_toggle_on" />
@@ -240,6 +243,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/rowNotifCampaigns"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -266,6 +270,7 @@
                     android:textSize="@dimen/text_body" />
 
                 <View
+                    android:id="@+id/toggleCampaigns"
                     android:layout_width="@dimen/toggle_width"
                     android:layout_height="@dimen/toggle_height"
                     android:background="@drawable/bg_toggle_off" />
@@ -283,6 +288,7 @@
                 android:text="@string/settings_section_account" />
 
             <LinearLayout
+                android:id="@+id/rowAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_divider_bottom"
@@ -309,9 +315,18 @@
                     android:textColor="@color/text_primary"
                     android:textSize="@dimen/text_body" />
 
+                <TextView
+                    android:id="@+id/tvAccountValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/profile_guest_user"
+                    android:textColor="@color/text_muted"
+                    android:textSize="@dimen/text_body_sm" />
+
                 <ImageView
                     android:layout_width="16dp"
                     android:layout_height="16dp"
+                    android:layout_marginStart="@dimen/spacing_xxs"
                     android:contentDescription="@null"
                     android:src="@drawable/ic_chevron_right"
                     app:tint="@color/text_muted" />
@@ -319,6 +334,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/rowSubscription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
