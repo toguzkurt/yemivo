@@ -119,6 +119,7 @@
         app:layout_constraintTop_toBottomOf="@id/premiumBanner">
 
         <LinearLayout
+            android:id="@+id/rowDownloads"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_divider_bottom"
@@ -153,6 +154,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/rowNotifications"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_divider_bottom"
@@ -187,6 +189,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/rowShoppingList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_divider_bottom"
@@ -221,6 +224,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/rowSettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
