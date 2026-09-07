@@ -1,7 +1,12 @@
 package com.tnc.data.di
 
+import com.tnc.domain.notification.usecase.GenerateDailyRecipeNotificationUseCase
+import com.tnc.domain.notification.usecase.GetNotificationsUseCase
+import com.tnc.domain.notification.usecase.MarkAllNotificationsReadUseCase
+import com.tnc.domain.notification.usecase.NotifyDownloadCompleteUseCase
 import com.tnc.domain.recipe.usecase.GetRecipeByIdUseCase
 import com.tnc.domain.recipe.usecase.GetRecipesUseCase
+import com.tnc.domain.recipe.usecase.ToggleDownloadUseCase
 import com.tnc.domain.recipe.usecase.ToggleFavoriteUseCase
 import com.tnc.domain.shoppinglist.usecase.AddRecipeToShoppingListUseCase
 import com.tnc.domain.shoppinglist.usecase.ClearShoppingListUseCase
@@ -30,6 +35,12 @@ val useCaseModule = module {
     }
 
     factory {
+        ToggleDownloadUseCase(
+            repository = get()
+        )
+    }
+
+    factory {
         GetShoppingListUseCase(
             repository = get()
         )
@@ -49,6 +60,30 @@ val useCaseModule = module {
 
     factory {
         ClearShoppingListUseCase(
+            repository = get()
+        )
+    }
+
+    factory {
+        GetNotificationsUseCase(
+            repository = get()
+        )
+    }
+
+    factory {
+        NotifyDownloadCompleteUseCase(
+            repository = get()
+        )
+    }
+
+    factory {
+        GenerateDailyRecipeNotificationUseCase(
+            repository = get()
+        )
+    }
+
+    factory {
+        MarkAllNotificationsReadUseCase(
             repository = get()
         )
     }

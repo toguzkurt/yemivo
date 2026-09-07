@@ -31,6 +31,8 @@ data class RecipeEntity(
 
     val isFavorite: Boolean,
 
+    val isDownloaded: Boolean,
+
     val imageUrl: String?
 )
 

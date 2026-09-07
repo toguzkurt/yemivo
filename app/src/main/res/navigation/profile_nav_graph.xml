@@ -27,6 +27,22 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
 
+        <action
+            android:id="@+id/action_profile_to_downloads"
+            app:destination="@id/downloadedRecipesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_profile_to_notifications"
+            app:destination="@id/notificationsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
     </fragment>
 
     <fragment
@@ -40,5 +56,49 @@
         android:name="com.tnc.yemivo.app.feature.shoppinglist.ShoppingListFragment"
         android:label="ShoppingList"
         tools:layout="@layout/fragment_shopping_list" />
+
+    <fragment
+        android:id="@+id/downloadedRecipesFragment"
+        android:name="com.tnc.yemivo.app.feature.downloads.DownloadedRecipesFragment"
+        android:label="DownloadedRecipes"
+        tools:layout="@layout/fragment_downloaded_recipes">
+
+        <action
+            android:id="@+id/action_downloads_to_recipeDetail"
+            app:destination="@id/recipeDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.tnc.yemivo.app.feature.notifications.NotificationsFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications">
+
+        <action
+            android:id="@+id/action_notifications_to_recipeDetail"
+            app:destination="@id/recipeDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.tnc.yemivo.app.feature.recipedetail.RecipeDetailFragment"
+        android:label="RecipeDetail"
+        tools:layout="@layout/fragment_recipe_detail">
+
+        <argument
+            android:name="recipeId"
+            app:argType="string" />
+
+    </fragment>
 
 </navigation>

@@ -22,4 +22,6 @@ val databaseModule = module {
 
     single { get<AppDatabase>().shoppingListDao() }
 
+    single { get<AppDatabase>().notificationDao() }
+
 }

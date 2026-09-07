@@ -47,6 +47,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/ivDownload"
+        android:layout_width="@dimen/icon_button_size"
+        android:layout_height="@dimen/icon_button_size"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:layout_marginEnd="@dimen/spacing_sm"
+        android:background="@drawable/bg_circle_white"
+        android:contentDescription="@null"
+        android:padding="@dimen/spacing_xs"
+        android:src="@drawable/ic_download"
+        app:layout_constraintEnd_toStartOf="@id/ivFavorite"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <!-- Body -->
 
     <androidx.core.widget.NestedScrollView

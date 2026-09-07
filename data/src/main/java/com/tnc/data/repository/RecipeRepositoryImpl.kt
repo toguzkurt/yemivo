@@ -25,4 +25,12 @@ class RecipeRepositoryImpl(
         recipeDao.setFavorite(id, !isCurrentlyFavorite)
     }
 
+    override suspend fun toggleDownload(
+        id: String
+    ): Boolean {
+        val isNowDownloaded = !(recipeDao.isDownloaded(id) ?: false)
+        recipeDao.setDownloaded(id, isNowDownloaded)
+        return isNowDownloaded
+    }
+
 }

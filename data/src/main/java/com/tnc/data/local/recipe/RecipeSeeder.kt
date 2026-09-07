@@ -58,6 +58,7 @@ class RecipeSeeder(
                 },
                 steps = dto.steps,
                 isFavorite = false,
+                isDownloaded = false,
                 imageUrl = null
             )
         }

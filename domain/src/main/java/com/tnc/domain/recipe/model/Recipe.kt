@@ -26,5 +26,7 @@ data class Recipe(
 
     val isFavorite: Boolean,
 
+    val isDownloaded: Boolean,
+
     val imageUrl: String?
 )

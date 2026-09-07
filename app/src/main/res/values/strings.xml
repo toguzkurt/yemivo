@@ -97,6 +97,8 @@
     <!-- ============================================================ -->
     <string name="shopping_list_title">Alışveriş Listem</string>
     <string name="shopping_list_item_added">Alışveriş listesine eklendi</string>
+    <string name="recipe_download_added">Tarif indirildi</string>
+    <string name="recipe_download_removed">Tarif indirilenlerden kaldırıldı</string>
     <string name="shopping_list_empty">Alışveriş listen boş</string>
     <string name="shopping_list_clear_confirm_title">Listeyi temizle</string>
     <string name="shopping_list_clear_confirm_message">Tüm ürünler alışveriş listesinden silinecek.</string>
@@ -185,6 +187,9 @@
     <string name="empty_favorites_title">Henüz favori tarifin yok</string>
     <string name="empty_favorites_message">Beğendiğin tarifleri kalp ikonuna dokunarak buraya kaydedebilirsin.</string>
     <string name="empty_favorites_cta">Tarifleri keşfet</string>
+    <string name="downloaded_recipes_title">İndirilen tarifler</string>
+    <string name="empty_downloads_title">Henüz indirilen tarifin yok</string>
+    <string name="empty_downloads_message">Offline erişmek istediğin tarifleri indirme ikonuna dokunarak buraya kaydedebilirsin.</string>
     <string name="search_results_title">Arama sonuçları</string>
     <string name="empty_search_title">Sonuç bulunamadı</string>
     <string name="empty_search_message">\"tavuklu waffle\" için bir tarif bulamadık. Farklı bir kelime dener misin?</string>
@@ -198,20 +203,16 @@
     <!-- Notifications                                                 -->
     <!-- ============================================================ -->
     <string name="notifications_title">Bildirimler</string>
-    <string name="notifications_section_today">BUGÜN</string>
-    <string name="notifications_section_this_week">BU HAFTA</string>
     <string name="notif_daily_recipe_title">Günün tarifi hazır</string>
-    <string name="notif_daily_recipe_message">Bugün için \"Karnıyarık\" tarifini önerdik, göz atmaya ne dersin?</string>
-    <string name="notif_time_2h">2 saat önce</string>
-    <string name="notif_premium_title">Premium fırsatı</string>
-    <string name="notif_premium_message">Yıllık plana geç, %40 avantajlı fiyattan sınırsız erişim kazan.</string>
-    <string name="notif_time_5h">5 saat önce</string>
+    <string name="notif_daily_recipe_message">Bugün için \"%s\" tarifini önerdik, göz atmaya ne dersin?</string>
     <string name="notif_download_title">İndirme tamamlandı</string>
-    <string name="notif_download_message">\"Mantı\" tarifi offline erişim için cihazına kaydedildi.</string>
-    <string name="notif_time_2d">2 gün önce</string>
-    <string name="notif_miss_you_title">Seni özledik</string>
-    <string name="notif_miss_you_message">3 gündür uğramadın, yeni tarifler seni bekliyor.</string>
-    <string name="notif_time_3d">3 gün önce</string>
+    <string name="notif_download_message">\"%s\" tarifi offline erişim için cihazına kaydedildi.</string>
+    <string name="notif_time_just_now">Az önce</string>
+    <string name="notif_time_minutes_ago">%d dakika önce</string>
+    <string name="notif_time_hours_ago">%d saat önce</string>
+    <string name="notif_time_days_ago">%d gün önce</string>
+    <string name="notifications_empty_title">Henüz bildirimin yok</string>
+    <string name="notifications_empty_message">Bir tarifi indirdiğinde veya günün tarifi hazır olduğunda burada göreceksin.</string>
 
     <!-- ============================================================ -->
     <!-- Settings                                                      -->

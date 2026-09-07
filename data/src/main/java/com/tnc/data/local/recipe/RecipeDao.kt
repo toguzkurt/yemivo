@@ -27,4 +27,13 @@ interface RecipeDao {
     @Query("UPDATE recipes SET isFavorite = :isFavorite WHERE id = :id")
     suspend fun setFavorite(id: String, isFavorite: Boolean)
 
+    @Query("SELECT isDownloaded FROM recipes WHERE id = :id")
+    suspend fun isDownloaded(id: String): Boolean?
+
+    @Query("UPDATE recipes SET isDownloaded = :isDownloaded WHERE id = :id")
+    suspend fun setDownloaded(id: String, isDownloaded: Boolean)
+
+    @Query("SELECT * FROM recipes ORDER BY RANDOM() LIMIT 1")
+    suspend fun getRandom(): RecipeEntity?
+
 }

@@ -15,4 +15,12 @@ interface RecipeRepository {
         id: String
     )
 
+    /**
+     * Returns the resulting isDownloaded state so callers can tell an on-toggle (worth a
+     * "download complete" notification) from an off-toggle (isn't).
+     */
+    suspend fun toggleDownload(
+        id: String
+    ): Boolean
+
 }

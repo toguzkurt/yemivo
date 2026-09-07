@@ -22,6 +22,8 @@ sealed interface RecipeDetailUiEvent {
 
     data object AddToShoppingListClicked : RecipeDetailUiEvent
 
+    data object DownloadClicked : RecipeDetailUiEvent
+
     data class TabSelected(
         val tab: RecipeDetailTab
     ) : RecipeDetailUiEvent

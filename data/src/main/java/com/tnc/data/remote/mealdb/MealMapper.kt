@@ -42,5 +42,6 @@ fun MealDto.toEntity(): RecipeEntity = RecipeEntity(
         // Drop blank lines and bare "STEP 1" headers — our own adapter already numbers steps.
         .filter { it.isNotBlank() && !it.matches(Regex("(?i)step\\s*\\d+\\.?")) },
     isFavorite = false,
+    isDownloaded = false,
     imageUrl = thumbnail
 )

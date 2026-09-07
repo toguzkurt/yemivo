@@ -50,6 +50,10 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
             viewModel.onEvent(RecipeDetailUiEvent.AddToShoppingListClicked)
         }
 
+        ivDownload.setOnClickListener {
+            viewModel.onEvent(RecipeDetailUiEvent.DownloadClicked)
+        }
+
         tabIngredients.setOnClickListener {
             viewModel.onEvent(RecipeDetailUiEvent.TabSelected(RecipeDetailTab.INGREDIENTS))
         }
@@ -104,6 +108,13 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
 
         ivFavorite.setImageResource(
             if (recipe.isFavorite) R.drawable.ic_heart_filled else R.drawable.ic_heart_outline
+        )
+
+        ivDownload.setColorFilter(
+            ContextCompat.getColor(
+                requireContext(),
+                if (recipe.isDownloaded) R.color.accent else R.color.text_secondary
+            )
         )
 
         ingredientAdapter.submitList(recipe.ingredients)

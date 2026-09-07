@@ -1,7 +1,9 @@
 package com.tnc.yemivo.app.di
 
+import com.tnc.yemivo.app.feature.downloads.DownloadedRecipesViewModel
 import com.tnc.yemivo.app.feature.favorites.FavoritesViewModel
 import com.tnc.yemivo.app.feature.home.HomeViewModel
+import com.tnc.yemivo.app.feature.notifications.NotificationsViewModel
 import com.tnc.yemivo.app.feature.recipedetail.RecipeDetailViewModel
 import com.tnc.yemivo.app.feature.search.SearchViewModel
 import com.tnc.yemivo.app.feature.shoppinglist.ShoppingListViewModel
@@ -19,12 +21,18 @@ val appModule = module {
 
     viewModelOf(::ShoppingListViewModel)
 
+    viewModelOf(::DownloadedRecipesViewModel)
+
+    viewModelOf(::NotificationsViewModel)
+
     viewModel { (recipeId: String) ->
         RecipeDetailViewModel(
             recipeId = recipeId,
             getRecipeByIdUseCase = get(),
             toggleFavoriteUseCase = get(),
-            addRecipeToShoppingListUseCase = get()
+            toggleDownloadUseCase = get(),
+            addRecipeToShoppingListUseCase = get(),
+            notifyDownloadCompleteUseCase = get()
         )
     }
 

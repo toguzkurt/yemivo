@@ -6,6 +6,7 @@ import com.tnc.data.di.networkModule
 import com.tnc.data.di.repositoryModule
 import com.tnc.data.di.useCaseModule
 import com.tnc.data.remote.mealdb.RecipeRemoteSeeder
+import com.tnc.domain.notification.usecase.GenerateDailyRecipeNotificationUseCase
 import com.tnc.yemivo.app.di.appModule
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -21,6 +22,8 @@ class YemivoApplication : Application() {
 
     private val recipeSeeder: RecipeRemoteSeeder by inject()
 
+    private val generateDailyRecipeNotificationUseCase: GenerateDailyRecipeNotificationUseCase by inject()
+
     override fun onCreate() {
         super.onCreate()
         startKoin {
@@ -34,10 +37,13 @@ class YemivoApplication : Application() {
             )
         }
 
-        // One-time: populates the empty recipes table from TheMealDB on first launch. Later
-        // launches see a non-empty table and RecipeRemoteSeeder.seedIfEmpty() no-ops.
         applicationScope.launch {
+            // One-time: populates the empty recipes table from TheMealDB on first launch. Later
+            // launches see a non-empty table and RecipeRemoteSeeder.seedIfEmpty() no-ops.
             recipeSeeder.seedIfEmpty()
+
+            // No-ops if today's daily-recipe notification already exists.
+            generateDailyRecipeNotificationUseCase()
         }
     }
 }
