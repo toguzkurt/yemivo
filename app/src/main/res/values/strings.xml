@@ -56,13 +56,9 @@
     <!-- ============================================================ -->
     <!-- Search                                                        -->
     <!-- ============================================================ -->
-    <string name="search_sample_query">tavuk</string>
     <string name="search_label_cuisine">Mutfak</string>
-    <string name="search_label_duration">Süre</string>
-    <string name="search_duration_under_15">15 dk altı</string>
-    <string name="search_duration_under_30">30 dk altı</string>
-    <string name="search_duration_over_60">1 saat +</string>
-    <string name="search_result_count">3 sonuç</string>
+    <string name="search_result_count">%d sonuç</string>
+    <string name="search_result_count_empty">Sonuç bulunamadı</string>
     <string name="recipe_name_tavuk_sote">Tavuk Sote</string>
     <string name="recipe_meta_tavuk_sote">Türk mutfağı · 20 dk</string>
 
