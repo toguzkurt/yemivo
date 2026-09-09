@@ -8,6 +8,10 @@
     <!-- Surfaces -->
     <color name="surface">#FFFFFFFF</color>
     <color name="page_bg">#FFF5F5F4</color>
+    <!-- Root background for "detail/utility" screens hosted inside the tabs bottom-nav host
+         (Settings, Notifications). Matches page_bg — the fixed background exposed in the gaps
+         around the floating bottom nav — so there's no seam behind/around the bar. -->
+    <color name="tabs_detail_screen_bg">@color/page_bg</color>
     <color name="border">#FFE0E0E0</color>
     <color name="dashed_border">#FFCCCCCC</color>
 

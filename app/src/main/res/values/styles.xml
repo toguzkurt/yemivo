@@ -82,6 +82,25 @@
 
     <style name="Widget.Yemivo" parent="" />
 
+    <!-- Bottom nav active-item indicator — cornerSize 50% of the shorter side always yields a
+         full stadium/pill regardless of the indicator's own width/height. -->
+    <style name="ShapeAppearance.Yemivo.Pill" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- The app theme is a MaterialComponents (M2) theme, whose default BottomNavigationView
+         style sets itemActiveIndicatorStyle to @null — the pill has to be opted back in
+         explicitly via this style rather than the individual itemActiveIndicator* attributes,
+         which only exist on the indicator style itself, not on the NavigationBarView widget. -->
+    <style name="Widget.Yemivo.BottomNavActiveIndicator" parent="">
+        <item name="android:width">52dp</item>
+        <item name="android:height">36dp</item>
+        <item name="marginHorizontal">4dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Yemivo.Pill</item>
+        <item name="android:color">@color/accent_bg</item>
+    </style>
+
     <style name="Widget.Yemivo.Chip">
         <item name="android:background">@drawable/bg_chip_outline</item>
         <item name="android:paddingStart">@dimen/spacing_md</item>
