@@ -28,4 +28,13 @@ class Converters {
     fun toIngredientList(value: String): List<RecipeIngredientEntity> =
         gson.fromJson(value, object : TypeToken<List<RecipeIngredientEntity>>() {}.type)
 
+    // Separate nullable variant for RecipeEntity.stepsTr — Room treats List<String>? as a
+    // distinct type from List<String> and needs its own converter pair.
+    @TypeConverter
+    fun fromNullableStringList(value: List<String>?): String? = value?.let { gson.toJson(it) }
+
+    @TypeConverter
+    fun toNullableStringList(value: String?): List<String>? =
+        value?.let { gson.fromJson(it, object : TypeToken<List<String>>() {}.type) }
+
 }

@@ -16,6 +16,8 @@ data class NotificationEntity(
 
     val recipeName: String?,
 
+    val recipeNameTr: String? = null,
+
     val timestamp: Long,
 
     val isRead: Boolean = false

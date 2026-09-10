@@ -2,6 +2,7 @@ package com.tnc.yemivo.app.feature.recipedetail
 
 import androidx.recyclerview.widget.DiffUtil
 import com.tnc.yemivo.app.feature.common.displayText
+import com.tnc.yemivo.app.theme.LocaleHelper
 import com.tnc.yemivo.databinding.ItemRecipeIngredientBinding
 import com.tnc.core.base.BaseAdapter
 import com.tnc.domain.recipe.model.RecipeIngredient
@@ -29,7 +30,9 @@ class RecipeIngredientAdapter : BaseAdapter<RecipeIngredient, ItemRecipeIngredie
         position: Int
     ) = with(binding) {
 
-        tvIngredient.text = item.displayText()
+        val isTurkish = LocaleHelper.currentTag(root.context) == LocaleHelper.TAG_TURKISH
+
+        tvIngredient.text = item.displayText(isTurkish)
 
     }
 

@@ -13,9 +13,11 @@ fun RecipeEntity.toDomain(): Recipe = Recipe(
     cookMinutes = cookMinutes,
     servings = servings,
     difficulty = difficulty,
-    ingredients = ingredients.map { RecipeIngredient(it.name, it.amount, it.unit) },
+    ingredients = ingredients.map { RecipeIngredient(it.name, it.amount, it.unit, it.nameTr) },
     steps = steps,
     isFavorite = isFavorite,
     isDownloaded = isDownloaded,
-    imageUrl = imageUrl
+    imageUrl = imageUrl,
+    nameTr = nameTr,
+    stepsTr = stepsTr
 )

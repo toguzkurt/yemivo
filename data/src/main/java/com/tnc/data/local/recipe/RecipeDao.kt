@@ -36,4 +36,18 @@ interface RecipeDao {
     @Query("SELECT * FROM recipes ORDER BY RANDOM() LIMIT 1")
     suspend fun getRandom(): RecipeEntity?
 
+    @Query("SELECT * FROM recipes WHERE nameTr IS NULL")
+    suspend fun getUntranslated(): List<RecipeEntity>
+
+    @Query(
+        "UPDATE recipes SET nameTr = :nameTr, stepsTr = :stepsTr, ingredients = :ingredients " +
+            "WHERE id = :id"
+    )
+    suspend fun updateTranslation(
+        id: String,
+        nameTr: String,
+        stepsTr: List<String>,
+        ingredients: List<RecipeIngredientEntity>
+    )
+
 }

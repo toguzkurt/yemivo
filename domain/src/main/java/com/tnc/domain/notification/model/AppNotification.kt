@@ -15,6 +15,8 @@ data class AppNotification(
 
     val recipeName: String?,
 
+    val recipeNameTr: String? = null,
+
     val timestamp: Long,
 
     val isRead: Boolean

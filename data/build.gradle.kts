@@ -37,6 +37,9 @@ dependencies {
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
 
+    implementation(libs.mlkit.translate)
+    implementation(libs.coroutines.play.services)
+
     implementation(libs.gson)
 
     implementation(libs.retrofit.core)

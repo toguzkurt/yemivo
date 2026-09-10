@@ -33,11 +33,18 @@ data class RecipeEntity(
 
     val isDownloaded: Boolean,
 
-    val imageUrl: String?
+    val imageUrl: String?,
+
+    // Null until RecipeTranslator's one-time background pass fills them in — UI falls back to
+    // the English fields above until then.
+    val nameTr: String? = null,
+
+    val stepsTr: List<String>? = null
 )
 
 data class RecipeIngredientEntity(
     val name: String,
     val amount: String,
-    val unit: String
+    val unit: String,
+    val nameTr: String? = null
 )

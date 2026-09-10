@@ -4,6 +4,7 @@ import android.content.Context
 import com.tnc.domain.notification.model.AppNotification
 import com.tnc.domain.notification.model.NotificationType
 import com.tnc.yemivo.R
+import com.tnc.yemivo.app.theme.LocaleHelper
 import java.util.concurrent.TimeUnit
 
 fun AppNotification.title(
@@ -17,13 +18,21 @@ fun AppNotification.title(
 
 fun AppNotification.message(
     context: Context
-): String = context.getString(
-    when (type) {
-        NotificationType.DOWNLOAD_COMPLETE -> R.string.notif_download_message
-        NotificationType.DAILY_RECIPE -> R.string.notif_daily_recipe_message
-    },
-    recipeName.orEmpty()
-)
+): String {
+    val isTurkish = LocaleHelper.currentTag(context) == LocaleHelper.TAG_TURKISH
+    val displayRecipeName = if (isTurkish) {
+        recipeNameTr?.takeIf { it.isNotBlank() } ?: recipeName
+    } else {
+        recipeName
+    }
+    return context.getString(
+        when (type) {
+            NotificationType.DOWNLOAD_COMPLETE -> R.string.notif_download_message
+            NotificationType.DAILY_RECIPE -> R.string.notif_daily_recipe_message
+        },
+        displayRecipeName.orEmpty()
+    )
+}
 
 /**
  * Real elapsed time (e.g. "2 saat önce"), computed and formatted ourselves rather than via

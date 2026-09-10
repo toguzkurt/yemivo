@@ -28,5 +28,9 @@ data class Recipe(
 
     val isDownloaded: Boolean,
 
-    val imageUrl: String?
+    val imageUrl: String?,
+
+    val nameTr: String? = null,
+
+    val stepsTr: List<String>? = null
 )

@@ -64,7 +64,7 @@ class ShoppingListFragment : BaseFragment<FragmentShoppingListBinding>(
             viewModel.effect.collect { effect ->
                 when (effect) {
                     is ShoppingListUiEffect.ShareList -> {
-                        shareList(effect.text)
+                        shareList(effect.items.toShareText(requireContext()))
                     }
                 }
             }

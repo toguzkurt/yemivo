@@ -6,6 +6,7 @@ import com.tnc.data.di.networkModule
 import com.tnc.data.di.repositoryModule
 import com.tnc.data.di.useCaseModule
 import com.tnc.data.remote.mealdb.RecipeRemoteSeeder
+import com.tnc.data.translation.RecipeTranslator
 import com.tnc.domain.notification.usecase.GenerateDailyRecipeNotificationUseCase
 import com.tnc.yemivo.app.di.appModule
 import com.tnc.yemivo.app.theme.NotificationPreferences
@@ -23,6 +24,8 @@ class YemivoApplication : Application() {
     private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 
     private val recipeSeeder: RecipeRemoteSeeder by inject()
+
+    private val recipeTranslator: RecipeTranslator by inject()
 
     private val generateDailyRecipeNotificationUseCase: GenerateDailyRecipeNotificationUseCase by inject()
 
@@ -51,6 +54,10 @@ class YemivoApplication : Application() {
             // One-time: populates the empty recipes table from TheMealDB on first launch. Later
             // launches see a non-empty table and RecipeRemoteSeeder.seedIfEmpty() no-ops.
             recipeSeeder.seedIfEmpty()
+
+            // One-time on-device EN->TR backfill for whatever seedIfEmpty() just populated (or
+            // any rows a previous pass failed on) — no-ops once every row has nameTr set.
+            recipeTranslator.translateIfNeeded()
 
             // No-ops if today's daily-recipe notification already exists, or if the user has
             // turned this off in Settings.

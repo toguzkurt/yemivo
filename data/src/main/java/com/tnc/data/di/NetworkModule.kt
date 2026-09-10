@@ -2,6 +2,7 @@ package com.tnc.data.di
 
 import com.tnc.data.remote.mealdb.MealDbApi
 import com.tnc.data.remote.mealdb.RecipeRemoteSeeder
+import com.tnc.data.translation.RecipeTranslator
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
@@ -33,5 +34,7 @@ val networkModule = module {
     single { get<Retrofit>().create(MealDbApi::class.java) }
 
     single { RecipeRemoteSeeder(api = get(), recipeDao = get()) }
+
+    single { RecipeTranslator(recipeDao = get()) }
 
 }

@@ -11,6 +11,7 @@ fun NotificationEntity.toDomain(): AppNotification = AppNotification(
     },
     recipeId = recipeId,
     recipeName = recipeName,
+    recipeNameTr = recipeNameTr,
     timestamp = timestamp,
     isRead = isRead
 )

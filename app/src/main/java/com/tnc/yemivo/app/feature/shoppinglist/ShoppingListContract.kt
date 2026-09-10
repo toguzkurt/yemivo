@@ -23,7 +23,7 @@ sealed interface ShoppingListUiEvent {
 sealed interface ShoppingListUiEffect {
 
     data class ShareList(
-        val text: String
+        val items: List<ShoppingListItem>
     ) : ShoppingListUiEffect
 
 }

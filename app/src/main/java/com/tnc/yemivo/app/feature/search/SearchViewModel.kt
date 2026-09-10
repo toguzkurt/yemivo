@@ -2,6 +2,7 @@ package com.tnc.yemivo.app.feature.search
 
 import com.tnc.core.base.BaseViewModel
 import com.tnc.domain.recipe.usecase.GetRecipesUseCase
+import com.tnc.yemivo.app.feature.common.availableCuisines
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine
 
@@ -48,9 +49,12 @@ class SearchViewModel(
                 SearchUiState(
                     query = query,
                     selectedCuisine = cuisine,
+                    cuisines = recipes.availableCuisines(),
                     results = recipes.filter { recipe ->
                         (cuisine == null || recipe.cuisine == cuisine) &&
-                            (query.isBlank() || recipe.name.contains(query, ignoreCase = true))
+                            (query.isBlank() ||
+                            recipe.name.contains(query, ignoreCase = true) ||
+                            recipe.nameTr?.contains(query, ignoreCase = true) == true)
                     }
                 )
             }.collect { newState ->

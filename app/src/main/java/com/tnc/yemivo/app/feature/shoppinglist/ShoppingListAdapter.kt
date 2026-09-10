@@ -34,8 +34,8 @@ class ShoppingListAdapter(
         position: Int
     ) = with(binding) {
 
-        tvName.text = "${item.amount} ${item.ingredientName}".trim()
-        tvTag.text = item.recipeName
+        tvName.text = "${item.amount} ${item.displayIngredientName(root.context)}".trim()
+        tvTag.text = item.displayRecipeName(root.context)
 
         checkbox.setBackgroundResource(
             if (item.isChecked) R.drawable.bg_checkbox_checked else R.drawable.bg_checkbox_unchecked

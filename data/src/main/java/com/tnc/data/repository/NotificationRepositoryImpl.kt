@@ -32,6 +32,7 @@ class NotificationRepositoryImpl(
                 type = NotificationType.DOWNLOAD_COMPLETE.toEntityType(),
                 recipeId = recipe.id,
                 recipeName = recipe.name,
+                recipeNameTr = recipe.nameTr,
                 timestamp = System.currentTimeMillis()
             )
         )
@@ -51,6 +52,7 @@ class NotificationRepositoryImpl(
                 type = NotificationType.DAILY_RECIPE.toEntityType(),
                 recipeId = recipe.id,
                 recipeName = recipe.name,
+                recipeNameTr = recipe.nameTr,
                 timestamp = System.currentTimeMillis()
             )
         )

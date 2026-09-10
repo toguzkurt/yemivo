@@ -1,7 +1,6 @@
 package com.tnc.yemivo.app.feature.shoppinglist
 
 import com.tnc.core.base.BaseViewModel
-import com.tnc.domain.shoppinglist.model.ShoppingListItem
 import com.tnc.domain.shoppinglist.usecase.ClearShoppingListUseCase
 import com.tnc.domain.shoppinglist.usecase.GetShoppingListUseCase
 import com.tnc.domain.shoppinglist.usecase.ToggleShoppingListItemUseCase
@@ -30,7 +29,7 @@ class ShoppingListViewModel(
             }
 
             ShoppingListUiEvent.ShareClicked -> {
-                sendEffect(ShoppingListUiEffect.ShareList(buildShareText(state.value.items)))
+                sendEffect(ShoppingListUiEffect.ShareList(state.value.items))
             }
 
         }
@@ -48,12 +47,6 @@ class ShoppingListViewModel(
 
         }
 
-    }
-
-    private fun buildShareText(
-        items: List<ShoppingListItem>
-    ): String = items.joinToString(separator = "\n") { item ->
-        "${if (item.isChecked) "✓" else "•"} ${item.amount} ${item.ingredientName}".trim()
     }
 
 }

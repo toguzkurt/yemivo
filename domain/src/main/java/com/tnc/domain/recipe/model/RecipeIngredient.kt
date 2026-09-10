@@ -6,5 +6,7 @@ data class RecipeIngredient(
 
     val amount: String,
 
-    val unit: String
+    val unit: String,
+
+    val nameTr: String? = null
 )
