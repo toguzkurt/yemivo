@@ -1,10 +1,13 @@
 package com.tnc.yemivo.app.feature.home
 
 import com.tnc.domain.recipe.model.Recipe
+import com.tnc.yemivo.app.feature.common.CuisineOption
 
 data class HomeUiState(
 
     val recipes: List<Recipe> = emptyList(),
+
+    val cuisines: List<CuisineOption> = emptyList(),
 
     val selectedCuisine: String? = null
 

@@ -13,10 +13,6 @@
     <!-- Shared: cuisines / filters                                    -->
     <!-- ============================================================ -->
     <string name="cuisine_all">Tümü</string>
-    <string name="cuisine_turkish">Türk</string>
-    <string name="cuisine_italian">İtalyan</string>
-    <string name="cuisine_mexican">Meksika</string>
-    <string name="cuisine_indian">Hint</string>
     <string name="cuisine_japanese">Japon</string>
     <string name="cuisine_thai">Tayland</string>
     <string name="cuisine_greek">Yunan</string>

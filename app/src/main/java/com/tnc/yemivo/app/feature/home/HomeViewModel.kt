@@ -3,6 +3,7 @@ package com.tnc.yemivo.app.feature.home
 import com.tnc.core.base.BaseViewModel
 import com.tnc.domain.recipe.usecase.GetRecipesUseCase
 import com.tnc.domain.recipe.usecase.ToggleFavoriteUseCase
+import com.tnc.yemivo.app.feature.common.availableCuisines
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
@@ -48,6 +49,7 @@ class HomeViewModel(
             ) { recipes, cuisine ->
                 HomeUiState(
                     recipes = recipes.filter { cuisine == null || it.cuisine == cuisine },
+                    cuisines = recipes.availableCuisines(),
                     selectedCuisine = cuisine
                 )
             }.collect { newState ->

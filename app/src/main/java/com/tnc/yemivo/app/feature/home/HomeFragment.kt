@@ -1,11 +1,11 @@
 package com.tnc.yemivo.app.feature.home
 
 import android.os.Bundle
-import android.widget.TextView
-import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.tnc.yemivo.R
+import com.tnc.yemivo.app.feature.common.CuisineChipAdapter
+import com.tnc.yemivo.app.feature.common.CuisineChipItem
 import com.tnc.yemivo.databinding.FragmentHomeBinding
 import com.tnc.core.base.BaseFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -25,9 +25,16 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(
         }
     )
 
+    private val cuisineChipAdapter = CuisineChipAdapter(
+        onChipClick = { cuisine ->
+            viewModel.onEvent(HomeUiEvent.CuisineFilterSelected(cuisine))
+        }
+    )
+
     override fun setupViews() = with(binding) {
 
         rvRecipes.adapter = adapter
+        rvCuisineChips.adapter = cuisineChipAdapter
 
     }
 
@@ -42,22 +49,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(
             requireActivity()
                 .findViewById<BottomNavigationView>(R.id.bottomNav)
                 ?.selectedItemId = R.id.search_nav_graph
-        }
-
-        chipAll.setOnClickListener {
-            viewModel.onEvent(HomeUiEvent.CuisineFilterSelected(null))
-        }
-
-        chipItalian.setOnClickListener {
-            viewModel.onEvent(HomeUiEvent.CuisineFilterSelected("italian"))
-        }
-
-        chipTurkish.setOnClickListener {
-            viewModel.onEvent(HomeUiEvent.CuisineFilterSelected("turkish"))
-        }
-
-        chipMexican.setOnClickListener {
-            viewModel.onEvent(HomeUiEvent.CuisineFilterSelected("mexican"))
         }
 
     }
@@ -100,26 +91,18 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(
     ) = with(binding) {
 
         adapter.submitList(state.recipes)
-        renderChip(chipAll, state.selectedCuisine == null)
-        renderChip(chipItalian, state.selectedCuisine == "italian")
-        renderChip(chipTurkish, state.selectedCuisine == "turkish")
-        renderChip(chipMexican, state.selectedCuisine == "mexican")
 
-    }
+        cuisineChipAdapter.submitList(
+            listOf(CuisineChipItem(cuisine = null, cuisineLabel = null, isSelected = state.selectedCuisine == null)) +
+                state.cuisines.map {
+                    CuisineChipItem(
+                        cuisine = it.cuisine,
+                        cuisineLabel = it.cuisineLabel,
+                        isSelected = it.cuisine == state.selectedCuisine
+                    )
+                }
+        )
 
-    private fun renderChip(
-        chip: TextView,
-        isActive: Boolean
-    ) {
-        chip.setBackgroundResource(
-            if (isActive) R.drawable.bg_chip_active else R.drawable.bg_chip_outline
-        )
-        chip.setTextColor(
-            ContextCompat.getColor(
-                requireContext(),
-                if (isActive) R.color.accent else R.color.text_secondary
-            )
-        )
     }
 
     private companion object {

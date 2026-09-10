@@ -75,48 +75,20 @@
         android:textSize="@dimen/text_sm"
         app:layout_constraintTop_toBottomOf="@id/searchField" />
 
-    <LinearLayout
-        android:id="@+id/cuisineChips"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCuisineChips"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_lg"
         android:layout_marginTop="@dimen/spacing_xs"
         android:layout_marginEnd="@dimen/spacing_lg"
+        android:clipToPadding="false"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/tvCuisineLabel">
-
-        <TextView
-            android:id="@+id/chipTurkish"
-            style="@style/Widget.Yemivo.Chip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/cuisine_turkish" />
-
-        <TextView
-            android:id="@+id/chipItalian"
-            style="@style/Widget.Yemivo.Chip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_xs"
-            android:text="@string/cuisine_italian" />
-
-        <TextView
-            android:id="@+id/chipMexican"
-            style="@style/Widget.Yemivo.Chip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_xs"
-            android:text="@string/cuisine_mexican" />
-
-        <TextView
-            android:id="@+id/chipIndian"
-            style="@style/Widget.Yemivo.Chip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_xs"
-            android:text="@string/cuisine_indian" />
-
-    </LinearLayout>
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/tvCuisineLabel"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_cuisine_chip" />
 
     <!-- Result count -->
 
@@ -130,7 +102,7 @@
         tools:text="@string/search_result_count"
         android:textAppearance="@style/TextAppearance.Yemivo.BodySecondary"
         android:textSize="@dimen/text_sm"
-        app:layout_constraintTop_toBottomOf="@id/cuisineChips" />
+        app:layout_constraintTop_toBottomOf="@id/rvCuisineChips" />
 
     <!-- Results list -->
 

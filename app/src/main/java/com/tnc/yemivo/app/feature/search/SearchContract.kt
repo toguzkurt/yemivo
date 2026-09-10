@@ -1,12 +1,15 @@
 package com.tnc.yemivo.app.feature.search
 
 import com.tnc.domain.recipe.model.Recipe
+import com.tnc.yemivo.app.feature.common.CuisineOption
 
 data class SearchUiState(
 
     val query: String = "",
 
     val selectedCuisine: String? = null,
+
+    val cuisines: List<CuisineOption> = emptyList(),
 
     val results: List<Recipe> = emptyList()
 
