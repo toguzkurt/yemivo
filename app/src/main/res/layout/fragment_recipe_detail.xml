@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/surface">
+    android:background="@color/tabs_detail_screen_bg">
 
     <!-- Hero image -->
 
@@ -31,6 +31,7 @@
         android:contentDescription="@null"
         android:padding="@dimen/spacing_xs"
         android:src="@drawable/ic_back"
+        android:tint="@color/icon_on_photo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

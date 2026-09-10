@@ -4,6 +4,11 @@
     <!-- Base -->
     <color name="white">#FFFFFFFF</color>
     <color name="black">#FF1A1A1A</color>
+    <!-- Fixed dark tint (no values-night override, same reasoning as "white" above) for icons
+         drawn inside bg_circle_white badges over the recipe-detail hero photo — those badges
+         stay literally white regardless of theme, so the icon on top must stay a fixed dark
+         color too, not the app's theme-adaptive colorControlNormal/text_secondary. -->
+    <color name="icon_on_photo">#FF1A1A1A</color>
 
     <!-- Surfaces -->
     <color name="surface">#FFFFFFFF</color>
