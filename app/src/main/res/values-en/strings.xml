@@ -2,6 +2,12 @@
     <!-- app_name intentionally not overridden — "Yemivo" is the brand name in every language. -->
 
     <!-- ============================================================ -->
+    <!-- Splash                                                        -->
+    <!-- ============================================================ -->
+    <string name="splash_tagline">World cuisine at your fingertips</string>
+    <string name="splash_status_seeding">Preparing recipes…</string>
+
+    <!-- ============================================================ -->
     <!-- Shared: bottom navigation                                     -->
     <!-- ============================================================ -->
     <string name="nav_home">Home</string>

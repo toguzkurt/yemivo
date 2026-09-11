@@ -4,6 +4,10 @@ import com.google.mlkit.nl.translate.TranslateLanguage
 import com.google.mlkit.nl.translate.Translation
 import com.google.mlkit.nl.translate.TranslatorOptions
 import com.tnc.data.local.recipe.RecipeDao
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 
 /**
@@ -15,10 +19,31 @@ class RecipeTranslator(
     private val recipeDao: RecipeDao
 ) {
 
-    suspend fun translateIfNeeded() {
+    // Translating the whole catalog can take much longer than seeding — SplashViewModel fires
+    // this and moves on rather than blocking the launch on it, so it needs a scope that outlives
+    // whatever screen triggered it. Owned here (lives as long as this singleton, i.e. the
+    // process) rather than handed a caller's viewModelScope that would cancel it mid-run.
+    private val backgroundScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+
+    /**
+     * Fire-and-forget: screens showing recipe content already fall back to English until a
+     * row's nameTr lands, so there's nothing for callers to await here.
+     */
+    fun translateInBackground() {
+        backgroundScope.launch {
+            runCatching { translateIfNeeded() }
+        }
+    }
+
+    suspend fun translateIfNeeded(
+        onProgress: suspend (done: Int, total: Int) -> Unit = { _, _ -> }
+    ) {
 
         val pending = recipeDao.getUntranslated()
-        if (pending.isEmpty()) return
+        if (pending.isEmpty()) {
+            onProgress(1, 1)
+            return
+        }
 
         val translator = Translation.getClient(
             TranslatorOptions.Builder()
@@ -31,7 +56,7 @@ class RecipeTranslator(
 
             translator.downloadModelIfNeeded().await()
 
-            pending.forEach { recipe ->
+            pending.forEachIndexed { index, recipe ->
                 runCatching {
                     val nameTr = translator.translate(recipe.name).await()
                     val stepsTr = recipe.steps.map { translator.translate(it).await() }
@@ -40,6 +65,7 @@ class RecipeTranslator(
                     }
                     recipeDao.updateTranslation(recipe.id, nameTr, stepsTr, ingredientsTr)
                 }
+                onProgress(index + 1, pending.size)
             }
 
         } finally {

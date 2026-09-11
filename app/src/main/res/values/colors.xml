@@ -9,6 +9,9 @@
          stay literally white regardless of theme, so the icon on top must stay a fixed dark
          color too, not the app's theme-adaptive colorControlNormal/text_secondary. -->
     <color name="icon_on_photo">#FF1A1A1A</color>
+    <!-- Splash screen brand orange — no values-night override on purpose, same reasoning as
+         white/icon_on_photo: the splash is a fixed brand moment, not a theme-adaptive screen. -->
+    <color name="splash_bg">#FFF26B3A</color>
 
     <!-- Surfaces -->
     <color name="surface">#FFFFFFFF</color>

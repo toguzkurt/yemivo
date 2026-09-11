@@ -7,6 +7,7 @@ import com.tnc.yemivo.app.feature.notifications.NotificationsViewModel
 import com.tnc.yemivo.app.feature.recipedetail.RecipeDetailViewModel
 import com.tnc.yemivo.app.feature.search.SearchViewModel
 import com.tnc.yemivo.app.feature.shoppinglist.ShoppingListViewModel
+import com.tnc.yemivo.app.feature.splash.SplashViewModel
 import com.tnc.yemivo.app.session.SessionPreferences
 import com.tnc.yemivo.app.theme.NotificationPreferences
 import com.tnc.yemivo.app.theme.ThemePreferences
@@ -25,6 +26,8 @@ val appModule = module {
     single { UnitPreferences(androidContext()) }
 
     single { NotificationPreferences(androidContext()) }
+
+    viewModelOf(::SplashViewModel)
 
     viewModelOf(::HomeViewModel)
 

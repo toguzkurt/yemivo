@@ -14,13 +14,22 @@ class RecipeRemoteSeeder(
     private val recipeDao: RecipeDao
 ) {
 
-    suspend fun seedIfEmpty() {
+    suspend fun seedIfEmpty(
+        onProgress: suspend (done: Int, total: Int) -> Unit = { _, _ -> }
+    ) {
 
-        if (recipeDao.count() > 0) return
+        if (recipeDao.count() > 0) {
+            onProgress(LETTERS.size, LETTERS.size)
+            return
+        }
 
-        val entities = ('a'..'z')
-            .mapNotNull { letter ->
-                runCatching { api.searchByFirstLetter(letter.toString()).meals }.getOrNull()
+        val entities = LETTERS
+            .mapIndexedNotNull { index, letter ->
+                val meals = runCatching {
+                    api.searchByFirstLetter(letter.toString()).meals
+                }.getOrNull()
+                onProgress(index + 1, LETTERS.size)
+                meals
             }
             .flatten()
             .distinctBy { it.idMeal }
@@ -30,6 +39,10 @@ class RecipeRemoteSeeder(
             recipeDao.insertAll(entities)
         }
 
+    }
+
+    private companion object {
+        val LETTERS = ('a'..'z').toList()
     }
 
 }

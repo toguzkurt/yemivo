@@ -2,6 +2,13 @@
     <string name="app_name">Yemivo</string>
 
     <!-- ============================================================ -->
+    <!-- Splash                                                        -->
+    <!-- ============================================================ -->
+    <string name="splash_tagline">Dünya mutfağı parmaklarının ucunda</string>
+    <string name="splash_status_seeding">Tarifler hazırlanıyor…</string>
+    <string name="splash_version">v1.0.0</string>
+
+    <!-- ============================================================ -->
     <!-- Shared: bottom navigation                                     -->
     <!-- ============================================================ -->
     <string name="nav_home">Ana Sayfa</string>
