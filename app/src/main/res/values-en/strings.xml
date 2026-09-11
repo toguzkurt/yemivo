@@ -130,10 +130,14 @@
     <string name="cook_mode_step_title">PREPARE THE FILLING</string>
     <string name="cook_mode_step_text">Knead the ground beef thoroughly with finely chopped onion, salt, and black pepper.</string>
     <string name="cook_mode_timer">02:30</string>
-    <string name="cook_mode_timer_label">resting time</string>
+    <string name="cook_mode_timer_label">Timer</string>
     <string name="cook_mode_prev">Previous</string>
     <string name="cook_mode_next">Next</string>
     <string name="cook_mode_voice_hint">You can also say \"next step\" to move on</string>
+    <string name="cook_mode_entry">👨‍🍳 Step-by-step cook mode</string>
+    <string name="cook_mode_step_count_format">Step %1$d / %2$d</string>
+    <string name="cook_mode_step_label_format">STEP %d</string>
+    <string name="cook_mode_finish">Finish</string>
 
     <!-- ============================================================ -->
     <!-- Login                                                         -->
@@ -252,5 +256,10 @@
     <string name="ingredient_salt">Salt</string>
     <string name="ingredient_salt_amount">1 tsp</string>
     <string name="portion_hint">The original recipe was calculated for 4 servings — amounts updated automatically</string>
+    <string name="portion_adjuster_title">%s — Ingredients</string>
+    <string name="portion_adjuster_servings_count">%d servings</string>
+    <string name="portion_adjuster_section_label">Ingredients (auto-calculated for %d servings)</string>
+    <string name="portion_adjuster_hint">The original recipe was calculated for %d servings — amounts updated automatically</string>
+    <string name="portion_adjuster_entry">Portion: %d servings</string>
 
 </resources>

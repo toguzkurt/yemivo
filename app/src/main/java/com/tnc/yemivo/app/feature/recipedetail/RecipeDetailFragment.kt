@@ -2,6 +2,7 @@ package com.tnc.yemivo.app.feature.recipedetail
 
 import android.content.res.ColorStateList
 import android.graphics.Typeface
+import android.os.Bundle
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
@@ -9,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.tnc.yemivo.R
 import com.tnc.yemivo.app.feature.common.bindRecipeImage
 import com.tnc.yemivo.app.feature.common.detailSummary
+import com.tnc.yemivo.app.feature.portionadjuster.DEFAULT_SERVINGS
 import com.tnc.yemivo.app.theme.LocaleHelper
 import com.tnc.yemivo.databinding.FragmentRecipeDetailBinding
 import com.tnc.core.base.BaseFragment
@@ -64,6 +66,20 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
 
         tabInstructions.setOnClickListener {
             viewModel.onEvent(RecipeDetailUiEvent.TabSelected(RecipeDetailTab.INSTRUCTIONS))
+        }
+
+        rowPortionEntry.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_recipeDetail_to_portionAdjuster,
+                Bundle().apply { putString(ARG_RECIPE_ID, recipeId) }
+            )
+        }
+
+        rowCookModeEntry.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_recipeDetail_to_cookMode,
+                Bundle().apply { putString(ARG_RECIPE_ID, recipeId) }
+            )
         }
 
     }
@@ -138,6 +154,14 @@ class RecipeDetailFragment : BaseFragment<FragmentRecipeDetailBinding>(
         val showIngredients = selectedTab == RecipeDetailTab.INGREDIENTS
         rvIngredients.isVisible = showIngredients
         rvSteps.isVisible = !showIngredients
+
+        rowPortionEntry.isVisible = showIngredients
+        tvPortionEntry.text = getString(
+            R.string.portion_adjuster_entry,
+            recipe.servings ?: DEFAULT_SERVINGS
+        )
+
+        rowCookModeEntry.isVisible = !showIngredients
 
         renderTab(tabIngredients, showIngredients)
         renderTab(tabInstructions, !showIngredients)

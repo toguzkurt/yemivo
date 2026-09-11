@@ -39,50 +39,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivClose">
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bg_progress_segment_done" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_progress_segment_done" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_progress_segment_pending" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_progress_segment_pending" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_progress_segment_pending" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_progress_segment_pending" />
-
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@id/ivClose" />
 
     <TextView
         android:id="@+id/tvStepTitle"
@@ -130,6 +87,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvStepText">
 
         <TextView
+            android:id="@+id/tvTimerValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cook_mode_timer"

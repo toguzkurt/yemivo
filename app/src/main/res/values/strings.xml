@@ -144,10 +144,14 @@
     <string name="cook_mode_step_title">İÇ HARCI HAZIRLA</string>
     <string name="cook_mode_step_text">Kıymayı ince doğranmış soğan, tuz ve karabiber ile iyice yoğurun.</string>
     <string name="cook_mode_timer">02:30</string>
-    <string name="cook_mode_timer_label">dinlendirme süresi</string>
+    <string name="cook_mode_timer_label">Süre</string>
     <string name="cook_mode_prev">Önceki</string>
     <string name="cook_mode_next">Sonraki</string>
     <string name="cook_mode_voice_hint">\"Sonraki adım\" diyerek de ilerleyebilirsin</string>
+    <string name="cook_mode_entry">👨‍🍳 Adım adım pişirme modu</string>
+    <string name="cook_mode_step_count_format">Adım %1$d / %2$d</string>
+    <string name="cook_mode_step_label_format">ADIM %d</string>
+    <string name="cook_mode_finish">Bitir</string>
 
     <!-- ============================================================ -->
     <!-- Login                                                         -->
@@ -266,5 +270,10 @@
     <string name="ingredient_salt">Tuz</string>
     <string name="ingredient_salt_amount">1 tatlı kaşığı</string>
     <string name="portion_hint">Orijinal tarif 4 kişilik için hesaplanmıştı — miktarlar otomatik güncellendi</string>
+    <string name="portion_adjuster_title">%s — Malzemeler</string>
+    <string name="portion_adjuster_servings_count">%d kişilik</string>
+    <string name="portion_adjuster_section_label">Malzemeler (%d kişilik için otomatik hesaplandı)</string>
+    <string name="portion_adjuster_hint">Orijinal tarif %d kişilik için hesaplanmıştı — miktarlar otomatik güncellendi</string>
+    <string name="portion_adjuster_entry">Porsiyon: %d kişilik</string>
 
 </resources>

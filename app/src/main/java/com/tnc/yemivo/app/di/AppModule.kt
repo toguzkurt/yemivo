@@ -1,11 +1,13 @@
 package com.tnc.yemivo.app.di
 
+import com.tnc.yemivo.app.feature.cookmode.CookModeViewModel
 import com.tnc.yemivo.app.feature.cuisinerecipes.CuisineRecipesViewModel
 import com.tnc.yemivo.app.feature.cuisinesgrid.CuisinesGridViewModel
 import com.tnc.yemivo.app.feature.downloads.DownloadedRecipesViewModel
 import com.tnc.yemivo.app.feature.favorites.FavoritesViewModel
 import com.tnc.yemivo.app.feature.home.HomeViewModel
 import com.tnc.yemivo.app.feature.notifications.NotificationsViewModel
+import com.tnc.yemivo.app.feature.portionadjuster.PortionAdjusterViewModel
 import com.tnc.yemivo.app.feature.recipedetail.RecipeDetailViewModel
 import com.tnc.yemivo.app.feature.search.SearchViewModel
 import com.tnc.yemivo.app.feature.shoppinglist.ShoppingListViewModel
@@ -68,6 +70,20 @@ val appModule = module {
             cuisineLabel = cuisineLabel,
             getRecipesUseCase = get(),
             toggleFavoriteUseCase = get()
+        )
+    }
+
+    viewModel { (recipeId: String) ->
+        PortionAdjusterViewModel(
+            recipeId = recipeId,
+            getRecipeByIdUseCase = get()
+        )
+    }
+
+    viewModel { (recipeId: String) ->
+        CookModeViewModel(
+            recipeId = recipeId,
+            getRecipeByIdUseCase = get()
         )
     }
 

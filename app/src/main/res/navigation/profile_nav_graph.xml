@@ -99,6 +99,46 @@
             android:name="recipeId"
             app:argType="string" />
 
+        <action
+            android:id="@+id/action_recipeDetail_to_portionAdjuster"
+            app:destination="@id/portionAdjusterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_recipeDetail_to_cookMode"
+            app:destination="@id/cookModeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/portionAdjusterFragment"
+        android:name="com.tnc.yemivo.app.feature.portionadjuster.PortionAdjusterFragment"
+        android:label="PortionAdjuster"
+        tools:layout="@layout/fragment_portion_adjuster">
+
+        <argument
+            android:name="recipeId"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cookModeFragment"
+        android:name="com.tnc.yemivo.app.feature.cookmode.CookModeFragment"
+        android:label="CookMode"
+        tools:layout="@layout/fragment_cook_mode">
+
+        <argument
+            android:name="recipeId"
+            app:argType="string" />
+
     </fragment>
 
 </navigation>

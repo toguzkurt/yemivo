@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/surface">
+    android:background="@color/tabs_detail_screen_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,12 +12,30 @@
         android:orientation="vertical"
         android:padding="@dimen/spacing_lg">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/spacing_md_lg"
-            android:text="@string/portion_title"
-            android:textAppearance="@style/TextAppearance.Yemivo.HeadlineSm" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_sm_md"
+                android:layout_weight="1"
+                android:text="@string/portion_title"
+                android:textAppearance="@style/TextAppearance.Yemivo.HeadlineSm" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -92,6 +110,7 @@
             tools:listitem="@layout/item_ingredient" />
 
         <TextView
+            android:id="@+id/tvHint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_md_lg"
