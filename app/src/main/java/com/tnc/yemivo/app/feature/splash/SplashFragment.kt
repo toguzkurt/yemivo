@@ -41,6 +41,9 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>(
                     SplashUiEffect.NavigateToMain -> {
                         findNavController().navigate(R.id.action_splash_to_mainTabs)
                     }
+                    SplashUiEffect.NavigateToOnboarding -> {
+                        findNavController().navigate(R.id.action_splash_to_onboarding)
+                    }
                 }
             }
 

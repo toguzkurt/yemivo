@@ -28,6 +28,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(
     private val cuisineChipAdapter = CuisineChipAdapter(
         onChipClick = { cuisine ->
             viewModel.onEvent(HomeUiEvent.CuisineFilterSelected(cuisine))
+        },
+        onSeeAllClick = {
+            findNavController().navigate(R.id.action_home_to_cuisinesGrid)
         }
     )
 
@@ -49,6 +52,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(
             requireActivity()
                 .findViewById<BottomNavigationView>(R.id.bottomNav)
                 ?.selectedItemId = R.id.search_nav_graph
+        }
+
+        fabSurprise.setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_surpriseRecipe)
         }
 
     }
@@ -100,7 +107,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(
                         cuisineLabel = it.cuisineLabel,
                         isSelected = it.cuisine == state.selectedCuisine
                     )
-                }
+                } +
+                listOf(CuisineChipItem(cuisine = null, cuisineLabel = null, isSelected = false, isSeeAll = true))
         )
 
     }

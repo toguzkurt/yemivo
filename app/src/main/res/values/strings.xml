@@ -20,19 +20,9 @@
     <!-- Shared: cuisines / filters                                    -->
     <!-- ============================================================ -->
     <string name="cuisine_all">Tümü</string>
-    <string name="cuisine_japanese">Japon</string>
-    <string name="cuisine_thai">Tayland</string>
-    <string name="cuisine_greek">Yunan</string>
-    <string name="cuisine_american">Amerikan</string>
-
-    <string name="cuisine_turkish_full">Türk mutfağı</string>
-    <string name="cuisine_italian_full">İtalyan mutfağı</string>
-    <string name="cuisine_mexican_full">Meksika mutfağı</string>
-    <string name="cuisine_indian_full">Hint mutfağı</string>
-    <string name="cuisine_japanese_full">Japon mutfağı</string>
-    <string name="cuisine_thai_full">Tayland mutfağı</string>
-    <string name="cuisine_greek_full">Yunan mutfağı</string>
-    <string name="cuisine_american_full">Amerikan mutfağı</string>
+    <string name="cuisines_see_all">Tümünü gör</string>
+    <string name="cuisines_cell_name">%s mutfağı</string>
+    <string name="cuisines_recipe_count">%d tarif</string>
 
     <!-- ============================================================ -->
     <!-- Shared: common actions / labels                               -->
@@ -179,12 +169,9 @@
     <!-- Surprise recipe                                               -->
     <!-- ============================================================ -->
     <string name="surprise_title">Bugün ne pişirsem?</string>
-    <string name="surprise_badge">🎲 Sürpriz</string>
-    <string name="recipe_name_karnıyarık">Karnıyarık</string>
-    <string name="recipe_detail_meta_karnıyarık">Türk mutfağı · 50 dk · 4 kişilik</string>
+    <string name="surprise_badge">🍲 Sürpriz</string>
     <string name="surprise_reroll">🔀 Başka göster</string>
     <string name="surprise_view_recipe">Tarife git</string>
-    <string name="surprise_fab">🎲 Sürpriz tarif</string>
 
     <!-- ============================================================ -->
     <!-- Empty states                                                  -->
@@ -258,14 +245,6 @@
     <!-- ============================================================ -->
     <string name="cuisines_title">Mutfaklar</string>
     <string name="cuisines_subtitle">Dünya mutfağını keşfetmeye başla</string>
-    <string name="cuisine_count_turkish">48 tarif</string>
-    <string name="cuisine_count_italian">62 tarif</string>
-    <string name="cuisine_count_mexican">31 tarif</string>
-    <string name="cuisine_count_indian">44 tarif</string>
-    <string name="cuisine_count_japanese">27 tarif</string>
-    <string name="cuisine_count_thai">19 tarif</string>
-    <string name="cuisine_count_greek">22 tarif</string>
-    <string name="cuisine_count_american">55 tarif</string>
 
     <!-- ============================================================ -->
     <!-- Portion adjuster                                              -->

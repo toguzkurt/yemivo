@@ -69,5 +69,7 @@
     <dimen name="onboarding_illustration_size">160dp</dimen>
     <dimen name="empty_state_icon_size">72dp</dimen>
     <dimen name="notif_dot_size">8dp</dimen>
+    <dimen name="drag_handle_width">36dp</dimen>
+    <dimen name="drag_handle_height">4dp</dimen>
 
 </resources>

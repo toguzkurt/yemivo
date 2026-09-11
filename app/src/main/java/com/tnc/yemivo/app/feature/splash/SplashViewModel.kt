@@ -4,6 +4,7 @@ import com.tnc.core.base.BaseViewModel
 import com.tnc.data.remote.mealdb.RecipeRemoteSeeder
 import com.tnc.data.translation.RecipeTranslator
 import com.tnc.domain.notification.usecase.GenerateDailyRecipeNotificationUseCase
+import com.tnc.yemivo.app.onboarding.OnboardingPreferences
 import com.tnc.yemivo.app.theme.NotificationPreferences
 import kotlinx.coroutines.delay
 
@@ -11,7 +12,8 @@ class SplashViewModel(
     private val recipeSeeder: RecipeRemoteSeeder,
     private val recipeTranslator: RecipeTranslator,
     private val generateDailyRecipeNotificationUseCase: GenerateDailyRecipeNotificationUseCase,
-    private val notificationPreferences: NotificationPreferences
+    private val notificationPreferences: NotificationPreferences,
+    private val onboardingPreferences: OnboardingPreferences
 ) : BaseViewModel<SplashUiState, SplashUiEffect>(initialState = SplashUiState()) {
 
     init {
@@ -47,7 +49,13 @@ class SplashViewModel(
             delay(MIN_DURATION_MS - elapsed)
         }
 
-        sendEffect(SplashUiEffect.NavigateToMain)
+        sendEffect(
+            if (onboardingPreferences.hasSeenOnboarding) {
+                SplashUiEffect.NavigateToMain
+            } else {
+                SplashUiEffect.NavigateToOnboarding
+            }
+        )
 
     }
 

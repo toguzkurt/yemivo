@@ -19,19 +19,9 @@
     <!-- Shared: cuisines / filters                                    -->
     <!-- ============================================================ -->
     <string name="cuisine_all">All</string>
-    <string name="cuisine_japanese">Japanese</string>
-    <string name="cuisine_thai">Thai</string>
-    <string name="cuisine_greek">Greek</string>
-    <string name="cuisine_american">American</string>
-
-    <string name="cuisine_turkish_full">Turkish cuisine</string>
-    <string name="cuisine_italian_full">Italian cuisine</string>
-    <string name="cuisine_mexican_full">Mexican cuisine</string>
-    <string name="cuisine_indian_full">Indian cuisine</string>
-    <string name="cuisine_japanese_full">Japanese cuisine</string>
-    <string name="cuisine_thai_full">Thai cuisine</string>
-    <string name="cuisine_greek_full">Greek cuisine</string>
-    <string name="cuisine_american_full">American cuisine</string>
+    <string name="cuisines_see_all">See all</string>
+    <string name="cuisines_cell_name">%s cuisine</string>
+    <string name="cuisines_recipe_count">%d recipes</string>
 
     <!-- ============================================================ -->
     <!-- Shared: common actions / labels                               -->
@@ -165,10 +155,9 @@
     <!-- Surprise recipe                                               -->
     <!-- ============================================================ -->
     <string name="surprise_title">What should I cook today?</string>
-    <string name="surprise_badge">🎲 Surprise</string>
+    <string name="surprise_badge">🍲 Surprise</string>
     <string name="surprise_reroll">🔀 Show another</string>
     <string name="surprise_view_recipe">View recipe</string>
-    <string name="surprise_fab">🎲 Surprise recipe</string>
 
     <!-- ============================================================ -->
     <!-- Empty states                                                  -->
@@ -242,14 +231,6 @@
     <!-- ============================================================ -->
     <string name="cuisines_title">Cuisines</string>
     <string name="cuisines_subtitle">Start exploring cuisines from around the world</string>
-    <string name="cuisine_count_turkish">48 recipes</string>
-    <string name="cuisine_count_italian">62 recipes</string>
-    <string name="cuisine_count_mexican">31 recipes</string>
-    <string name="cuisine_count_indian">44 recipes</string>
-    <string name="cuisine_count_japanese">27 recipes</string>
-    <string name="cuisine_count_thai">19 recipes</string>
-    <string name="cuisine_count_greek">22 recipes</string>
-    <string name="cuisine_count_american">55 recipes</string>
 
     <!-- ============================================================ -->
     <!-- Portion adjuster                                              -->

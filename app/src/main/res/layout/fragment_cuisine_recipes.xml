@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/page_bg">
+    android:background="@color/tabs_detail_screen_bg">
 
     <ImageView
         android:id="@+id/ivBack"
@@ -24,41 +24,27 @@
         android:layout_marginStart="@dimen/spacing_sm_md"
         android:layout_marginTop="@dimen/spacing_lg"
         android:layout_marginEnd="@dimen/spacing_lg"
-        android:text="@string/cuisines_title"
         android:textAppearance="@style/TextAppearance.Yemivo.ScreenTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivBack"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvSubtitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/spacing_lg"
-        android:layout_marginTop="@dimen/spacing_xxs"
-        android:layout_marginEnd="@dimen/spacing_lg"
-        android:text="@string/cuisines_subtitle"
-        android:textAppearance="@style/TextAppearance.Yemivo.BodySecondary"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Türk mutfağı" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvCuisines"
+        android:id="@+id/rvRecipes"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/spacing_sm"
+        android:layout_marginTop="@dimen/spacing_md"
         android:clipToPadding="false"
         android:paddingStart="@dimen/spacing_lg"
-        android:paddingTop="@dimen/spacing_xs"
         android:paddingEnd="@dimen/spacing_lg"
         android:paddingBottom="@dimen/spacing_lg"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="2"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
-        tools:itemCount="8"
-        tools:listitem="@layout/item_cuisine_cell"
-        tools:spanCount="2" />
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_recipe_card" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/surface">
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet_top_rounded"
+    android:paddingBottom="@dimen/spacing_xxl">
+
+    <View
+        android:id="@+id/dragHandle"
+        android:layout_width="@dimen/drag_handle_width"
+        android:layout_height="@dimen/drag_handle_height"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:background="@drawable/bg_drag_handle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ivClose"
         android:layout_width="18dp"
         android:layout_height="18dp"
-        android:layout_marginStart="@dimen/spacing_lg"
         android:layout_marginTop="@dimen/spacing_lg"
+        android:layout_marginEnd="@dimen/spacing_lg"
         android:contentDescription="@null"
         android:src="@drawable/ic_close"
-        app:layout_constraintBottom_toBottomOf="@id/tvTopTitle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tvTopTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dragHandle"
         app:tint="@color/text_muted" />
 
     <TextView
@@ -30,46 +41,51 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/dragHandle" />
 
-    <FrameLayout
-        android:id="@+id/heroFrame"
+    <ImageView
+        android:id="@+id/ivHero"
         android:layout_width="0dp"
         android:layout_height="@dimen/hero_image_height_lg"
         android:layout_marginStart="@dimen/spacing_lg"
-        android:layout_marginTop="@dimen/spacing_sm"
+        android:layout_marginTop="@dimen/spacing_lg"
         android:layout_marginEnd="@dimen/spacing_lg"
+        android:background="@drawable/bg_hero_placeholder_rounded"
+        android:contentDescription="@null"
+        android:padding="@dimen/spacing_huge"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_add_photo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTopTitle">
+        app:layout_constraintTop_toBottomOf="@id/tvTopTitle"
+        app:tint="@color/text_muted" />
 
-        <ImageView
-            android:id="@+id/ivHero"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bg_hero_placeholder_rounded"
-            android:contentDescription="@null"
-            android:padding="@dimen/spacing_huge"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_add_photo"
-            app:tint="@color/text_muted" />
+    <TextView
+        android:id="@+id/tvBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_sm_md"
+        android:layout_marginTop="@dimen/spacing_sm_md"
+        android:background="@drawable/bg_badge_accent_pill"
+        android:paddingStart="@dimen/spacing_sm_md"
+        android:paddingEnd="@dimen/spacing_sm_md"
+        android:paddingTop="@dimen/spacing_xxs"
+        android:paddingBottom="@dimen/spacing_xxs"
+        android:text="@string/surprise_badge"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_xs"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/ivHero"
+        app:layout_constraintTop_toTopOf="@id/ivHero" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|start"
-            android:layout_margin="@dimen/spacing_sm_md"
-            android:background="@drawable/bg_badge_accent_pill"
-            android:paddingStart="@dimen/spacing_sm_md"
-            android:paddingEnd="@dimen/spacing_sm_md"
-            android:paddingTop="@dimen/spacing_xxs"
-            android:paddingBottom="@dimen/spacing_xxs"
-            android:text="@string/surprise_badge"
-            android:textColor="@color/white"
-            android:textSize="@dimen/text_xs"
-            android:textStyle="bold" />
-
-    </FrameLayout>
+    <com.tnc.yemivo.app.feature.common.ConfettiView
+        android:id="@+id/confettiView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/actions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivHero" />
 
     <TextView
         android:id="@+id/tvName"
@@ -78,12 +94,12 @@
         android:layout_marginStart="@dimen/spacing_lg"
         android:layout_marginTop="@dimen/spacing_lg"
         android:layout_marginEnd="@dimen/spacing_lg"
-        android:text="@string/recipe_name_karnıyarık"
         android:textAppearance="@style/TextAppearance.Yemivo.HeadlineSm"
         android:textSize="@dimen/text_headline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/heroFrame" />
+        app:layout_constraintTop_toBottomOf="@id/ivHero"
+        tools:text="Karnıyarık" />
 
     <TextView
         android:id="@+id/tvMeta"
@@ -92,11 +108,11 @@
         android:layout_marginStart="@dimen/spacing_lg"
         android:layout_marginTop="@dimen/spacing_xs"
         android:layout_marginEnd="@dimen/spacing_lg"
-        android:text="@string/recipe_detail_meta_karnıyarık"
         android:textAppearance="@style/TextAppearance.Yemivo.BodySecondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvName" />
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        tools:text="Türk mutfağı · 50 dk · 4 kişilik" />
 
     <LinearLayout
         android:id="@+id/actions"
@@ -128,25 +144,5 @@
             android:text="@string/surprise_view_recipe" />
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/fabSurprise"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_md"
-        android:layout_marginBottom="@dimen/spacing_xxl"
-        android:background="@drawable/bg_chip_active"
-        android:paddingStart="@dimen/spacing_xl"
-        android:paddingEnd="@dimen/spacing_xl"
-        android:paddingTop="@dimen/spacing_sm_md"
-        android:paddingBottom="@dimen/spacing_sm_md"
-        android:text="@string/surprise_fab"
-        android:textColor="@color/accent"
-        android:textSize="@dimen/text_body_sm"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/actions" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

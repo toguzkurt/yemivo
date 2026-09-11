@@ -11,6 +11,8 @@ interface RecipeRepository {
         id: String
     ): Flow<Recipe?>
 
+    suspend fun getRandomRecipe(): Recipe?
+
     suspend fun toggleFavorite(
         id: String
     )

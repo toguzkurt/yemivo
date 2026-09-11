@@ -19,6 +19,9 @@ fun ImageView.bindRecipeImage(
         scaleType = ImageView.ScaleType.CENTER_CROP
         setPadding(0, 0, 0, 0)
         clipToOutline = true
+        // A real photo must never inherit a layout-declared tint meant only for the icon
+        // fallback below (e.g. text_muted) — that would recolor the whole bitmap flat gray.
+        imageTintList = null
         load(recipe.imageUrl) {
             crossfade(true)
             placeholder(fallbackRes)
@@ -28,6 +31,7 @@ fun ImageView.bindRecipeImage(
         scaleType = ImageView.ScaleType.CENTER_CROP
         setPadding(0, 0, 0, 0)
         clipToOutline = true
+        imageTintList = null
         setImageResource(fallbackRes)
     } else {
         scaleType = ImageView.ScaleType.CENTER_INSIDE

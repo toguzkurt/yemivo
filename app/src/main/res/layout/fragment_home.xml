@@ -140,4 +140,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Surprise recipe entry point -->
+
+    <TextView
+        android:id="@+id/fabSurprise"
+        android:layout_width="@dimen/avatar_size_lg"
+        android:layout_height="@dimen/avatar_size_lg"
+        android:layout_marginEnd="@dimen/spacing_lg"
+        android:layout_marginBottom="@dimen/spacing_lg"
+        android:background="@drawable/bg_circle_accent"
+        android:clickable="true"
+        android:elevation="@dimen/spacing_xxs"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="🍲"
+        android:textSize="@dimen/text_headline"
+        app:layout_constraintBottom_toTopOf="@id/premiumBanner"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

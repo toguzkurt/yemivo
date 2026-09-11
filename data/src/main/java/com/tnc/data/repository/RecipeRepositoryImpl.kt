@@ -18,6 +18,8 @@ class RecipeRepositoryImpl(
         id: String
     ): Flow<Recipe?> = recipeDao.getById(id).map { it?.toDomain() }
 
+    override suspend fun getRandomRecipe(): Recipe? = recipeDao.getRandom()?.toDomain()
+
     override suspend fun toggleFavorite(
         id: String
     ) {

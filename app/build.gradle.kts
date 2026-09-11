@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.constraintlayout)
     implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.viewpager2)
     implementation(libs.coil)
 
     implementation(libs.androidx.lifecycle.runtime.ktx)

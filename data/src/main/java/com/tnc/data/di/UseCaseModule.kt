@@ -4,6 +4,7 @@ import com.tnc.domain.notification.usecase.GenerateDailyRecipeNotificationUseCas
 import com.tnc.domain.notification.usecase.GetNotificationsUseCase
 import com.tnc.domain.notification.usecase.MarkAllNotificationsReadUseCase
 import com.tnc.domain.notification.usecase.NotifyDownloadCompleteUseCase
+import com.tnc.domain.recipe.usecase.GetRandomRecipeUseCase
 import com.tnc.domain.recipe.usecase.GetRecipeByIdUseCase
 import com.tnc.domain.recipe.usecase.GetRecipesUseCase
 import com.tnc.domain.recipe.usecase.ToggleDownloadUseCase
@@ -24,6 +25,12 @@ val useCaseModule = module {
 
     factory {
         GetRecipeByIdUseCase(
+            repository = get()
+        )
+    }
+
+    factory {
+        GetRandomRecipeUseCase(
             repository = get()
         )
     }

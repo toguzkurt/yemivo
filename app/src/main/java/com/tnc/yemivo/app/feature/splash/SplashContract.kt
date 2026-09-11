@@ -10,4 +10,6 @@ sealed interface SplashUiEffect {
 
     data object NavigateToMain : SplashUiEffect
 
+    data object NavigateToOnboarding : SplashUiEffect
+
 }

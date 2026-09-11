@@ -19,6 +19,22 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
 
+        <action
+            android:id="@+id/action_home_to_cuisinesGrid"
+            app:destination="@id/cuisinesGridFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_home_to_surpriseRecipe"
+            app:destination="@id/surpriseRecipeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
     </fragment>
 
     <fragment
@@ -32,5 +48,61 @@
             app:argType="string" />
 
     </fragment>
+
+    <fragment
+        android:id="@+id/cuisinesGridFragment"
+        android:name="com.tnc.yemivo.app.feature.cuisinesgrid.CuisinesGridFragment"
+        android:label="CuisinesGrid"
+        tools:layout="@layout/fragment_cuisines_grid">
+
+        <action
+            android:id="@+id/action_cuisinesGrid_to_cuisineRecipes"
+            app:destination="@id/cuisineRecipesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cuisineRecipesFragment"
+        android:name="com.tnc.yemivo.app.feature.cuisinerecipes.CuisineRecipesFragment"
+        android:label="CuisineRecipes"
+        tools:layout="@layout/fragment_cuisine_recipes">
+
+        <argument
+            android:name="cuisine"
+            app:argType="string" />
+
+        <argument
+            android:name="cuisineLabel"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_cuisineRecipes_to_recipeDetail"
+            app:destination="@id/recipeDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/surpriseRecipeFragment"
+        android:name="com.tnc.yemivo.app.feature.surpriserecipe.SurpriseRecipeFragment"
+        android:label="SurpriseRecipe"
+        tools:layout="@layout/fragment_surprise_recipe">
+
+        <action
+            android:id="@+id/action_surpriseRecipe_to_recipeDetail"
+            app:destination="@id/recipeDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </dialog>
 
 </navigation>
