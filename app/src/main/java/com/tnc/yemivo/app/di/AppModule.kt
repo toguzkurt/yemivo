@@ -76,7 +76,8 @@ val appModule = module {
     viewModel { (recipeId: String) ->
         PortionAdjusterViewModel(
             recipeId = recipeId,
-            getRecipeByIdUseCase = get()
+            getRecipeByIdUseCase = get(),
+            addRecipeToShoppingListUseCase = get()
         )
     }
 

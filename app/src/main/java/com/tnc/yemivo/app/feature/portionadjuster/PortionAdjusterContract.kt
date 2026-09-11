@@ -1,5 +1,6 @@
 package com.tnc.yemivo.app.feature.portionadjuster
 
+import com.tnc.core.common.result.UiText
 import com.tnc.domain.recipe.model.Recipe
 
 data class PortionAdjusterUiState(
@@ -16,6 +17,14 @@ sealed interface PortionAdjusterUiEvent {
 
     data object DecrementClicked : PortionAdjusterUiEvent
 
+    data object AddToShoppingListClicked : PortionAdjusterUiEvent
+
 }
 
-sealed interface PortionAdjusterUiEffect
+sealed interface PortionAdjusterUiEffect {
+
+    data class ShowMessage(
+        val message: UiText
+    ) : PortionAdjusterUiEffect
+
+}

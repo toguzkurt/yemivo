@@ -29,25 +29,49 @@ fun RecipeIngredient.scaledFor(
 ): ScaledIngredient {
 
     val name = displayName(isTurkish)
-    val parsed = if (targetServings != originalServings) parseLeadingNumber(amount) else null
+    val scaledAmount = scaledAmountText(amount, originalServings, targetServings)
 
-    if (parsed == null) {
-        return ScaledIngredient(
+    return if (scaledAmount == null) {
+        ScaledIngredient(
             displayName = name,
             displayAmount = listOf(amount, unit).filter { it.isNotBlank() }.joinToString(" "),
             isHighlighted = false
         )
+    } else {
+        ScaledIngredient(
+            displayName = name,
+            displayAmount = listOf(scaledAmount, unit).filter { it.isNotBlank() }.joinToString(" "),
+            isHighlighted = true
+        )
     }
 
-    val (value, suffix) = parsed
-    val scaledValue = value * targetServings / originalServings
-    val scaledAmount = formatScaledAmount(scaledValue) + suffix
+}
 
-    return ScaledIngredient(
-        displayName = name,
-        displayAmount = listOf(scaledAmount, unit).filter { it.isNotBlank() }.joinToString(" "),
-        isHighlighted = true
-    )
+/**
+ * Same recalculation as [scaledFor], but returns a [RecipeIngredient] copy (amount replaced,
+ * name/unit untouched) so the result can be fed into the existing shopping-list pipeline
+ * (Recipe.toShoppingListEntities()) instead of just displayed.
+ */
+fun RecipeIngredient.scaledForShoppingList(
+    originalServings: Int,
+    targetServings: Int
+): RecipeIngredient {
+    val scaledAmount = scaledAmountText(amount, originalServings, targetServings) ?: return this
+    return copy(amount = scaledAmount)
+}
+
+private fun scaledAmountText(
+    amount: String,
+    originalServings: Int,
+    targetServings: Int
+): String? {
+
+    if (targetServings == originalServings) return null
+
+    val (value, suffix) = parseLeadingNumber(amount) ?: return null
+    val scaledValue = value * targetServings / originalServings
+
+    return formatScaledAmount(scaledValue) + suffix
 
 }
 

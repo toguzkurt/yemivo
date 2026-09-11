@@ -3,6 +3,7 @@ package com.tnc.yemivo.app.feature.portionadjuster
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import com.tnc.core.base.BaseFragment
+import com.tnc.core.extensions.showToast
 import com.tnc.yemivo.R
 import com.tnc.yemivo.app.theme.LocaleHelper
 import com.tnc.yemivo.databinding.FragmentPortionAdjusterBinding
@@ -42,6 +43,10 @@ class PortionAdjusterFragment : BaseFragment<FragmentPortionAdjusterBinding>(
             viewModel.onEvent(PortionAdjusterUiEvent.IncrementClicked)
         }
 
+        btnAddToShoppingList.setOnClickListener {
+            viewModel.onEvent(PortionAdjusterUiEvent.AddToShoppingListClicked)
+        }
+
     }
 
     override fun observeState() {
@@ -52,6 +57,22 @@ class PortionAdjusterFragment : BaseFragment<FragmentPortionAdjusterBinding>(
 
                 state.recipe?.let { render(it, state.currentServings) }
 
+            }
+
+        }
+
+    }
+
+    override fun observeEffect() {
+
+        launchAndRepeatWithViewLifecycle {
+
+            viewModel.effect.collect { effect ->
+                when (effect) {
+                    is PortionAdjusterUiEffect.ShowMessage -> {
+                        requireContext().showToast(effect.message)
+                    }
+                }
             }
 
         }

@@ -119,6 +119,14 @@
             android:textColor="@color/text_muted"
             android:textSize="@dimen/text_sm" />
 
+        <TextView
+            android:id="@+id/btnAddToShoppingList"
+            style="@style/Widget.Yemivo.ButtonDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:text="@string/action_add_to_shopping_list" />
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
